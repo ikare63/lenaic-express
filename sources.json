@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "notes": "Les entrées google_news utilisent le flux RSS de recherche Google News. Les flux RSS directs restent attribués à leur source d'origine.",
+  "sources": [
+    {
+      "id": "github-blog",
+      "name": "GitHub Blog",
+      "type": "rss",
+      "url": "https://github.com/blog.atom",
+      "category": "tech",
+      "priority": 3.5,
+      "enabled": true
+    },
+    {
+      "id": "france-culture",
+      "name": "France Culture",
+      "type": "rss",
+      "url": "https://www.radiofrance.fr/franceculture/rss",
+      "category": "histoire",
+      "priority": 2.3,
+      "enabled": true
+    },
+    {
+      "id": "actu-histoire",
+      "name": "actu.fr — Histoire & patrimoine",
+      "type": "rss",
+      "url": "https://actu.fr/histoire-patrimoine/rss.xml",
+      "category": "histoire",
+      "priority": 2.7,
+      "enabled": true
+    },
+    {
+      "id": "france3-histoire",
+      "name": "France 3 — Histoire",
+      "type": "rss",
+      "url": "https://france3-regions.franceinfo.fr/culture/histoire/rss",
+      "category": "histoire",
+      "priority": 2.7,
+      "enabled": true
+    },
+    {
+      "id": "news-genealogie",
+      "name": "Actualités généalogie",
+      "type": "google_news",
+      "query": "généalogie OR archives OR \"état civil\" OR paléographie",
+      "category": "genealogie",
+      "priority": 4.5,
+      "enabled": true
+    },
+    {
+      "id": "news-francearchives",
+      "name": "FranceArchives",
+      "type": "google_news",
+      "query": "site:francearchives.gouv.fr archives",
+      "category": "genealogie",
+      "priority": 5,
+      "enabled": true
+    },
+    {
+      "id": "news-archives-loire",
+      "name": "Archives de la Loire",
+      "type": "google_news",
+      "query": "\"Archives départementales de la Loire\" OR \"Archives de la Loire\"",
+      "category": "genealogie",
+      "priority": 5,
+      "enabled": true
+    },
+    {
+      "id": "news-clermont",
+      "name": "Clermont-Ferrand",
+      "type": "google_news",
+      "query": "\"Clermont-Ferrand\"",
+      "category": "local",
+      "priority": 4.7,
+      "enabled": true
+    },
+    {
+      "id": "news-puy-de-dome",
+      "name": "Puy-de-Dôme",
+      "type": "google_news",
+      "query": "\"Puy-de-Dôme\"",
+      "category": "local",
+      "priority": 4.2,
+      "enabled": true
+    },
+    {
+      "id": "news-loire-roannais",
+      "name": "Loire / Roannais",
+      "type": "google_news",
+      "query": "Roanne OR Roannais OR \"Saint-Just-la-Pendue\" OR \"Saint-Étienne\"",
+      "category": "local",
+      "priority": 3.6,
+      "enabled": true
+    },
+    {
+      "id": "news-github-pages",
+      "name": "GitHub Pages & Actions",
+      "type": "google_news",
+      "query": "\"GitHub Pages\" OR \"GitHub Actions\"",
+      "category": "tech",
+      "priority": 4,
+      "enabled": true
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "language": "fr",
+  "country": "FR",
+  "max_age_days": 14,
+  "max_articles": 180,
+  "per_source_limit": 30,
+  "categories": {
+    "genealogie": {
+      "label": "Généalogie",
+      "weight": 5.0
+    },
+    "histoire": {
+      "label": "Histoire",
+      "weight": 4.0
+    },
+    "local": {
+      "label": "Actualité locale",
+      "weight": 4.5
+    },
+    "tech": {
+      "label": "Web / Tech",
+      "weight": 3.2
+    },
+    "culture": {
+      "label": "Culture",
+      "weight": 2.0
+    },
+    "sciences": {
+      "label": "Sciences",
+      "weight": 1.8
+    },
+    "general": {
+      "label": "Actualité",
+      "weight": 1.0
+    }
+  },
+  "keywords": [
+    {
+      "term": "généalogie",
+      "weight": 7
+    },
+    {
+      "term": "archives",
+      "weight": 7
+    },
+    {
+      "term": "état civil",
+      "weight": 7
+    },
+    {
+      "term": "registre",
+      "weight": 6
+    },
+    {
+      "term": "recensement",
+      "weight": 6
+    },
+    {
+      "term": "paléographie",
+      "weight": 6
+    },
+    {
+      "term": "francearchives",
+      "weight": 7
+    },
+    {
+      "term": "loire",
+      "weight": 4
+    },
+    {
+      "term": "saint-just-la-pendue",
+      "weight": 9
+    },
+    {
+      "term": "roanne",
+      "weight": 4
+    },
+    {
+      "term": "clermont-ferrand",
+      "weight": 6
+    },
+    {
+      "term": "puy-de-dôme",
+      "weight": 5
+    },
+    {
+      "term": "github pages",
+      "weight": 6
+    },
+    {
+      "term": "github actions",
+      "weight": 5
+    },
+    {
+      "term": "html",
+      "weight": 2
+    },
+    {
+      "term": "histoire",
+      "weight": 3
+    },
+    {
+      "term": "patrimoine",
+      "weight": 4
+    }
+  ],
+  "negative_keywords": [
+    {
+      "term": "résultats sportifs",
+      "weight": -3
+    },
+    {
+      "term": "people",
+      "weight": -2
+    }
+  ]
+}

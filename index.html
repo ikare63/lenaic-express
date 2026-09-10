@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#eee7d7">
+  <title>Lénaïc Express — Votre journal personnalisé</title>
+  <meta name="description" content="Un journal d'actualité personnalisé, alimenté automatiquement par des flux RSS et GitHub Actions.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading" class="loading">Composition de l’édition…</div>
+
+  <main id="app" class="newspaper" hidden>
+    <header class="header">
+      <div class="masthead-grid">
+        <div class="motto">« Des nouvelles<br>qui valent vraiment<br>le détour »</div>
+        <div class="masthead">
+          <h1>Lénaïc Express</h1>
+          <p>Votre journal personnalisé</p>
+        </div>
+        <div class="edition-box">
+          <strong>ÉDITION<br>PERSONNELLE</strong>
+          <span id="updateShort">—</span>
+        </div>
+      </div>
+
+      <div class="edition-line">
+        <span id="issue">N° —</span>
+        <span id="today">—</span>
+        <span id="count">— article</span>
+      </div>
+
+      <nav class="sections" id="sections" aria-label="Rubriques">
+        <button class="active" data-filter="all">Pour toi</button>
+        <button data-filter="recent">Récent</button>
+        <button data-filter="saved">À lire</button>
+        <button data-filter="genealogie">Généalogie</button>
+        <button data-filter="histoire">Histoire</button>
+        <button data-filter="local">Local</button>
+        <button data-filter="tech">Web / Tech</button>
+        <button class="search-button" id="searchButton" aria-label="Rechercher">⌕</button>
+      </nav>
+    </header>
+
+    <section id="frontPage" class="front-page"></section>
+    <section id="feed" class="feed"></section>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Navigation mobile">
+    <button data-mobile-filter="all"><b>⌂</b><span>Fil</span></button>
+    <button data-mobile-filter="saved"><b>▱</b><span>À lire</span></button>
+    <button id="mobileTopics"><b>◇</b><span>Sujets</span></button>
+    <button id="mobileSearch"><b>⌕</b><span>Recherche</span></button>
+  </nav>
+
+  <div id="searchModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <strong>Rechercher dans l’édition</strong>
+        <button id="closeSearch" aria-label="Fermer">×</button>
+      </div>
+      <input id="searchInput" type="search" placeholder="Archives, Clermont-Ferrand, GitHub…">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+
+  <div id="topicsModal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <div class="modal-head">
+        <strong>Mes sujets</strong>
+        <button id="closeTopics" aria-label="Fermer">×</button>
+      </div>
+      <p class="small">Ces réglages restent uniquement dans ce navigateur.</p>
+      <div id="topicControls" class="topic-controls"></div>
+      <button class="paper-button" id="resetPrefs">Réinitialiser mes préférences</button>
+    </div>
+  </div>
+
+  <template id="storyTemplate">
+    <article class="story">
+      <div class="story-category"></div>
+      <h3></h3>
+      <p class="summary"></p>
+      <div class="story-meta"></div>
+      <div class="story-actions">
+        <button class="save" title="À lire">☆</button>
+        <button class="more" title="Personnaliser">···</button>
+      </div>
+      <div class="story-menu" hidden>
+        <button data-action="more-like">Plus comme ça</button>
+        <button data-action="less-like">Moins comme ça</button>
+        <button data-action="hide">Masquer cet article</button>
+        <button data-action="hide-source">Masquer cette source</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
