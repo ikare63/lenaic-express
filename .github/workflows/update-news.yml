@@ -1,0 +1,48 @@
+name: Mettre à jour Lénaïc Express
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mise à jour toutes les heures (heures en UTC)
+    - cron: "12 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lenaic-express-news
+  cancel-in-progress: true
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Installer les dépendances
+        run: pip install -r requirements.txt
+
+      - name: Construire l'édition
+        run: python scripts/fetch_news.py
+
+      - name: Enregistrer la nouvelle édition
+        run: |
+          if git diff --quiet -- data/actualites.json; then
+            echo "Aucune modification à enregistrer."
+            exit 0
+          fi
+
+          git config user.name "Lénaïc Express Bot"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add data/actualites.json
+          git commit -m "Actualise Lénaïc Express"
+          git push
