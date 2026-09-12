@@ -27,6 +27,41 @@
   };
   const categoryIcons = {genealogie:"♟",histoire:"⌂",local:"⌖",tech:"▣",culture:"✦",sciences:"◉",general:"◆"};
 
+  const EXPRESS_SNAPSHOT_KEY = "lenaic-express-snapshot-v1";
+  let lastSnapshotSignature = "";
+
+  function personalizedArticles(){
+    return state.articles
+      .filter(a => !state.hidden.has(a.id) && !state.hiddenSources.has(a.source))
+      .sort((a,b) => localScore(b) - localScore(a));
+  }
+
+  function publishExpressSnapshot(){
+    if(!state.data) return;
+    const top = personalizedArticles().slice(0,5).map(a => ({
+      id:a.id,
+      title:a.title,
+      category:a.category,
+      categoryLabel:categoryLabels[a.category] || a.category || "Actualité",
+      source:a.source || "Source",
+      url:a.url || "",
+      publishedAt:a.published_at || null,
+      score:localScore(a)
+    }));
+    const payload={
+      generatedAt:new Date().toISOString(),
+      editionGeneratedAt:state.data.generated_at || null,
+      count:state.articles.length,
+      top
+    };
+    const signature=JSON.stringify(top.map(a=>[a.id,a.score]));
+    try{localStorage.setItem(EXPRESS_SNAPSHOT_KEY,JSON.stringify(payload))}catch(e){}
+    if(window.LenaicBus && signature!==lastSnapshotSignature){
+      lastSnapshotSignature=signature;
+      LenaicBus.publish('news.snapshot',payload,{source:'lenaic-express',target:'3615'});
+    }
+  }
+
   function saveState(){
     localStorage.setItem("lex_saved", JSON.stringify([...state.saved]));
     localStorage.setItem("lex_hidden", JSON.stringify([...state.hidden]));
@@ -165,6 +200,7 @@
     renderFront();
     renderFeed();
     $$("#sections button[data-filter]").forEach(b => b.classList.toggle("active", b.dataset.filter === state.activeFilter));
+    publishExpressSnapshot();
   }
 
   function setFilter(filter){
@@ -240,6 +276,7 @@
     $$("#topicControls input").forEach(input => input.addEventListener("input", () => {
       state.categoryBoosts[input.dataset.topic] = Number(input.value);
       saveState();
+      publishExpressSnapshot();
     }));
   }
 
