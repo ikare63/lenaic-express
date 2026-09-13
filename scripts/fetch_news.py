@@ -472,6 +472,11 @@ def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dic
             {"role": "system", "content": [{"type": "input_text", "text": prompt}]},
             {"role": "user", "content": [{"type": "input_text", "text": user}]},
         ],
+        # Un résumé de presse n'a pas besoin de raisonnement interne.
+        # GPT-5.6 Luna utilise sinon un effort medium par défaut, ce qui peut
+        # consommer max_output_tokens avant même de produire le texte final.
+        "reasoning": {"effort": "none"},
+        "text": {"verbosity": "low"},
         "max_output_tokens": max_output_tokens,
     }
     try:
@@ -487,6 +492,17 @@ def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dic
         data = r.json()
         input_tokens, output_tokens, cost_usd = actual_call_cost(data, prefs)
         text = response_text(data).strip()
+        if not text:
+            usage = data.get("usage") or {}
+            details = usage.get("output_tokens_details") or {}
+            print(
+                "AI EMPTY "
+                f"status={data.get('status', '')} "
+                f"output_tokens={usage.get('output_tokens', 0)} "
+                f"reasoning_tokens={details.get('reasoning_tokens', 0)} "
+                f"incomplete={data.get('incomplete_details') or ''}",
+                file=sys.stderr,
+            )
         if not text or text.upper() == "INSUFFICIENT":
             text = ""
         return {
