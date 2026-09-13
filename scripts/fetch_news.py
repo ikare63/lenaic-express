@@ -10,6 +10,7 @@ import sys
 import time
 import unicodedata
 from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from urllib.parse import quote_plus, urljoin, urlparse
 
@@ -22,6 +23,7 @@ SOURCES_PATH = ROOT / "sources.json"
 PREFS_PATH = ROOT / "preferences.json"
 WATCHES_PATH = ROOT / "veilles.json"
 OUTPUT_PATH = ROOT / "data" / "actualites.json"
+AI_USAGE_PATH = ROOT / "data" / "ai-usage.json"
 
 TAG_RE = re.compile(r"<[^>]+>")
 IMG_RE = re.compile(r'<img[^>]+src=["\']([^"\']+)["\']', re.I)
@@ -360,15 +362,103 @@ def response_text(data: dict) -> str:
     return "\n".join(chunks).strip()
 
 
-def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dict) -> str:
+def ai_limits(prefs: dict) -> dict:
+    cfg = prefs.get("ai", {}) or {}
+    return {
+        "monthly_budget_usd": float(os.getenv("AI_MONTHLY_BUDGET_USD", cfg.get("monthly_budget_usd", 0.90))),
+        "daily_summary_limit": int(os.getenv("AI_DAILY_SUMMARY_LIMIT", cfg.get("daily_summary_limit", 20))),
+        "input_price_per_million_usd": float(cfg.get("input_price_per_million_usd", 0.20)),
+        "output_price_per_million_usd": float(cfg.get("output_price_per_million_usd", 1.20)),
+        "timezone": str(cfg.get("budget_timezone", "Europe/Paris")),
+    }
+
+
+def load_ai_usage(prefs: dict, now: datetime) -> dict:
+    limits = ai_limits(prefs)
+    try:
+        local_now = now.astimezone(ZoneInfo(limits["timezone"]))
+    except Exception:
+        local_now = now
+    month_key = local_now.strftime("%Y-%m")
+    day_key = local_now.strftime("%Y-%m-%d")
+    usage = load_json(AI_USAGE_PATH, {}) or {}
+    if usage.get("month") != month_key:
+        usage["month"] = month_key
+        usage["month_spend_usd"] = 0.0
+        usage["month_requests"] = 0
+        usage["month_summaries"] = 0
+    if usage.get("day") != day_key:
+        usage["day"] = day_key
+        usage["day_requests"] = 0
+        usage["day_summaries"] = 0
+    usage.setdefault("version", 1)
+    usage.setdefault("lifetime_spend_usd", 0.0)
+    usage.setdefault("month_spend_usd", 0.0)
+    usage.setdefault("month_requests", 0)
+    usage.setdefault("month_summaries", 0)
+    usage.setdefault("day_requests", 0)
+    usage.setdefault("day_summaries", 0)
+    usage["limits"] = limits
+    return usage
+
+
+def save_ai_usage(usage: dict, now: datetime):
+    usage["updated_at"] = now.isoformat().replace("+00:00", "Z")
+    AI_USAGE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    AI_USAGE_PATH.write_text(json.dumps(usage, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def estimated_max_call_cost(source_text: str, title: str, source: str, prefs: dict) -> float:
+    """Réserve un coût volontairement conservateur avant chaque appel.
+
+    Pour du texte français/latin, 1 caractère = 1 token est une forte surestimation.
+    Elle évite qu'un dernier appel puisse franchir le plafond mensuel configuré.
+    """
+    cfg = prefs.get("ai", {}) or {}
+    limits = ai_limits(prefs)
+    max_chars = int(cfg.get("max_input_chars", 9000))
+    max_output_tokens = int(cfg.get("max_output_tokens", 220))
+    input_chars = min(len(source_text or ""), max_chars) + len(title or "") + len(source or "") + 3500
+    conservative_input_tokens = input_chars
+    return (
+        conservative_input_tokens * limits["input_price_per_million_usd"] / 1_000_000
+        + max_output_tokens * limits["output_price_per_million_usd"] / 1_000_000
+    )
+
+
+def actual_call_cost(data: dict, prefs: dict) -> tuple[int, int, float]:
+    usage = data.get("usage") or {}
+    input_tokens = int(usage.get("input_tokens") or usage.get("prompt_tokens") or 0)
+    output_tokens = int(usage.get("output_tokens") or usage.get("completion_tokens") or 0)
+    limits = ai_limits(prefs)
+    cost = (
+        input_tokens * limits["input_price_per_million_usd"] / 1_000_000
+        + output_tokens * limits["output_price_per_million_usd"] / 1_000_000
+    )
+    return input_tokens, output_tokens, cost
+
+
+def ai_can_call(usage: dict, source_text: str, title: str, source: str, prefs: dict) -> tuple[bool, str]:
+    limits = ai_limits(prefs)
+    if int(usage.get("day_requests", 0)) >= limits["daily_summary_limit"]:
+        return False, "daily_limit"
+    remaining = limits["monthly_budget_usd"] - float(usage.get("month_spend_usd", 0.0))
+    reserve = estimated_max_call_cost(source_text, title, source, prefs)
+    if remaining <= 0 or reserve > remaining:
+        return False, "monthly_budget"
+    return True, ""
+
+
+def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dict) -> dict:
     api_key = os.getenv("OPENAI_API_KEY", "").strip()
     if not api_key:
-        return ""
+        return {"summary": "", "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
     ai_cfg = prefs.get("ai", {})
     model = os.getenv("OPENAI_MODEL", ai_cfg.get("model", "gpt-5.6-luna"))
     max_chars = int(ai_cfg.get("max_input_chars", 9000))
     min_words = int(ai_cfg.get("summary_min_words", 35))
     max_words = int(ai_cfg.get("summary_max_words", 70))
+    max_output_tokens = int(ai_cfg.get("max_output_tokens", 220))
     prompt = (
         "Tu rédiges les résumés de Lénaïc Express. Résume uniquement les informations présentes dans le texte fourni. "
         "N'ajoute aucun fait, chiffre, contexte ou conclusion absent du texte. Style journalistique neutre, français naturel, "
@@ -382,7 +472,7 @@ def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dic
             {"role": "system", "content": [{"type": "input_text", "text": prompt}]},
             {"role": "user", "content": [{"type": "input_text", "text": user}]},
         ],
-        "max_output_tokens": 220,
+        "max_output_tokens": max_output_tokens,
     }
     try:
         r = requests.post(
@@ -393,24 +483,33 @@ def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dic
         )
         if not r.ok:
             print(f"AI ERR {r.status_code}: {r.text[:240]}", file=sys.stderr)
-            return ""
-        text = response_text(r.json()).strip()
+            return {"summary": "", "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
+        data = r.json()
+        input_tokens, output_tokens, cost_usd = actual_call_cost(data, prefs)
+        text = response_text(data).strip()
         if not text or text.upper() == "INSUFFICIENT":
-            return ""
-        return re.sub(r"\s+", " ", text).strip()
+            text = ""
+        return {
+            "summary": re.sub(r"\s+", " ", text).strip(),
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "cost_usd": cost_usd,
+        }
     except Exception as exc:
         print(f"AI ERR: {exc}", file=sys.stderr)
-        return ""
+        return {"summary": "", "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
 
 
-def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: datetime):
+def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: datetime, ai_usage: dict):
     old_articles = old_payload.get("articles", []) if isinstance(old_payload, dict) else []
     old_by_title = {normalize(a.get("title", "")): a for a in old_articles if a.get("title")}
     ai_cfg = prefs.get("ai", {})
     ai_enabled = bool(ai_cfg.get("enabled", True)) and bool(os.getenv("OPENAI_API_KEY", "").strip())
-    ai_budget = int(ai_cfg.get("max_summaries_per_run", 80)) if ai_enabled else 0
-    ai_done = 0
+    per_run_limit = int(ai_cfg.get("max_summaries_per_run", 20)) if ai_enabled else 0
+    ai_calls_this_run = 0
+    ai_summaries_this_run = 0
     pending = 0
+    blocked_reason = ""
 
     for a in articles:
         old = old_by_title.get(normalize(a.get("title", "")), {})
@@ -425,7 +524,6 @@ def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: d
             ):
                 if key in old:
                     a[key] = old[key]
-            # Les veilles et mots-clés sont recalculés à chaque édition.
             a["why_for_you"] = []
             if a.get("watch_matches"):
                 a["why_for_you"].append("veille : " + ", ".join(a["watch_matches"][:2]))
@@ -435,11 +533,10 @@ def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: d
                 a["why_for_you"].append("rubrique prioritaire")
             continue
 
-        # Tant que le budget IA du passage n'est pas atteint, on tente d'obtenir
-        # le texte réel de l'article. Les articles restants gardent leur extrait RSS
-        # et seront enrichis lors des passages suivants.
+        # On ne télécharge le texte intégral que si un appel IA est encore envisageable.
         extracted = {"resolved_url": a.get("url", ""), "text": "", "paywalled": False, "status": "skipped"}
-        if ai_done < ai_budget:
+        can_attempt = ai_enabled and ai_calls_this_run < per_run_limit
+        if can_attempt:
             extracted = extract_article_text(a.get("url", ""))
 
         a["resolved_url"] = extracted.get("resolved_url") or a.get("url", "")
@@ -456,21 +553,36 @@ def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: d
             basis_text = ""
             basis = "insufficient"
 
-        content_hash = sha_text(basis_text) if basis_text else ""
-        a["content_hash"] = content_hash
+        a["content_hash"] = sha_text(basis_text) if basis_text else ""
         a["ai_summary"] = ""
         a["ai_summary_basis"] = ""
         a["ai_summary_at"] = ""
         a["ai_summary_model"] = ""
 
-        if basis_text and ai_done < ai_budget:
-            summary = ai_summary(a["title"], a.get("source", ""), basis_text, basis, prefs)
-            if summary:
-                a["ai_summary"] = summary
-                a["ai_summary_basis"] = basis
-                a["ai_summary_at"] = now.isoformat().replace("+00:00", "Z")
-                a["ai_summary_model"] = os.getenv("OPENAI_MODEL", ai_cfg.get("model", "gpt-5.6-luna"))
-            ai_done += 1
+        if basis_text and can_attempt:
+            allowed, reason = ai_can_call(ai_usage, basis_text, a["title"], a.get("source", ""), prefs)
+            if allowed:
+                result = ai_summary(a["title"], a.get("source", ""), basis_text, basis, prefs)
+                # Une requête réussie au niveau HTTP est comptabilisée dès qu'une consommation est remontée.
+                if result.get("input_tokens") or result.get("output_tokens"):
+                    ai_calls_this_run += 1
+                    ai_usage["day_requests"] = int(ai_usage.get("day_requests", 0)) + 1
+                    ai_usage["month_requests"] = int(ai_usage.get("month_requests", 0)) + 1
+                    cost = float(result.get("cost_usd", 0.0))
+                    ai_usage["month_spend_usd"] = round(float(ai_usage.get("month_spend_usd", 0.0)) + cost, 8)
+                    ai_usage["lifetime_spend_usd"] = round(float(ai_usage.get("lifetime_spend_usd", 0.0)) + cost, 8)
+                summary = result.get("summary", "")
+                if summary:
+                    a["ai_summary"] = summary
+                    a["ai_summary_basis"] = basis
+                    a["ai_summary_at"] = now.isoformat().replace("+00:00", "Z")
+                    a["ai_summary_model"] = os.getenv("OPENAI_MODEL", ai_cfg.get("model", "gpt-5.6-luna"))
+                    ai_summaries_this_run += 1
+                    ai_usage["day_summaries"] = int(ai_usage.get("day_summaries", 0)) + 1
+                    ai_usage["month_summaries"] = int(ai_usage.get("month_summaries", 0)) + 1
+            else:
+                blocked_reason = reason
+                pending += 1
         elif basis_text:
             pending += 1
 
@@ -492,8 +604,7 @@ def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: d
         if not a["why_for_you"]:
             a["why_for_you"].append("rubrique prioritaire")
 
-    return ai_done, pending
-
+    return ai_summaries_this_run, ai_calls_this_run, pending, blocked_reason
 
 def main():
     sources_cfg = load_json(SOURCES_PATH, {"sources": []})
@@ -535,7 +646,9 @@ def main():
         print("Aucun nouvel article : édition précédente conservée.")
         return
 
-    ai_done, ai_pending = enrich_articles(all_articles, prefs, old_payload, now)
+    ai_usage = load_ai_usage(prefs, now)
+    ai_done, ai_calls, ai_pending, ai_blocked_reason = enrich_articles(all_articles, prefs, old_payload, now, ai_usage)
+    save_ai_usage(ai_usage, now)
     payload = {
         "generated_at": now.isoformat().replace("+00:00", "Z"),
         "mode": "live",
@@ -545,7 +658,18 @@ def main():
             "enabled": bool(os.getenv("OPENAI_API_KEY", "").strip()) and bool(prefs.get("ai", {}).get("enabled", True)),
             "model": os.getenv("OPENAI_MODEL", prefs.get("ai", {}).get("model", "gpt-5.6-luna")),
             "generated_this_run": ai_done,
+            "requests_this_run": ai_calls,
             "pending": ai_pending,
+            "blocked_reason": ai_blocked_reason,
+            "budget": {
+                "month": ai_usage.get("month"),
+                "spent_usd": ai_usage.get("month_spend_usd", 0.0),
+                "limit_usd": ai_usage.get("limits", {}).get("monthly_budget_usd"),
+                "day": ai_usage.get("day"),
+                "requests_today": ai_usage.get("day_requests", 0),
+                "summaries_today": ai_usage.get("day_summaries", 0),
+                "daily_summary_limit": ai_usage.get("limits", {}).get("daily_summary_limit"),
+            },
         },
         "fetch_errors": errors,
         "articles": all_articles,
