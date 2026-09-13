@@ -1,0 +1,17 @@
+LÉNAÏC EXPRESS — GARDE-FOU BUDGET IA
+
+Cette mise à jour ajoute deux limites cumulatives :
+- 20 requêtes de résumé IA maximum par jour (heure de Paris)
+- 0,90 $ US maximum par mois selon le coût de tokens remonté par l'API
+
+Le plafond mensuel est volontairement inférieur à 1 $ pour rester autour/sous l'objectif de 1 € malgré les variations de change.
+Quand une limite est atteinte, le site continue de fonctionner avec les extraits RSS ; les articles en attente seront repris plus tard.
+
+Fichiers à remplacer / ajouter :
+- scripts/fetch_news.py
+- preferences.json
+- .github/workflows/update-news.yml
+- data/ai-usage.json
+- .gitignore (facultatif mais recommandé)
+
+Ne jamais mettre OPENAI_API_KEY dans un fichier du dépôt.
