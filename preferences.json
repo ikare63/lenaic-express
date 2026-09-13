@@ -1,72 +1,127 @@
 {
-  "version": 1,
+  "version": 2,
   "language": "fr",
   "country": "FR",
-  "max_age_days": 14,
-  "max_articles": 180,
-  "per_source_limit": 30,
+  "max_age_days": 10,
+  "max_articles": 160,
+  "per_source_limit": 28,
+  "ai": {
+    "enabled": true,
+    "model": "gpt-5.6-luna",
+    "max_summaries_per_run": 80,
+    "summary_min_words": 35,
+    "summary_max_words": 70,
+    "max_input_chars": 9000
+  },
   "categories": {
-    "genealogie": {
-      "label": "Généalogie",
-      "weight": 5.0
+    "politique": {
+      "label": "Politique",
+      "weight": 5.2,
+      "limit": 36
     },
-    "histoire": {
-      "label": "Histoire",
-      "weight": 4.0
+    "sondages": {
+      "label": "Sondages",
+      "weight": 5.4,
+      "limit": 24
     },
     "local": {
-      "label": "Actualité locale",
-      "weight": 4.5
+      "label": "Local",
+      "weight": 4.8,
+      "limit": 28
+    },
+    "medias": {
+      "label": "Médias / TV",
+      "weight": 3.9,
+      "limit": 22
+    },
+    "genealogie": {
+      "label": "Généalogie",
+      "weight": 3.4,
+      "limit": 22
+    },
+    "histoire": {
+      "label": "Histoire / patrimoine",
+      "weight": 3.2,
+      "limit": 20
     },
     "tech": {
-      "label": "Web / Tech",
-      "weight": 3.2
+      "label": "Tech / IA",
+      "weight": 3.8,
+      "limit": 24
+    },
+    "sciences": {
+      "label": "Sciences / société",
+      "weight": 2.4,
+      "limit": 18
     },
     "culture": {
       "label": "Culture",
-      "weight": 2.0
+      "weight": 2.2,
+      "limit": 16
     },
-    "sciences": {
-      "label": "Sciences",
-      "weight": 1.8
+    "international": {
+      "label": "International",
+      "weight": 2.6,
+      "limit": 18
     },
     "general": {
       "label": "Actualité",
-      "weight": 1.0
+      "weight": 1.4,
+      "limit": 18
     }
   },
   "keywords": [
     {
-      "term": "généalogie",
+      "term": "sondage",
+      "weight": 8
+    },
+    {
+      "term": "intentions de vote",
+      "weight": 9
+    },
+    {
+      "term": "popularité",
+      "weight": 6
+    },
+    {
+      "term": "assemblée nationale",
       "weight": 7
+    },
+    {
+      "term": "élection présidentielle",
+      "weight": 8
+    },
+    {
+      "term": "primaire",
+      "weight": 6
+    },
+    {
+      "term": "gouvernement",
+      "weight": 4
+    },
+    {
+      "term": "clermont-ferrand",
+      "weight": 7
+    },
+    {
+      "term": "puy-de-dôme",
+      "weight": 6
+    },
+    {
+      "term": "auvergne",
+      "weight": 4
+    },
+    {
+      "term": "généalogie",
+      "weight": 5
     },
     {
       "term": "archives",
-      "weight": 7
+      "weight": 5
     },
     {
       "term": "état civil",
-      "weight": 7
-    },
-    {
-      "term": "registre",
-      "weight": 6
-    },
-    {
-      "term": "recensement",
-      "weight": 6
-    },
-    {
-      "term": "paléographie",
-      "weight": 6
-    },
-    {
-      "term": "francearchives",
-      "weight": 7
-    },
-    {
-      "term": "loire",
-      "weight": 4
+      "weight": 5
     },
     {
       "term": "saint-just-la-pendue",
@@ -77,42 +132,62 @@
       "weight": 4
     },
     {
-      "term": "clermont-ferrand",
-      "weight": 6
-    },
-    {
-      "term": "puy-de-dôme",
-      "weight": 5
-    },
-    {
-      "term": "github pages",
-      "weight": 6
-    },
-    {
-      "term": "github actions",
-      "weight": 5
-    },
-    {
-      "term": "html",
-      "weight": 2
-    },
-    {
-      "term": "histoire",
-      "weight": 3
-    },
-    {
       "term": "patrimoine",
+      "weight": 4
+    },
+    {
+      "term": "ina",
+      "weight": 5
+    },
+    {
+      "term": "télévision",
+      "weight": 4
+    },
+    {
+      "term": "audiovisuel",
+      "weight": 4
+    },
+    {
+      "term": "intelligence artificielle",
+      "weight": 5
+    },
+    {
+      "term": "openai",
+      "weight": 5
+    },
+    {
+      "term": "chatgpt",
+      "weight": 4
+    },
+    {
+      "term": "github",
       "weight": 4
     }
   ],
   "negative_keywords": [
     {
       "term": "résultats sportifs",
-      "weight": -3
+      "weight": -5
+    },
+    {
+      "term": "mercato",
+      "weight": -5
     },
     {
       "term": "people",
-      "weight": -2
+      "weight": -3
+    },
+    {
+      "term": "horoscope",
+      "weight": -3
     }
+  ],
+  "paywall_sources": [
+    "Le Monde",
+    "Les Echos",
+    "L'Opinion",
+    "Mediapart",
+    "La Montagne",
+    "Le Figaro"
   ]
 }

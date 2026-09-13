@@ -1,0 +1,60 @@
+LÉNAÏC EXPRESS V4 — POLITIQUE, SONDAGES, VEILLES, RÉSUMÉS IA
+================================================================
+
+1) DÉPÔT lenaic-express
+----------------------
+Remplacer / ajouter les fichiers de cette archive en conservant exactement les dossiers.
+Le workflow ACTIF est désormais :
+.github/workflows/update-news.yml
+
+L'ancien update-news.yml placé à la racine peut rester : GitHub Actions l'ignore.
+
+Nouveautés principales :
+- politique et sondages deviennent des rubriques fortes ;
+- généalogie plafonnée pour ne plus monopoliser le fil ;
+- médias / télévision, tech / IA, sciences / société et international ;
+- veilles de mots / expressions ;
+- résumé IA par article avec cache ;
+- détection paywall + lien original + recherche Archive.is ;
+- mise à jour toutes les 3 h ;
+- modification de veilles/preferences/sources = mise à jour immédiate du workflow.
+
+2) UNE SEULE FOIS : CLÉ OPENAI
+-------------------------------
+Créer une clé API OpenAI, puis dans le dépôt lenaic-express :
+Settings > Secrets and variables > Actions > New repository secret
+Nom EXACT : OPENAI_API_KEY
+Valeur : votre clé API
+
+Ne jamais mettre la clé dans app.js, preferences.json ou un autre fichier public.
+
+Le site fonctionne sans clé, mais il garde alors les extraits RSS à la place des résumés IA.
+
+3) PREMIÈRE MISE À JOUR
+-----------------------
+Dans GitHub : Actions > Mettre à jour Lénaïc Express > Run workflow.
+Le premier passage peut prendre plus longtemps car il doit enrichir les articles existants.
+Les résumés déjà générés sont réutilisés ensuite : ils ne sont pas repayés toutes les 3 h.
+
+4) VEILLES
+----------
+Dans Lénaïc Express > Sujets, ajouter un mot ou une expression crée immédiatement une veille LOCALE :
+elle remonte toutes les correspondances déjà présentes dans l'édition.
+
+Pour que ce terme déclenche AUSSI une recherche internet à chaque édition :
+- ouvrir 3615 NEXUS > VEILLES EXPRESS ;
+- le brouillon local y est repris automatiquement ;
+- connecter GitHub dans PUBLICATION ;
+- cliquer PUBLIER LES VEILLES SUR GITHUB.
+
+La publication modifie veilles.json et déclenche immédiatement le workflow Lénaïc Express.
+
+5) ARTICLES PAYANTS
+-------------------
+Quand un article semble réservé aux abonnés :
+- badge PAYANT ;
+- bouton Article original ;
+- bouton Archive disponible ou Chercher une archive.
+
+La vérification Archive.is est best-effort : le service peut demander un CAPTCHA ou refuser les robots.
+Le résumé IA n'utilise PAS le texte d'une archive payante : seulement le texte original accessible ou le chapô/RSS.

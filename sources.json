@@ -1,105 +1,26 @@
 {
-  "version": 1,
-  "notes": "Les entrées google_news utilisent le flux RSS de recherche Google News. Les flux RSS directs restent attribués à leur source d'origine.",
+  "version": 2,
+  "notes": "Les requêtes Google News complètent les flux RSS. Les veilles définies dans veilles.json génèrent en plus leurs propres recherches.",
   "sources": [
-    {
-      "id": "github-blog",
-      "name": "GitHub Blog",
-      "type": "rss",
-      "url": "https://github.com/blog.atom",
-      "category": "tech",
-      "priority": 3.5,
-      "enabled": true
-    },
-    {
-      "id": "france-culture",
-      "name": "France Culture",
-      "type": "rss",
-      "url": "https://www.radiofrance.fr/franceculture/rss",
-      "category": "histoire",
-      "priority": 2.3,
-      "enabled": true
-    },
-    {
-      "id": "actu-histoire",
-      "name": "actu.fr — Histoire & patrimoine",
-      "type": "rss",
-      "url": "https://actu.fr/histoire-patrimoine/rss.xml",
-      "category": "histoire",
-      "priority": 2.7,
-      "enabled": true
-    },
-    {
-      "id": "france3-histoire",
-      "name": "France 3 — Histoire",
-      "type": "rss",
-      "url": "https://france3-regions.franceinfo.fr/culture/histoire/rss",
-      "category": "histoire",
-      "priority": 2.7,
-      "enabled": true
-    },
-    {
-      "id": "news-genealogie",
-      "name": "Actualités généalogie",
-      "type": "google_news",
-      "query": "généalogie OR archives OR \"état civil\" OR paléographie",
-      "category": "genealogie",
-      "priority": 4.5,
-      "enabled": true
-    },
-    {
-      "id": "news-francearchives",
-      "name": "FranceArchives",
-      "type": "google_news",
-      "query": "site:francearchives.gouv.fr archives",
-      "category": "genealogie",
-      "priority": 5,
-      "enabled": true
-    },
-    {
-      "id": "news-archives-loire",
-      "name": "Archives de la Loire",
-      "type": "google_news",
-      "query": "\"Archives départementales de la Loire\" OR \"Archives de la Loire\"",
-      "category": "genealogie",
-      "priority": 5,
-      "enabled": true
-    },
-    {
-      "id": "news-clermont",
-      "name": "Clermont-Ferrand",
-      "type": "google_news",
-      "query": "\"Clermont-Ferrand\"",
-      "category": "local",
-      "priority": 4.7,
-      "enabled": true
-    },
-    {
-      "id": "news-puy-de-dome",
-      "name": "Puy-de-Dôme",
-      "type": "google_news",
-      "query": "\"Puy-de-Dôme\"",
-      "category": "local",
-      "priority": 4.2,
-      "enabled": true
-    },
-    {
-      "id": "news-loire-roannais",
-      "name": "Loire / Roannais",
-      "type": "google_news",
-      "query": "Roanne OR Roannais OR \"Saint-Just-la-Pendue\" OR \"Saint-Étienne\"",
-      "category": "local",
-      "priority": 3.6,
-      "enabled": true
-    },
-    {
-      "id": "news-github-pages",
-      "name": "GitHub Pages & Actions",
-      "type": "google_news",
-      "query": "\"GitHub Pages\" OR \"GitHub Actions\"",
-      "category": "tech",
-      "priority": 4,
-      "enabled": true
-    }
+    {"id":"politique-fr","name":"Politique française","type":"google_news","query":"politique France gouvernement OR Assemblée nationale OR Élysée OR Matignon","category":"politique","priority":5.0,"enabled":true},
+    {"id":"politique-partis","name":"Partis politiques","type":"google_news","query":"France parti politique PS OR RN OR Renaissance OR LFI OR EELV OR LR OR Place publique","category":"politique","priority":4.4,"enabled":true},
+    {"id":"sondages-politique","name":"Sondages politiques","type":"google_news","query":"sondage politique France IFOP OR Ipsos OR Elabe OR Odoxa OR Harris Interactive OR Cluster17 OR Toluna","category":"sondages","priority":5.5,"enabled":true},
+    {"id":"sondages-elections","name":"Intentions de vote","type":"google_news","query":"\"intentions de vote\" France OR \"élection présidentielle\" sondage","category":"sondages","priority":5.4,"enabled":true},
+    {"id":"news-clermont","name":"Clermont-Ferrand","type":"google_news","query":"\"Clermont-Ferrand\"","category":"local","priority":4.8,"enabled":true},
+    {"id":"news-puy-de-dome","name":"Puy-de-Dôme","type":"google_news","query":"\"Puy-de-Dôme\" OR Auvergne","category":"local","priority":4.4,"enabled":true},
+    {"id":"news-loire-roannais","name":"Loire / Roannais","type":"google_news","query":"Roanne OR Roannais OR \"Saint-Just-la-Pendue\" OR \"Saint-Étienne\"","category":"local","priority":3.7,"enabled":true},
+    {"id":"news-medias-tv","name":"Médias & télévision","type":"google_news","query":"télévision France OR audiovisuel OR ARCOM OR INA OR France Télévisions OR TF1 OR M6 OR Arte","category":"medias","priority":4.3,"enabled":true},
+    {"id":"news-media-history","name":"Histoire de la télévision","type":"google_news","query":"INA télévision archives OR histoire télévision française OR ancienne chaîne télévision","category":"medias","priority":4.0,"enabled":true},
+    {"id":"news-genealogie","name":"Actualités généalogie","type":"google_news","query":"généalogie OR \"archives départementales\" OR \"état civil\" OR paléographie","category":"genealogie","priority":3.9,"enabled":true},
+    {"id":"news-francearchives","name":"FranceArchives","type":"google_news","query":"site:francearchives.gouv.fr archives","category":"genealogie","priority":4.2,"enabled":true},
+    {"id":"news-archives-loire","name":"Archives de la Loire","type":"google_news","query":"\"Archives départementales de la Loire\" OR \"Archives de la Loire\"","category":"genealogie","priority":4.3,"enabled":true},
+    {"id":"france-culture","name":"France Culture","type":"rss","url":"https://www.radiofrance.fr/franceculture/rss","category":"histoire","priority":2.6,"enabled":true},
+    {"id":"actu-histoire","name":"actu.fr — Histoire & patrimoine","type":"rss","url":"https://actu.fr/histoire-patrimoine/rss.xml","category":"histoire","priority":2.8,"enabled":true},
+    {"id":"france3-histoire","name":"France 3 — Histoire","type":"rss","url":"https://france3-regions.franceinfo.fr/culture/histoire/rss","category":"histoire","priority":2.7,"enabled":true},
+    {"id":"news-tech-ai","name":"Tech & IA","type":"google_news","query":"intelligence artificielle OR OpenAI OR ChatGPT OR GitHub","category":"tech","priority":4.1,"enabled":true},
+    {"id":"github-blog","name":"GitHub Blog","type":"rss","url":"https://github.blog/feed/","category":"tech","priority":3.3,"enabled":true},
+    {"id":"news-sciences-societe","name":"Sciences & société","type":"google_news","query":"science société France recherche étude découverte","category":"sciences","priority":2.7,"enabled":true},
+    {"id":"news-culture","name":"Culture","type":"google_news","query":"culture France patrimoine exposition cinéma télévision","category":"culture","priority":2.4,"enabled":true},
+    {"id":"news-international","name":"International","type":"google_news","query":"international Europe monde politique diplomatie","category":"international","priority":2.7,"enabled":true}
   ]
 }
