@@ -387,17 +387,21 @@ def load_ai_usage(prefs: dict, now: datetime) -> dict:
         usage["month_spend_usd"] = 0.0
         usage["month_requests"] = 0
         usage["month_summaries"] = 0
+        usage["month_briefs"] = 0
     if usage.get("day") != day_key:
         usage["day"] = day_key
         usage["day_requests"] = 0
         usage["day_summaries"] = 0
+        usage["day_briefs"] = 0
     usage.setdefault("version", 1)
     usage.setdefault("lifetime_spend_usd", 0.0)
     usage.setdefault("month_spend_usd", 0.0)
     usage.setdefault("month_requests", 0)
     usage.setdefault("month_summaries", 0)
+    usage.setdefault("month_briefs", 0)
     usage.setdefault("day_requests", 0)
     usage.setdefault("day_summaries", 0)
+    usage.setdefault("day_briefs", 0)
     usage["limits"] = limits
     return usage
 
@@ -516,12 +520,233 @@ def ai_summary(title: str, source: str, source_text: str, basis: str, prefs: dic
         return {"summary": "", "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
 
 
+
+def _json_from_model_text(text: str) -> dict:
+    raw = (text or "").strip()
+    if raw.startswith("```"):
+        raw = re.sub(r"^```(?:json)?\s*", "", raw, flags=re.I)
+        raw = re.sub(r"\s*```$", "", raw)
+    start, end = raw.find("{"), raw.rfind("}")
+    if start >= 0 and end > start:
+        raw = raw[start:end + 1]
+    try:
+        data = json.loads(raw)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def build_brief_material(articles: list[dict], prefs: dict) -> tuple[str, dict, str]:
+    """Prépare toutes les actualités de l'édition, groupées par thème.
+
+    On privilégie le résumé IA déjà calculé ; sinon on utilise l'extrait RSS.
+    Le titre reste toujours présent afin qu'aucun article de l'édition ne disparaisse
+    silencieusement du brief.
+    """
+    categories = prefs.get("categories", {}) or {}
+    max_chars = int((prefs.get("brief") or {}).get("max_article_summary_chars", 520))
+    grouped: dict[str, list[dict]] = {}
+    signature = []
+    for a in articles:
+        cat = str(a.get("category") or "general")
+        text = str(a.get("ai_summary") or a.get("summary") or "").strip()
+        if len(text) > max_chars:
+            text = text[:max_chars].rsplit(" ", 1)[0] + "…"
+        item = {
+            "id": str(a.get("id") or ""),
+            "title": str(a.get("title") or "").strip(),
+            "source": str(a.get("source") or "Source").strip(),
+            "summary": text,
+        }
+        grouped.setdefault(cat, []).append(item)
+        signature.append([cat, item["id"], a.get("content_hash") or sha_text(text or item["title"])])
+
+    blocks = []
+    meta = {}
+    # Ordre éditorial = ordre des catégories dans preferences.json.
+    ordered = list(categories.keys()) + [k for k in grouped.keys() if k not in categories]
+    for cat in ordered:
+        rows = grouped.get(cat) or []
+        if not rows:
+            continue
+        label = (categories.get(cat) or {}).get("label") or cat
+        meta[cat] = {"label": label, "article_ids": [r["id"] for r in rows], "article_count": len(rows)}
+        lines = [f"### {cat} | {label} | {len(rows)} article(s)"]
+        for r in rows:
+            snippet = r["summary"] or "Aucun extrait disponible : utilise seulement le titre, sans inventer de détails."
+            lines.append(f"[{r['id']}] {r['title']} — {r['source']}\nRésumé disponible : {snippet}")
+        blocks.append("\n".join(lines))
+
+    material = "\n\n".join(blocks)
+    digest = sha_text(json.dumps(signature, ensure_ascii=False, separators=(",", ":")))
+    return material, meta, digest
+
+
+def estimated_brief_cost(material: str, prefs: dict) -> float:
+    cfg = prefs.get("brief", {}) or {}
+    limits = ai_limits(prefs)
+    # Estimation volontairement prudente : ~1 caractère = 1 token.
+    input_tokens = len(material) + 5000
+    output_tokens = int(cfg.get("max_output_tokens", 3200))
+    return (
+        input_tokens * limits["input_price_per_million_usd"] / 1_000_000
+        + output_tokens * limits["output_price_per_million_usd"] / 1_000_000
+    )
+
+
+def ai_daily_brief(material: str, meta: dict, prefs: dict) -> dict:
+    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return {"data": {}, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
+    cfg = prefs.get("brief", {}) or {}
+    ai_cfg = prefs.get("ai", {}) or {}
+    model = os.getenv("OPENAI_MODEL", ai_cfg.get("model", "gpt-5.6-luna"))
+    max_output_tokens = int(cfg.get("max_output_tokens", 3200))
+    category_contract = ", ".join(f"{k} ({v['article_count']})" for k, v in meta.items())
+    prompt = (
+        "Tu es le rédacteur en chef de Lénaïc Express. À partir UNIQUEMENT des fiches d'articles fournies, "
+        "rédige le brief complet du jour par thème. Chaque article fourni doit être pris en compte. "
+        "Fusionne les articles qui racontent la même actualité pour éviter les répétitions, mais n'omets aucun sujet distinct. "
+        "Si un même thème contient plusieurs actualités différentes (par exemple des intentions de vote ET une primaire), "
+        "elles doivent toutes apparaître dans le paragraphe du thème, éventuellement dans des phrases différentes. "
+        "N'ajoute aucun fait extérieur, aucune explication supposée et aucun chiffre absent des fiches. "
+        "Un thème = un seul paragraphe continu, généralement 2 à 8 phrases ; adapte sa longueur au nombre et à la diversité des articles. "
+        "Le ton est journalistique, synthétique et neutre. "
+        "Réponds uniquement avec un JSON valide, sans markdown, sous la forme : "
+        '{"themes":[{"category":"politique","text":"paragraphe...","article_count":3,"covered_ids":["id1","id2","id3"]}]}. '
+        "Il faut exactement une entrée pour chaque thème fourni. covered_ids doit contenir TOUS les identifiants du thème."
+    )
+    user = f"Thèmes attendus : {category_contract}\n\nARTICLES À SYNTHÉTISER :\n{material}"
+    payload = {
+        "model": model,
+        "input": [
+            {"role": "system", "content": [{"type": "input_text", "text": prompt}]},
+            {"role": "user", "content": [{"type": "input_text", "text": user}]},
+        ],
+        "reasoning": {"effort": "none"},
+        "text": {"verbosity": "low"},
+        "max_output_tokens": max_output_tokens,
+    }
+    try:
+        r = requests.post(
+            "https://api.openai.com/v1/responses",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            json=payload,
+            timeout=70,
+        )
+        if not r.ok:
+            print(f"BRIEF ERR {r.status_code}: {r.text[:260]}", file=sys.stderr)
+            return {"data": {}, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
+        raw = r.json()
+        input_tokens, output_tokens, cost_usd = actual_call_cost(raw, prefs)
+        text = response_text(raw).strip()
+        parsed = _json_from_model_text(text)
+        if not parsed:
+            print(f"BRIEF ERR JSON: {text[:300]}", file=sys.stderr)
+        return {"data": parsed, "input_tokens": input_tokens, "output_tokens": output_tokens, "cost_usd": cost_usd}
+    except Exception as exc:
+        print(f"BRIEF ERR: {exc}", file=sys.stderr)
+        return {"data": {}, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
+
+
+def generate_daily_brief(articles: list[dict], prefs: dict, old_payload: dict, now: datetime, ai_usage: dict):
+    cfg = prefs.get("brief", {}) or {}
+    old_brief = old_payload.get("brief") if isinstance(old_payload, dict) else None
+    old_brief = old_brief if isinstance(old_brief, dict) else {}
+    if not cfg.get("enabled", True):
+        return old_brief, 0, "disabled"
+
+    material, meta, digest = build_brief_material(articles, prefs)
+    if not material or not meta:
+        return old_brief, 0, "empty"
+    if old_brief.get("content_hash") == digest and old_brief.get("themes"):
+        return old_brief, 0, "cached"
+
+    api_key = os.getenv("OPENAI_API_KEY", "").strip()
+    if not api_key:
+        return old_brief, 0, "no_api_key"
+
+    limits = ai_limits(prefs)
+    daily_limit = int(cfg.get("daily_limit", 2))
+    if int(ai_usage.get("day_briefs", 0)) >= daily_limit:
+        if old_brief:
+            old_brief = dict(old_brief)
+            old_brief["stale"] = True
+        return old_brief, 0, "brief_daily_limit"
+    if int(ai_usage.get("day_requests", 0)) >= int(limits.get("daily_summary_limit", 20)):
+        if old_brief:
+            old_brief = dict(old_brief)
+            old_brief["stale"] = True
+        return old_brief, 0, "daily_limit"
+    remaining = float(limits.get("monthly_budget_usd", 0.9)) - float(ai_usage.get("month_spend_usd", 0.0))
+    if remaining <= 0 or estimated_brief_cost(material, prefs) > remaining:
+        if old_brief:
+            old_brief = dict(old_brief)
+            old_brief["stale"] = True
+        return old_brief, 0, "monthly_budget"
+
+    result = ai_daily_brief(material, meta, prefs)
+    if result.get("input_tokens") or result.get("output_tokens"):
+        ai_usage["day_requests"] = int(ai_usage.get("day_requests", 0)) + 1
+        ai_usage["month_requests"] = int(ai_usage.get("month_requests", 0)) + 1
+        ai_usage["day_briefs"] = int(ai_usage.get("day_briefs", 0)) + 1
+        ai_usage["month_briefs"] = int(ai_usage.get("month_briefs", 0)) + 1
+        cost = float(result.get("cost_usd", 0.0))
+        ai_usage["month_spend_usd"] = round(float(ai_usage.get("month_spend_usd", 0.0)) + cost, 8)
+        ai_usage["lifetime_spend_usd"] = round(float(ai_usage.get("lifetime_spend_usd", 0.0)) + cost, 8)
+
+    raw_themes = (result.get("data") or {}).get("themes") or []
+    by_cat = {str(x.get("category") or ""): x for x in raw_themes if isinstance(x, dict)}
+    themes = []
+    for cat, info in meta.items():
+        item = by_cat.get(cat) or {}
+        text = re.sub(r"\s+", " ", str(item.get("text") or "")).strip()
+        if not text:
+            continue
+        expected_ids = info["article_ids"]
+        covered = [str(x) for x in (item.get("covered_ids") or []) if str(x)]
+        themes.append({
+            "category": cat,
+            "label": info["label"],
+            "text": text,
+            "article_count": info["article_count"],
+            "covered_count": len(set(covered) & set(expected_ids)),
+            "coverage_complete": set(expected_ids).issubset(set(covered)),
+        })
+
+    if not themes:
+        return old_brief, 1 if (result.get("input_tokens") or result.get("output_tokens")) else 0, "invalid_response"
+
+    brief = {
+        "generated_at": now.isoformat().replace("+00:00", "Z"),
+        "content_hash": digest,
+        "model": os.getenv("OPENAI_MODEL", (prefs.get("ai") or {}).get("model", "gpt-5.6-luna")),
+        "article_count": len(articles),
+        "theme_count": len(themes),
+        "stale": False,
+        "themes": themes,
+    }
+    return brief, 1 if (result.get("input_tokens") or result.get("output_tokens")) else 0, "generated"
+
+
 def enrich_articles(articles: list[dict], prefs: dict, old_payload: dict, now: datetime, ai_usage: dict):
     old_articles = old_payload.get("articles", []) if isinstance(old_payload, dict) else []
     old_by_title = {normalize(a.get("title", "")): a for a in old_articles if a.get("title")}
     ai_cfg = prefs.get("ai", {})
     ai_enabled = bool(ai_cfg.get("enabled", True)) and bool(os.getenv("OPENAI_API_KEY", "").strip())
-    per_run_limit = int(ai_cfg.get("max_summaries_per_run", 20)) if ai_enabled else 0
+    # Le quota quotidien est commun aux résumés d'articles et au Brief du jour.
+    # On réserve jusqu'à 2 appels pour que le brief puisse être produit / rafraîchi
+    # sans dépasser le plafond global de requêtes API.
+    limits = ai_limits(prefs)
+    remaining_daily = max(0, int(limits.get("daily_summary_limit", 20)) - int(ai_usage.get("day_requests", 0)))
+    brief_cfg = prefs.get("brief", {}) or {}
+    brief_daily_limit = int(brief_cfg.get("daily_limit", 2)) if brief_cfg.get("enabled", True) else 0
+    brief_remaining = max(0, brief_daily_limit - int(ai_usage.get("day_briefs", 0)))
+    reserved_for_brief = min(brief_remaining, remaining_daily)
+    per_run_limit = min(
+        int(ai_cfg.get("max_summaries_per_run", 20)),
+        max(0, remaining_daily - reserved_for_brief),
+    ) if ai_enabled else 0
     ai_calls_this_run = 0
     ai_summaries_this_run = 0
     pending = 0
@@ -664,6 +889,7 @@ def main():
 
     ai_usage = load_ai_usage(prefs, now)
     ai_done, ai_calls, ai_pending, ai_blocked_reason = enrich_articles(all_articles, prefs, old_payload, now, ai_usage)
+    daily_brief, brief_calls, brief_status = generate_daily_brief(all_articles, prefs, old_payload, now, ai_usage)
     save_ai_usage(ai_usage, now)
     payload = {
         "generated_at": now.isoformat().replace("+00:00", "Z"),
@@ -674,7 +900,9 @@ def main():
             "enabled": bool(os.getenv("OPENAI_API_KEY", "").strip()) and bool(prefs.get("ai", {}).get("enabled", True)),
             "model": os.getenv("OPENAI_MODEL", prefs.get("ai", {}).get("model", "gpt-5.6-luna")),
             "generated_this_run": ai_done,
-            "requests_this_run": ai_calls,
+            "requests_this_run": ai_calls + brief_calls,
+            "article_summary_requests_this_run": ai_calls,
+            "brief_requests_this_run": brief_calls,
             "pending": ai_pending,
             "blocked_reason": ai_blocked_reason,
             "budget": {
@@ -684,15 +912,18 @@ def main():
                 "day": ai_usage.get("day"),
                 "requests_today": ai_usage.get("day_requests", 0),
                 "summaries_today": ai_usage.get("day_summaries", 0),
-                "daily_summary_limit": ai_usage.get("limits", {}).get("daily_summary_limit"),
+                "briefs_today": ai_usage.get("day_briefs", 0),
+                "daily_request_limit": ai_usage.get("limits", {}).get("daily_summary_limit"),
             },
         },
+        "brief_status": brief_status,
+        "brief": daily_brief,
         "fetch_errors": errors,
         "articles": all_articles,
     }
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Écrit: {OUTPUT_PATH} ({len(all_articles)} articles, {ai_done} résumé(s) IA généré(s))")
+    print(f"Écrit: {OUTPUT_PATH} ({len(all_articles)} articles, {ai_done} résumé(s) IA généré(s), brief={brief_status})")
 
 
 if __name__ == "__main__":
