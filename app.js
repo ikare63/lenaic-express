@@ -181,6 +181,37 @@
     strip.innerHTML=`<button type="button" data-filter="watch"><strong>● MES VEILLES</strong><span>${rows.length} correspondance${rows.length>1?"s":""}</span><small>${terms.map(esc).join(" · ")}</small></button>`;
   }
 
+  function renderDailyBrief(){
+    const box = $("#dailyBrief");
+    const brief = state.data && state.data.brief;
+    const themes = Array.isArray(brief?.themes) ? brief.themes.filter(t => t && t.text) : [];
+    if(!themes.length){ box.hidden=true; box.innerHTML=""; return; }
+    const generated = parseDate(brief.generated_at);
+    const stamp = generated.getTime() ? generated.toLocaleString("fr-FR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "—";
+    const total = Number(brief.article_count || themes.reduce((n,t)=>n+Number(t.article_count||0),0));
+    box.hidden=false;
+    box.innerHTML = `
+      <div class="brief-head">
+        <div>
+          <div class="brief-kicker">BRIEF DU JOUR · SYNTHÈSE IA</div>
+          <h2>Ce qu’il faut retenir, thème par thème</h2>
+        </div>
+        <div class="brief-meta">${total} article${total>1?"s":""} analysé${total>1?"s":""}<br>MAJ ${esc(stamp)}</div>
+      </div>
+      <div class="brief-grid">
+        ${themes.map(t=>{
+          const cat = t.category || "general";
+          const label = t.label || categoryLabels[cat] || cat;
+          const count = Number(t.article_count || 0);
+          const coverage = t.coverage_complete === false ? `<span class="brief-coverage warning">couverture ${Number(t.covered_count||0)}/${count}</span>` : `<span class="brief-coverage">${count} article${count>1?"s":""}</span>`;
+          return `<article class="brief-theme">
+            <button type="button" class="brief-theme-title" data-filter="${esc(cat)}"><span>${categoryIcons[cat]||"◆"}</span><b>${esc(label)}</b>${coverage}</button>
+            <p>${esc(t.text)}</p>
+          </article>`;
+        }).join("")}
+      </div>`;
+  }
+
   function renderFront(){
     const arr = visibleArticles();
     const front = $("#frontPage");
@@ -279,6 +310,7 @@
 
   function render(){
     renderWatchStrip();
+    renderDailyBrief();
     renderFront();
     renderFeed();
     $$("#sections button[data-filter]").forEach(b => b.classList.toggle("active", b.dataset.filter === state.activeFilter));

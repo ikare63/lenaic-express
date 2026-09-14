@@ -1,0 +1,32 @@
+LÉNAÏC EXPRESS V4.2 — BRIEF DU JOUR
+
+À remplacer dans le dépôt lenaic-express :
+- index.html
+- app.js
+- style.css
+- preferences.json
+- scripts/fetch_news.py
+
+Ne change pas :
+- .github/workflows/update-news.yml
+- OPENAI_API_KEY
+- veilles.json
+- sources.json
+- data/ai-usage.json
+
+Fonctionnement :
+- Les articles continuent à recevoir leur résumé IA individuel.
+- 18 appels au maximum sont réservés aux résumés d'articles par jour.
+- Jusqu'à 2 appels restants peuvent servir au BRIEF DU JOUR.
+- Le plafond global reste 20 requêtes API/jour et 0,90 $/mois côté script.
+- Le brief est construit avec TOUS les articles de l'édition, groupés par thème.
+- Pour chaque article : le résumé IA est utilisé s'il existe, sinon l'extrait RSS ; le titre est toujours transmis.
+- Un seul appel IA génère tous les paragraphes thématiques.
+- Si le contenu de l'édition n'a pas changé, le brief existant est réutilisé sans nouvel appel.
+- Si le quota est atteint, le dernier brief reste affiché jusqu'au prochain rafraîchissement possible.
+
+Après mise en ligne :
+1. GitHub > Actions > Mettre à jour Lénaïc Express.
+2. Run workflow.
+3. À la fin, data/actualites.json doit contenir une clé "brief".
+4. Recharge Lénaïc Express : "BRIEF DU JOUR" apparaît au-dessus de la une.

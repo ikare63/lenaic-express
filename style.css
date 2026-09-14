@@ -235,3 +235,44 @@ a{color:inherit}
   .watch-add-row{grid-template-columns:1fr}
   .watch-add-row .paper-button{width:100%}
 }
+
+
+/* V4.2 — Brief du jour, synthèse de tous les articles par thème */
+.daily-brief{
+  margin:10px 26px 12px;
+  border-top:3px double var(--rule);
+  border-bottom:2px solid var(--rule);
+  padding:12px 0 13px;
+}
+.brief-head{
+  display:flex;justify-content:space-between;align-items:flex-end;gap:18px;
+  border-bottom:1px solid var(--rule);padding-bottom:9px;margin-bottom:2px
+}
+.brief-kicker{
+  font-family:var(--sans);font-size:.68rem;font-weight:900;letter-spacing:.13em;
+  color:var(--accent);text-transform:uppercase;margin-bottom:4px
+}
+.brief-head h2{margin:0;font-size:clamp(2rem,4vw,3.4rem);line-height:.94;letter-spacing:-.025em}
+.brief-meta{font-family:var(--sans);font-size:.66rem;text-align:right;line-height:1.35;color:var(--muted);white-space:nowrap}
+.brief-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.brief-theme{padding:12px 14px 13px 0;border-bottom:1px solid var(--soft)}
+.brief-theme:nth-child(odd){border-right:1px solid var(--rule);padding-right:14px}
+.brief-theme:nth-child(even){padding-left:14px;padding-right:0}
+.brief-theme-title{
+  width:100%;display:flex;align-items:center;gap:7px;border:0;background:transparent;padding:0 0 6px;
+  text-align:left;color:var(--ink);cursor:pointer
+}
+.brief-theme-title>span:first-child{color:var(--accent);font-size:.9rem}
+.brief-theme-title b{font-family:var(--sans);text-transform:uppercase;letter-spacing:.075em;font-size:.72rem}
+.brief-coverage{margin-left:auto;font-family:var(--sans);font-size:.58rem;color:var(--muted);border:1px solid var(--soft);padding:2px 5px}
+.brief-coverage.warning{color:#8a5d22;border-color:#8a5d22}
+.brief-theme p{margin:0;font-size:1rem;line-height:1.34;text-align:justify}
+@media(max-width:900px){
+  .daily-brief{margin:8px 11px 12px;padding-top:10px}
+  .brief-head{align-items:flex-start}
+  .brief-head h2{font-size:2rem}
+  .brief-meta{font-size:.59rem}
+  .brief-grid{grid-template-columns:1fr}
+  .brief-theme,.brief-theme:nth-child(odd),.brief-theme:nth-child(even){border-right:0;padding:11px 0;border-bottom:1px solid var(--soft)}
+  .brief-theme p{font-size:.95rem;line-height:1.32;text-align:left}
+}

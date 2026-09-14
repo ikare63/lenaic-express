@@ -8,7 +8,7 @@
   "ai": {
     "enabled": true,
     "model": "gpt-5.6-luna",
-    "max_summaries_per_run": 20,
+    "max_summaries_per_run": 18,
     "summary_min_words": 35,
     "summary_max_words": 70,
     "max_input_chars": 9000,
@@ -195,5 +195,11 @@
     "Mediapart",
     "La Montagne",
     "Le Figaro"
-  ]
+  ],
+  "brief": {
+    "enabled": true,
+    "daily_limit": 2,
+    "max_output_tokens": 3200,
+    "max_article_summary_chars": 520
+  }
 }
