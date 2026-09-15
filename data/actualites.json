@@ -23,8 +23,89 @@
       "daily_request_limit": 20
     }
   },
-  "brief_status": "brief_daily_limit",
-  "brief": {},
+  "brief_status": "seeded_current_edition",
+  "brief": {
+    "generated_at": "2026-09-15T11:38:34.601489Z",
+    "content_hash": "16323630688e42f2eb6e",
+    "model": "gpt-5.6-sol",
+    "article_count": 150,
+    "theme_count": 9,
+    "stale": false,
+    "themes": [
+      {
+        "category": "politique",
+        "label": "Politique",
+        "text": "La préparation de la présidentielle 2027 s’accélère à gauche : le débat de la primaire socialiste est annoncé pour le 1er octobre sur France 2 et France Inter, tandis qu’une centaine de responsables socialistes demandent d’élargir la primaire, notamment à François Ruffin. L’actualité politique comprend aussi un point sur les principaux candidats déjà déclarés et la minute de silence prévue à l’Assemblée nationale pour plusieurs victimes.",
+        "article_count": 4,
+        "covered_count": 4,
+        "coverage_complete": true
+      },
+      {
+        "category": "sondages",
+        "label": "Sondages",
+        "text": "Les enquêtes consacrées à 2027 convergent sur une nette avance de Marine Le Pen, malgré un léger recul signalé dans certains baromètres. Jean-Luc Mélenchon apparaît comme le candidat le mieux placé à gauche et accède au second tour dans plusieurs scénarios, tandis que le duel Édouard Philippe–Gabriel Attal reste un enjeu du centre. Plusieurs articles insistent aussi sur le pessimisme de l’électorat, la fracture générationnelle et la nécessité de lire les sondages avec prudence plutôt que de s’arrêter au seul classement.",
+        "article_count": 24,
+        "covered_count": 24,
+        "coverage_complete": true
+      },
+      {
+        "category": "local",
+        "label": "Local",
+        "text": "À Clermont-Ferrand et dans le Puy-de-Dôme, l’édition mêle travaux et aménagements, Journées du patrimoine, actualité culturelle et sportive, météo et faits divers. Le cours Sablon fait l’objet d’un renforcement de chaussée, le bus #FaitesDesParents est annoncé pour le 30 septembre, et plusieurs sujets portent sur la démographie de la ville, la restauration du patrimoine, l’activité industrielle, la recherche de lithium et la mobilisation universitaire.",
+        "article_count": 28,
+        "covered_count": 28,
+        "coverage_complete": true
+      },
+      {
+        "category": "medias",
+        "label": "Médias / TV",
+        "text": "France Télévisions concentre l’essentiel de l’actualité médias : plan de transition écologique, évolution de ses commandes de fiction, mouvements de dirigeants et nouveaux programmes. La suppression du replay d’une intervention d’Adèle Haenel dans « La Grande Librairie » nourrit une controverse sur la censure, tandis que le projet de téléfilm sur Oradour refusé par le groupe revient dans plusieurs articles. L’édition suit aussi W9, France TV Slash, les Journées du patrimoine dans les chaînes publiques et une sélection de séries disponibles sur Arte.tv.",
+        "article_count": 18,
+        "covered_count": 18,
+        "coverage_complete": true
+      },
+      {
+        "category": "genealogie",
+        "label": "Généalogie",
+        "text": "La généalogie est surtout portée par les Journées européennes du patrimoine et l’ouverture des coulisses de plusieurs Archives départementales. Plusieurs initiatives locales proposent ateliers, activités généalogiques ou recherches sur l’histoire des maisons, tandis que les publications d’état civil continuent d’alimenter les sources nominatives. À noter aussi l’acquisition de lettres adressées à Jean Moulin en 1940 par les Archives d’Eure-et-Loir.",
+        "article_count": 22,
+        "covered_count": 22,
+        "coverage_complete": true
+      },
+      {
+        "category": "histoire",
+        "label": "Histoire / patrimoine",
+        "text": "Le patrimoine domine la rubrique avec de nombreux projets de restauration, les dotations du Loto du patrimoine et des mobilisations pour sauver églises, châteaux, manufactures ou lieux de mémoire. La Seconde Guerre mondiale est présente à travers le camp des Milles, le réseau Comète et Henri Fertet, dont le nom doit être donné à la première promotion du nouveau service militaire. D’autres sujets croisent histoire, photographie, littérature, climat et évolution des paysages.",
+        "article_count": 20,
+        "covered_count": 20,
+        "coverage_complete": true
+      },
+      {
+        "category": "tech",
+        "label": "Tech / IA",
+        "text": "L’intelligence artificielle reste au centre de la rubrique : appels à ralentir la course, recherche de standards communs entre grands acteurs et débats sur les risques d’agents plus autonomes ou d’usages malveillants. En parallèle, les entreprises accélèrent leurs investissements, avec notamment le partenariat TotalEnergies–Mistral, les projets d’Axa et la formation de dirigeants chez Adeo. L’IA entre aussi dans la campagne présidentielle, tandis que GitHub met en avant de nouveaux usages de Copilot et de l’automatisation.",
+        "article_count": 24,
+        "covered_count": 24,
+        "coverage_complete": true
+      },
+      {
+        "category": "sciences",
+        "label": "Sciences / société",
+        "text": "Deux sujets composent la rubrique : un escape game consacré à la valorisation de la recherche et une proposition de médiation autour de la quête mathématique de l’infini, tous deux relayés par l’Université de Lorraine.",
+        "article_count": 2,
+        "covered_count": 2,
+        "coverage_complete": true
+      },
+      {
+        "category": "culture",
+        "label": "Culture",
+        "text": "La culture combine économie de la fiction, patrimoine et grands rendez-vous populaires. Mediawan reste présenté comme le premier groupe de fiction télé en France dans un secteur fragilisé par la baisse des financements, tandis que les dotations du Loto du patrimoine sont détaillées. Les Emmy Awards, le street art français, le retour de Céline Dion et l’exposition londonienne de la tapisserie de Bayeux complètent l’édition.",
+        "article_count": 8,
+        "covered_count": 8,
+        "coverage_complete": true
+      }
+    ]
+  },
   "fetch_errors": [
     {
       "source": "actu.fr — Histoire & patrimoine",
