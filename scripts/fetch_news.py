@@ -536,6 +536,28 @@ def _json_from_model_text(text: str) -> dict:
         return {}
 
 
+def carry_forward_ai_summaries(articles: list[dict], old_payload: dict) -> None:
+    """Recopie les résumés IA déjà disponibles avant de générer le brief.
+
+    Le brief est généré en priorité, avant les nouveaux résumés d'articles, afin
+    qu'il ne soit jamais privé de quota. Les résumés IA précédents restent
+    néanmoins disponibles pour construire une synthèse stable d'un run à l'autre.
+    """
+    old_articles = old_payload.get("articles", []) if isinstance(old_payload, dict) else []
+    old_by_title = {normalize(a.get("title", "")): a for a in old_articles if a.get("title")}
+    for a in articles:
+        old = old_by_title.get(normalize(a.get("title", "")), {})
+        if not old.get("ai_summary"):
+            continue
+        for key in (
+            "resolved_url", "paywalled", "archive_url", "archive_status",
+            "content_hash", "ai_summary", "ai_summary_basis", "ai_summary_at",
+            "ai_summary_model"
+        ):
+            if key in old:
+                a[key] = old[key]
+
+
 def build_brief_material(articles: list[dict], prefs: dict) -> tuple[str, dict, str]:
     """Prépare toutes les actualités de l'édition, groupées par thème.
 
@@ -601,20 +623,18 @@ def ai_daily_brief(material: str, meta: dict, prefs: dict) -> dict:
     cfg = prefs.get("brief", {}) or {}
     ai_cfg = prefs.get("ai", {}) or {}
     model = os.getenv("OPENAI_MODEL", ai_cfg.get("model", "gpt-5.6-luna"))
-    max_output_tokens = int(cfg.get("max_output_tokens", 3200))
+    max_output_tokens = int(cfg.get("max_output_tokens", 5000))
     category_contract = ", ".join(f"{k} ({v['article_count']})" for k, v in meta.items())
+    categories = list(meta.keys())
     prompt = (
         "Tu es le rédacteur en chef de Lénaïc Express. À partir UNIQUEMENT des fiches d'articles fournies, "
         "rédige le brief complet du jour par thème. Chaque article fourni doit être pris en compte. "
         "Fusionne les articles qui racontent la même actualité pour éviter les répétitions, mais n'omets aucun sujet distinct. "
-        "Si un même thème contient plusieurs actualités différentes (par exemple des intentions de vote ET une primaire), "
-        "elles doivent toutes apparaître dans le paragraphe du thème, éventuellement dans des phrases différentes. "
+        "Si un même thème contient plusieurs actualités différentes, elles doivent toutes apparaître dans le paragraphe du thème. "
         "N'ajoute aucun fait extérieur, aucune explication supposée et aucun chiffre absent des fiches. "
-        "Un thème = un seul paragraphe continu, généralement 2 à 8 phrases ; adapte sa longueur au nombre et à la diversité des articles. "
+        "Un thème = un seul paragraphe continu, généralement 1 à 4 phrases ; adapte sa longueur au nombre et à la diversité des articles. "
         "Le ton est journalistique, synthétique et neutre. "
-        "Réponds uniquement avec un JSON valide, sans markdown, sous la forme : "
-        '{"themes":[{"category":"politique","text":"paragraphe...","article_count":3,"covered_ids":["id1","id2","id3"]}]}. '
-        "Il faut exactement une entrée pour chaque thème fourni. covered_ids doit contenir TOUS les identifiants du thème."
+        "covered_ids doit contenir TOUS les identifiants du thème."
     )
     user = f"Thèmes attendus : {category_contract}\n\nARTICLES À SYNTHÉTISER :\n{material}"
     payload = {
@@ -624,25 +644,59 @@ def ai_daily_brief(material: str, meta: dict, prefs: dict) -> dict:
             {"role": "user", "content": [{"type": "input_text", "text": user}]},
         ],
         "reasoning": {"effort": "none"},
-        "text": {"verbosity": "low"},
+        "text": {
+            "verbosity": "low",
+            "format": {
+                "type": "json_schema",
+                "name": "lenaic_express_daily_brief",
+                "strict": True,
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "themes": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "category": {"type": "string", "enum": categories},
+                                    "text": {"type": "string"},
+                                    "article_count": {"type": "integer"},
+                                    "covered_ids": {
+                                        "type": "array",
+                                        "items": {"type": "string"}
+                                    }
+                                },
+                                "required": ["category", "text", "article_count", "covered_ids"],
+                                "additionalProperties": False
+                            }
+                        }
+                    },
+                    "required": ["themes"],
+                    "additionalProperties": False
+                }
+            }
+        },
         "max_output_tokens": max_output_tokens,
+        "store": False,
     }
     try:
         r = requests.post(
             "https://api.openai.com/v1/responses",
             headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
             json=payload,
-            timeout=70,
+            timeout=90,
         )
         if not r.ok:
-            print(f"BRIEF ERR {r.status_code}: {r.text[:260]}", file=sys.stderr)
+            print(f"BRIEF ERR {r.status_code}: {r.text[:500]}", file=sys.stderr)
             return {"data": {}, "input_tokens": 0, "output_tokens": 0, "cost_usd": 0.0}
         raw = r.json()
         input_tokens, output_tokens, cost_usd = actual_call_cost(raw, prefs)
         text = response_text(raw).strip()
         parsed = _json_from_model_text(text)
         if not parsed:
-            print(f"BRIEF ERR JSON: {text[:300]}", file=sys.stderr)
+            status = raw.get("status")
+            reason = (raw.get("incomplete_details") or {}).get("reason")
+            print(f"BRIEF ERR JSON status={status} reason={reason}: {text[:500]}", file=sys.stderr)
         return {"data": parsed, "input_tokens": input_tokens, "output_tokens": output_tokens, "cost_usd": cost_usd}
     except Exception as exc:
         print(f"BRIEF ERR: {exc}", file=sys.stderr)
@@ -687,10 +741,11 @@ def generate_daily_brief(articles: list[dict], prefs: dict, old_payload: dict, n
 
     result = ai_daily_brief(material, meta, prefs)
     if result.get("input_tokens") or result.get("output_tokens"):
+        # Toute requête consommée compte dans le plafond global et le budget.
+        # En revanche, day_briefs/month_briefs ne comptent que les briefs VALides :
+        # une réponse tronquée ou invalide ne doit pas condamner les tentatives suivantes.
         ai_usage["day_requests"] = int(ai_usage.get("day_requests", 0)) + 1
         ai_usage["month_requests"] = int(ai_usage.get("month_requests", 0)) + 1
-        ai_usage["day_briefs"] = int(ai_usage.get("day_briefs", 0)) + 1
-        ai_usage["month_briefs"] = int(ai_usage.get("month_briefs", 0)) + 1
         cost = float(result.get("cost_usd", 0.0))
         ai_usage["month_spend_usd"] = round(float(ai_usage.get("month_spend_usd", 0.0)) + cost, 8)
         ai_usage["lifetime_spend_usd"] = round(float(ai_usage.get("lifetime_spend_usd", 0.0)) + cost, 8)
@@ -716,6 +771,10 @@ def generate_daily_brief(articles: list[dict], prefs: dict, old_payload: dict, n
 
     if not themes:
         return old_brief, 1 if (result.get("input_tokens") or result.get("output_tokens")) else 0, "invalid_response"
+
+    # Le quota de briefs ne progresse qu'une fois une synthèse exploitable obtenue.
+    ai_usage["day_briefs"] = int(ai_usage.get("day_briefs", 0)) + 1
+    ai_usage["month_briefs"] = int(ai_usage.get("month_briefs", 0)) + 1
 
     brief = {
         "generated_at": now.isoformat().replace("+00:00", "Z"),
@@ -888,8 +947,13 @@ def main():
         return
 
     ai_usage = load_ai_usage(prefs, now)
-    ai_done, ai_calls, ai_pending, ai_blocked_reason = enrich_articles(all_articles, prefs, old_payload, now, ai_usage)
+
+    # Priorité absolue au résumé global : on réutilise d'abord les résumés IA
+    # déjà calculés, puis on tente le Brief du jour AVANT les nouveaux résumés
+    # d'articles. Ainsi, le quota des articles ne peut plus faire disparaître le brief.
+    carry_forward_ai_summaries(all_articles, old_payload)
     daily_brief, brief_calls, brief_status = generate_daily_brief(all_articles, prefs, old_payload, now, ai_usage)
+    ai_done, ai_calls, ai_pending, ai_blocked_reason = enrich_articles(all_articles, prefs, old_payload, now, ai_usage)
     save_ai_usage(ai_usage, now)
     payload = {
         "generated_at": now.isoformat().replace("+00:00", "Z"),
