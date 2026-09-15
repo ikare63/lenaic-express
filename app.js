@@ -92,6 +92,8 @@
       editionGeneratedAt:state.data.generated_at || null,
       count:state.articles.length,
       watchCount:top.filter(a=>a.watchMatches.length).length,
+      brief:state.data.brief || null,
+      briefStatus:state.data.brief_status || "",
       top
     };
     const signature=JSON.stringify(top.map(a=>[a.id,a.score,a.watchMatches]));
@@ -185,7 +187,20 @@
     const box = $("#dailyBrief");
     const brief = state.data && state.data.brief;
     const themes = Array.isArray(brief?.themes) ? brief.themes.filter(t => t && t.text) : [];
-    if(!themes.length){ box.hidden=true; box.innerHTML=""; return; }
+    if(!themes.length){
+      const status = String(state.data?.brief_status || "en_attente").replaceAll("_"," ");
+      box.hidden=false;
+      box.innerHTML = `
+        <div class="brief-head">
+          <div>
+            <div class="brief-kicker">BRIEF DU JOUR · SYNTHÈSE IA</div>
+            <h2>Synthèse en attente</h2>
+          </div>
+          <div class="brief-meta">${esc(status.toUpperCase())}</div>
+        </div>
+        <p class="brief-empty">Le résumé IA n’a pas été produit lors de cette édition. Il sera retenté en priorité au prochain passage du bot, sans masquer silencieusement le bloc.</p>`;
+      return;
+    }
     const generated = parseDate(brief.generated_at);
     const stamp = generated.getTime() ? generated.toLocaleString("fr-FR",{day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit"}) : "—";
     const total = Number(brief.article_count || themes.reduce((n,t)=>n+Number(t.article_count||0),0));

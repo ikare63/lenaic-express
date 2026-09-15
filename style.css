@@ -267,6 +267,7 @@ a{color:inherit}
 .brief-coverage{margin-left:auto;font-family:var(--sans);font-size:.58rem;color:var(--muted);border:1px solid var(--soft);padding:2px 5px}
 .brief-coverage.warning{color:#8a5d22;border-color:#8a5d22}
 .brief-theme p{margin:0;font-size:1rem;line-height:1.34;text-align:justify}
+.brief-empty{margin:12px 0 2px;font-family:var(--sans);font-size:.78rem;line-height:1.45;color:var(--muted)}
 @media(max-width:900px){
   .daily-brief{margin:8px 11px 12px;padding-top:10px}
   .brief-head{align-items:flex-start}
