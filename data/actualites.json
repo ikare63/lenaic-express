@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-10-10T09:44:35.557583Z",
+  "generated_at": "2026-10-10T17:18:44.177381Z",
   "mode": "live",
-  "article_count": 158,
+  "article_count": 156,
   "watch_count": 0,
   "ai": {
     "enabled": true,
     "model": "gpt-5.6-luna",
     "generated_this_run": 0,
-    "requests_this_run": 1,
+    "requests_this_run": 0,
     "article_summary_requests_this_run": 0,
-    "brief_requests_this_run": 1,
-    "pending": 126,
+    "brief_requests_this_run": 0,
+    "pending": 125,
     "blocked_reason": "",
     "budget": {
       "month": "2026-10",
@@ -23,14 +23,14 @@
       "daily_request_limit": 20
     }
   },
-  "brief_status": "generated",
+  "brief_status": "brief_daily_limit",
   "brief": {
     "generated_at": "2026-10-10T09:44:35.557583Z",
     "content_hash": "22854c0840c1d1ced263",
     "model": "gpt-5.6-luna",
     "article_count": 158,
     "theme_count": 10,
-    "stale": false,
+    "stale": true,
     "themes": [
       {
         "category": "politique",
@@ -132,7 +132,7 @@
       "category": "sondages",
       "published_at": "2026-10-09T11:39:00Z",
       "image": "",
-      "score": 192.84,
+      "score": 191.89,
       "matched_keywords": [
         "sondage",
         "intentions de vote",
@@ -162,7 +162,7 @@
       "category": "sondages",
       "published_at": "2026-10-09T08:31:51Z",
       "image": "",
-      "score": 192.45,
+      "score": 191.5,
       "matched_keywords": [
         "sondage",
         "intentions de vote",
@@ -192,7 +192,7 @@
       "category": "sondages",
       "published_at": "2026-10-09T10:01:00Z",
       "image": "",
-      "score": 156.63,
+      "score": 155.69,
       "matched_keywords": [
         "sondage",
         "primaire"
@@ -221,7 +221,7 @@
       "category": "sondages",
       "published_at": "2026-10-09T04:16:20Z",
       "image": "",
-      "score": 156.52,
+      "score": 155.57,
       "matched_keywords": [
         "sondage",
         "primaire"
@@ -250,7 +250,7 @@
       "category": "sondages",
       "published_at": "2026-10-05T15:17:23Z",
       "image": "",
-      "score": 145.29,
+      "score": 144.35,
       "matched_keywords": [
         "sondage",
         "primaire"
@@ -269,52 +269,109 @@
       ]
     },
     {
-      "id": "bec1b5fabc934283c6",
-      "title": "Clermont-Ferrand : l'exposition « Les audacieuses » de Régis Guillot célèbre les femmes et le patrimoine auvergnat",
-      "summary": "Clermont-Ferrand : l'exposition « Les audacieuses » de Régis Guillot célèbre les femmes et le patrimoine auvergnat La Montagne",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOTnN3N2l4WGpaRkhXQXFGa1p0NHk2RF9LcEM0MmtCT0YyU3pqSEh1cF9jR1NWUERWSGlDUktMdVVyQVp5M0pXOUpIYXBER3RybEVqVDlQMm5TSkl5UHNwMWgxNGFPWWtTYlRsdWpELXRzUWEwNGd2LXJFcFVDUURyaVJMdjRCNzhjZGJuUGFiQ3IwdHdia1dCRm9Mb2pzSF92MEZVcHpXUnBhNEdwQnVuNjNNWmJ2YzJ4ZmdfcFlLb2t5bTEwbVhkMTNfS3g5WlF5WkFUUXJKYkJJblRrc1Q1ZzlwMzREc3Y2bDB5ZjllUnpLd1RhSWFDZUs4aDl1VU43UDh0STJR?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOTnN3N2l4WGpaRkhXQXFGa1p0NHk2RF9LcEM0MmtCT0YyU3pqSEh1cF9jR1NWUERWSGlDUktMdVVyQVp5M0pXOUpIYXBER3RybEVqVDlQMm5TSkl5UHNwMWgxNGFPWWtTYlRsdWpELXRzUWEwNGd2LXJFcFVDUURyaVJMdjRCNzhjZGJuUGFiQ3IwdHdia1dCRm9Mb2pzSF92MEZVcHpXUnBhNEdwQnVuNjNNWmJ2YzJ4ZmdfcFlLb2t5bTEwbVhkMTNfS3g5WlF5WkFUUXJKYkJJblRrc1Q1ZzlwMzREc3Y2bDB5ZjllUnpLd1RhSWFDZUs4aDl1VU43UDh0STJR?oc=5",
+      "id": "586cc4c082c3cc1b11",
+      "title": "Vaccination contre la grippe : qui est concerné et comment se faire vacciner dans le Puy-de-Dôme",
+      "summary": "Vaccination contre la grippe : qui est concerné et comment se faire vacciner dans le Puy-de-Dôme La Montagne",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPRkRSR19vUWdneDVac21mTEFRczl0di1rQ0cxRGZyTEJ3T2paRkpVcmo4Y3lTYndhWV92V2xhbXlYeW4zaW42VUpzQk5ocHMyM0R4aUpzVkpKZFBUTUpsSU8xV3dsTkYyckhLdVAtR1pCTzVJVGlsRE9BS0pXMXF4a2ZSVWVXVXNXSTF3Yml6WXNBcnVoT3RRb2hTblZUdzlyeDVEQkh0c256Rnd6LTYtcXdCaVFRRUtpbnMxUDZLbThqSmZ4MDRBbVNpVFhCc3FzVi0tWWMzYzNOZDNObmp5WTlWTnNCeFlYbGt4VTExYUFwMXJWMC1V?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPRkRSR19vUWdneDVac21mTEFRczl0di1rQ0cxRGZyTEJ3T2paRkpVcmo4Y3lTYndhWV92V2xhbXlYeW4zaW42VUpzQk5ocHMyM0R4aUpzVkpKZFBUTUpsSU8xV3dsTkYyckhLdVAtR1pCTzVJVGlsRE9BS0pXMXF4a2ZSVWVXVXNXSTF3Yml6WXNBcnVoT3RRb2hTblZUdzlyeDVEQkh0c256Rnd6LTYtcXdCaVFRRUtpbnMxUDZLbThqSmZ4MDRBbVNpVFhCc3FzVi0tWWMzYzNOZDNObmp5WTlWTnNCeFlYbGt4VTExYUFwMXJWMC1V?oc=5",
       "source": "La Montagne",
-      "source_id": "news-clermont",
+      "source_id": "news-puy-de-dome",
       "category": "local",
-      "published_at": "2026-10-10T04:33:00Z",
+      "published_at": "2026-10-10T12:08:00Z",
       "image": "",
-      "score": 138.55,
+      "score": 136.15,
       "matched_keywords": [
-        "clermont-ferrand",
-        "patrimoine"
+        "puy-de-dôme",
+        "ina"
       ],
       "watch_matches": [],
       "paywalled": true,
-      "content_hash": "460ec4a97390cc2ab9db",
+      "content_hash": "7e4adf0d9c57824f2047",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
       "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMihgJBVV95cUxOTnN3N2l4WGpaRkhXQXFGa1p0NHk2RF9LcEM0MmtCT0YyU3pqSEh1cF9jR1NWUERWSGlDUktMdVVyQVp5M0pXOUpIYXBER3RybEVqVDlQMm5TSkl5UHNwMWgxNGFPWWtTYlRsdWpELXRzUWEwNGd2LXJFcFVDUURyaVJMdjRCNzhjZGJuUGFiQ3IwdHdia1dCRm9Mb2pzSF92MEZVcHpXUnBhNEdwQnVuNjNNWmJ2YzJ4ZmdfcFlLb2t5bTEwbVhkMTNfS3g5WlF5WkFUUXJKYkJJblRrc1Q1ZzlwMzREc3Y2bDB5ZjllUnpLd1RhSWFDZUs4aDl1VU43UDh0STJR?oc=5",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi9wFBVV95cUxPRkRSR19vUWdneDVac21mTEFRczl0di1rQ0cxRGZyTEJ3T2paRkpVcmo4Y3lTYndhWV92V2xhbXlYeW4zaW42VUpzQk5ocHMyM0R4aUpzVkpKZFBUTUpsSU8xV3dsTkYyckhLdVAtR1pCTzVJVGlsRE9BS0pXMXF4a2ZSVWVXVXNXSTF3Yml6WXNBcnVoT3RRb2hTblZUdzlyeDVEQkh0c256Rnd6LTYtcXdCaVFRRUtpbnMxUDZLbThqSmZ4MDRBbVNpVFhCc3FzVi0tWWMzYzNOZDNObmp5WTlWTnNCeFlYbGt4VTExYUFwMXJWMC1V?oc=5",
       "archive_status": "unknown",
       "why_for_you": [
-        "mots-clés : clermont-ferrand, patrimoine"
+        "mots-clés : puy-de-dôme, ina"
       ]
     },
     {
-      "id": "8cff249c27bbef2ff6",
+      "id": "a034136a84116a313a",
+      "title": "Hockey : pourquoi le derby entre Roanne et Clermont-Ferrand prévu à Fontalon est reporté ?",
+      "summary": "Hockey : pourquoi le derby entre Roanne et Clermont-Ferrand prévu à Fontalon est reporté ? Le Pays Roannais",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUm1aS3BmMlBNYWF6T2s4cEZkT1c0UXh3NDk3OF84MmhTY3M2MTBUWlFYV2o1WWlTUTNtVHJuQTlsd3Badmw1OERMaVNaMGNzV005eG13ZzRjeHBMWEZkNGp0WVQxTkN5bEJhbXZPdlhTdjR5U3BVUXUwTnpVd20tREozZy1CVXdXSnN6Q3MxZXA0ajMwZjBCY3BZdTc3RmhnS2RaRDEwcXE1QXdjbmYyYmpxN1FGeUxfTHdZVWI1RVZIVzdqaEhKbEU4OXAwdXczOW5aOXpfRFgxUQ?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUm1aS3BmMlBNYWF6T2s4cEZkT1c0UXh3NDk3OF84MmhTY3M2MTBUWlFYV2o1WWlTUTNtVHJuQTlsd3Badmw1OERMaVNaMGNzV005eG13ZzRjeHBMWEZkNGp0WVQxTkN5bEJhbXZPdlhTdjR5U3BVUXUwTnpVd20tREozZy1CVXdXSnN6Q3MxZXA0ajMwZjBCY3BZdTc3RmhnS2RaRDEwcXE1QXdjbmYyYmpxN1FGeUxfTHdZVWI1RVZIVzdqaEhKbEU4OXAwdXczOW5aOXpfRFgxUQ?oc=5",
+      "source": "Le Pays Roannais",
+      "source_id": "news-clermont",
+      "category": "local",
+      "published_at": "2026-10-09T09:24:00Z",
+      "image": "",
+      "score": 135.21,
+      "matched_keywords": [
+        "clermont-ferrand",
+        "roanne"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "785907f1411d97811d68",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : clermont-ferrand, roanne"
+      ]
+    },
+    {
+      "id": "d8cb2202aca054332f",
       "title": "Présidentielle 2027 : Où en sont les sondages à six mois du premier tour ?",
       "summary": "Présidentielle 2027 : Où en sont les sondages à six mois du premier tour ? Yahoo Actualités",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM19ZQmRmenBLYjVTWmt1OGFydXpnSnZodmhKQW5FMkxrZjhhTGt5NUplSEFjanpLaFpPendpWlVpMlpUVnpEZkRoSVdDQ1NYZFJwVGx4RDk3NTR1SEE4bEpZVEhuQTBLWkV2UmVuWURLZWd5Yk5FcHBFOGEyRFVOY18wLXRWaEJvbXo5aU1VQk5nMXc?oc=5",
       "resolved_url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM19ZQmRmenBLYjVTWmt1OGFydXpnSnZodmhKQW5FMkxrZjhhTGt5NUplSEFjanpLaFpPendpWlVpMlpUVnpEZkRoSVdDQ1NYZFJwVGx4RDk3NTR1SEE4bEpZVEhuQTBLWkV2UmVuWURLZWd5Yk5FcHBFOGEyRFVOY18wLXRWaEJvbXo5aU1VQk5nMXc?oc=5",
       "source": "Yahoo Actualités",
-      "source_id": "sondages-elections",
+      "source_id": "sondages-politique",
       "category": "sondages",
       "published_at": "2026-10-10T07:12:39Z",
       "image": "",
-      "score": 135.28,
+      "score": 134.94,
       "matched_keywords": [
         "sondage"
       ],
       "watch_matches": [],
       "paywalled": false,
       "content_hash": "ea7c4eeb8a29b4c922b2",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : sondage"
+      ]
+    },
+    {
+      "id": "66b4aff7654df39c7b",
+      "title": "Où en sont les sondages des présidentielles à six mois du premier tour ?",
+      "summary": "Où en sont les sondages des présidentielles à six mois du premier tour ? 20 Minutes",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdHkyRmJQTEFZcFczNTNnek5FY05ubjdYMDE1N1N6OXRGc0YwUVc4ZUhWazZmX2tjcHZDMjdEYlA2cFlOdDVBbG5vZXhaakxrUUlPdFpFeEpqNmRaM0FCUXBGNWNkY3F3a2dtSmRWQU1PMUl4U250TnRKdHVEbWNVeWM1ZzhCTERZaTZJU0psT3lwNlFGbWpZNmFmbWFVbzBHRnc?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdHkyRmJQTEFZcFczNTNnek5FY05ubjdYMDE1N1N6OXRGc0YwUVc4ZUhWazZmX2tjcHZDMjdEYlA2cFlOdDVBbG5vZXhaakxrUUlPdFpFeEpqNmRaM0FCUXBGNWNkY3F3a2dtSmRWQU1PMUl4U250TnRKdHVEbWNVeWM1ZzhCTERZaTZJU0psT3lwNlFGbWpZNmFmbWFVbzBHRnc?oc=5",
+      "source": "20 Minutes",
+      "source_id": "sondages-elections",
+      "category": "sondages",
+      "published_at": "2026-10-10T07:12:00Z",
+      "image": "",
+      "score": 134.34,
+      "matched_keywords": [
+        "sondage"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -336,7 +393,7 @@
       "category": "politique",
       "published_at": "2026-10-07T11:50:00Z",
       "image": "",
-      "score": 134.86,
+      "score": 133.92,
       "matched_keywords": [
         "assemblée nationale",
         "gouvernement"
@@ -365,7 +422,7 @@
       "category": "sondages",
       "published_at": "2026-10-01T07:00:00Z",
       "image": "",
-      "score": 132.26,
+      "score": 131.6,
       "matched_keywords": [
         "sondage",
         "primaire"
@@ -394,7 +451,7 @@
       "category": "sondages",
       "published_at": "2026-10-09T06:24:00Z",
       "image": "",
-      "score": 132.18,
+      "score": 131.24,
       "matched_keywords": [
         "sondage"
       ],
@@ -422,7 +479,7 @@
       "category": "sondages",
       "published_at": "2026-10-08T13:00:00Z",
       "image": "",
-      "score": 130.01,
+      "score": 129.06,
       "matched_keywords": [
         "sondage"
       ],
@@ -450,7 +507,7 @@
       "category": "sondages",
       "published_at": "2026-10-08T09:12:05Z",
       "image": "",
-      "score": 129.53,
+      "score": 128.59,
       "matched_keywords": [
         "sondage"
       ],
@@ -478,7 +535,7 @@
       "category": "sondages",
       "published_at": "2026-10-07T15:02:00Z",
       "image": "",
-      "score": 127.26,
+      "score": 126.32,
       "matched_keywords": [
         "sondage"
       ],
@@ -496,34 +553,6 @@
       ]
     },
     {
-      "id": "000ac6e8a14f3939f7",
-      "title": "L'Assemblée nationale adopte un congé pour les salariés victimes de violences sexuelles et sexistes, dans le cadre de la loi intégrale",
-      "summary": "L'Assemblée nationale adopte un congé pour les salariés victimes de violences sexuelles et sexistes, dans le cadre de la loi intégrale franceinfo",
-      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNeXp6X05rRkJqLWFwZVRhdlU3bzA4ZWhSbWZQdnRlMUsyZkl4MXhjNE9wRnRoZmZzbDRXN0t5bXpIYWhGSnNMU1hud2c3QlEyQ05MSUtiWVZBQ0N5TG5LR0hxTDlFVjFYbC1xZkVjdjNCTUJqOVRyWXBVbnBTdVdYZTlTNk83YXZUanMybVB6ckFLM1k2UllMVHJQMk5wRmN3b0FxLWpNc3drQWxobjV2ektSZmF4TG1kRVdZVDAwMUhXdjloNi04WmN5NlcwczRWVGlnRlBLUTlHc1F1OTNsRnZKQ2VvbGhSNklNalFiSGRheGl3QTRTU0FTeFlNdkc2ajU3dnBoM2tMNkdya3YyUGI3X1dLTy1GX0E?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNeXp6X05rRkJqLWFwZVRhdlU3bzA4ZWhSbWZQdnRlMUsyZkl4MXhjNE9wRnRoZmZzbDRXN0t5bXpIYWhGSnNMU1hud2c3QlEyQ05MSUtiWVZBQ0N5TG5LR0hxTDlFVjFYbC1xZkVjdjNCTUJqOVRyWXBVbnBTdVdYZTlTNk83YXZUanMybVB6ckFLM1k2UllMVHJQMk5wRmN3b0FxLWpNc3drQWxobjV2ektSZmF4TG1kRVdZVDAwMUhXdjloNi04WmN5NlcwczRWVGlnRlBLUTlHc1F1OTNsRnZKQ2VvbGhSNklNalFiSGRheGl3QTRTU0FTeFlNdkc2ajU3dnBoM2tMNkdya3YyUGI3X1dLTy1GX0E?oc=5",
-      "source": "franceinfo",
-      "source_id": "politique-fr",
-      "category": "politique",
-      "published_at": "2026-10-09T11:41:04Z",
-      "image": "",
-      "score": 124.84,
-      "matched_keywords": [
-        "assemblée nationale"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "82299b6843e7fbb831dc",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : assemblée nationale"
-      ]
-    },
-    {
       "id": "5e3464bc415cbbb01f",
       "title": "L’Assemblée nationale rejette un amendement proposant l’expulsion définitive des étrangers condamnés pour violences sexuelles",
       "summary": "L’Assemblée nationale rejette un amendement proposant l’expulsion définitive des étrangers condamnés pour violences sexuelles CNews",
@@ -534,7 +563,7 @@
       "category": "politique",
       "published_at": "2026-10-09T05:00:22Z",
       "image": "",
-      "score": 124.01,
+      "score": 123.06,
       "matched_keywords": [
         "assemblée nationale"
       ],
@@ -552,6 +581,34 @@
       ]
     },
     {
+      "id": "d55bd357e4705b515a",
+      "title": "\"Un sentiment de gâchis\" : l'avenir s'assombrit pour les 140 associations du Lieu-Dit à Clermont-Ferrand, toujours menacé de fermeture",
+      "summary": "\"Un sentiment de gâchis\" : l'avenir s'assombrit pour les 140 associations du Lieu-Dit à Clermont-Ferrand, toujours menacé de fermeture France 3 Régions",
+      "url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNZHFQYXFCbGF0VHhzVDJ4RFdGZ3ZwRW5hdXUwdlFEazJxV0EyV28zTmVRNGpaTi1zbm1OaHFESlpzN0Vlc25qT1lweUpVa2hSTVFKbjZ2XzhoaEw0Z20waG1PLWdFdUxYM2ZTdmQ0WkU3NWhJRjRUN1BFVlFBQ2dDVW1vejlXU3Q5YWpaQnlGRE5acjdRYkZVODhNTi1QNk8teGszQlpnbE9QNTZmYV9yREg0NmpsOTJMejQ1MlhQVEo0N09HOWh5RWJVaUVzMWhDM1BwNjNkSmg5Qko0UFcxREVsRHQ3dFp3ZUNHRk1TQzVOdDN1YV8xanRxUWtzWktaV0QtY0hmWEdqVUE3VmdpVml5RDY4NVhtSlVBUkhqUG5Eb1BEbGQzTGt2Ty1OR2NKX3B1X2pzalBpVUlJWHE1cTUwd01qemJJVXZSUjVDcw?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNZHFQYXFCbGF0VHhzVDJ4RFdGZ3ZwRW5hdXUwdlFEazJxV0EyV28zTmVRNGpaTi1zbm1OaHFESlpzN0Vlc25qT1lweUpVa2hSTVFKbjZ2XzhoaEw0Z20waG1PLWdFdUxYM2ZTdmQ0WkU3NWhJRjRUN1BFVlFBQ2dDVW1vejlXU3Q5YWpaQnlGRE5acjdRYkZVODhNTi1QNk8teGszQlpnbE9QNTZmYV9yREg0NmpsOTJMejQ1MlhQVEo0N09HOWh5RWJVaUVzMWhDM1BwNjNkSmg5Qko0UFcxREVsRHQ3dFp3ZUNHRk1TQzVOdDN1YV8xanRxUWtzWktaV0QtY0hmWEdqVUE3VmdpVml5RDY4NVhtSlVBUkhqUG5Eb1BEbGQzTGt2Ty1OR2NKX3B1X2pzalBpVUlJWHE1cTUwd01qemJJVXZSUjVDcw?oc=5",
+      "source": "France 3 Régions",
+      "source_id": "news-clermont",
+      "category": "local",
+      "published_at": "2026-10-10T16:08:58Z",
+      "image": "",
+      "score": 123.05,
+      "matched_keywords": [
+        "clermont-ferrand"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "17040bcf3b4dfdbecd57",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : clermont-ferrand"
+      ]
+    },
+    {
       "id": "b423eb3b3ae946777e",
       "title": "Assemblée nationale : le Rassemblement national échoue à faire adopter ses textes lors de sa niche parlementaire",
       "summary": "Assemblée nationale : le Rassemblement national échoue à faire adopter ses textes lors de sa niche parlementaire Sud Ouest",
@@ -562,7 +619,7 @@
       "category": "politique",
       "published_at": "2026-10-09T04:32:41Z",
       "image": "",
-      "score": 123.95,
+      "score": 123.0,
       "matched_keywords": [
         "assemblée nationale"
       ],
@@ -580,6 +637,63 @@
       ]
     },
     {
+      "id": "f24ae024ab67f77f21",
+      "title": "Comment une rencontre peut changer un destin ? Article 1 lance le débat à Clermont-Ferrand",
+      "summary": "Comment une rencontre peut changer un destin ? Article 1 lance le débat à Clermont-Ferrand La Montagne",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQU213ZTRnTXA5UzJYQk1iZ1FSeVZxWkFLeFByWlFucmV0WG13YUQxYzN3eVh4eC1tc25VNU5iaDRuT25VZUpTWkZzaG14UUwxZlNqZWxIR212NkYwdS1hdlRSLVUyWGl4ZzBoTnhjQUJGZk5INy1aem04UzByUmhHUTdQQ1RmQS1kUGFUNFFrTlp4NEd0cmtjZDdwMXJkOWJDR1JqbUVUbFVZaUJsZGtGV0Q5UHpkZlJacE9JbVVhYzktT0N5RVotVkxldlhmZ1MwX1hLR1FJbE1mWXBIVUVrcWtjRG1MaU1xcTZtVjFSZw?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQU213ZTRnTXA5UzJYQk1iZ1FSeVZxWkFLeFByWlFucmV0WG13YUQxYzN3eVh4eC1tc25VNU5iaDRuT25VZUpTWkZzaG14UUwxZlNqZWxIR212NkYwdS1hdlRSLVUyWGl4ZzBoTnhjQUJGZk5INy1aem04UzByUmhHUTdQQ1RmQS1kUGFUNFFrTlp4NEd0cmtjZDdwMXJkOWJDR1JqbUVUbFVZaUJsZGtGV0Q5UHpkZlJacE9JbVVhYzktT0N5RVotVkxldlhmZ1MwX1hLR1FJbE1mWXBIVUVrcWtjRG1MaU1xcTZtVjFSZw?oc=5",
+      "source": "La Montagne",
+      "source_id": "news-clermont",
+      "category": "local",
+      "published_at": "2026-10-10T15:30:00Z",
+      "image": "",
+      "score": 122.97,
+      "matched_keywords": [
+        "clermont-ferrand"
+      ],
+      "watch_matches": [],
+      "paywalled": true,
+      "content_hash": "c71b92a7e80fa5c967b3",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi7wFBVV95cUxQU213ZTRnTXA5UzJYQk1iZ1FSeVZxWkFLeFByWlFucmV0WG13YUQxYzN3eVh4eC1tc25VNU5iaDRuT25VZUpTWkZzaG14UUwxZlNqZWxIR212NkYwdS1hdlRSLVUyWGl4ZzBoTnhjQUJGZk5INy1aem04UzByUmhHUTdQQ1RmQS1kUGFUNFFrTlp4NEd0cmtjZDdwMXJkOWJDR1JqbUVUbFVZaUJsZGtGV0Q5UHpkZlJacE9JbVVhYzktT0N5RVotVkxldlhmZ1MwX1hLR1FJbE1mWXBIVUVrcWtjRG1MaU1xcTZtVjFSZw?oc=5",
+      "archive_status": "unknown",
+      "why_for_you": [
+        "mots-clés : clermont-ferrand"
+      ]
+    },
+    {
+      "id": "4084fdef644efe8d8b",
+      "title": "Entre crainte et fascination, l’intelligence artificielle présentée aux habitants de La Crèche",
+      "summary": "Entre crainte et fascination, l’intelligence artificielle présentée aux habitants de La Crèche lanouvellerepublique.fr",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMkNaSVZuOXpHUXpsV21oN3lyQmQ2ajFxU3pVSlVIODdfcHRueTk4TzA1V293aVNpR1hoWEcwVlI0Qm5Nd2FlTmJKY2sxeHJ4bDROWkt6Sm5KQTNjYy1nLU0tZ0wzMzZRVUpFeEswbHROQ04yWVUtd2lmb1FiM3ZBTGpWSGQ0d1NXV3J3QnFWU0J0bnJCd0FaRklLMXJLbnpxd0hSSzg2R2RGb0NERnZRQURzazVrNVNZc0pCUHdPcHM1d3ZYRWdWVHFiRnE5dEFHNHQwRHd6aXdHUm9pNTVqTTFtR3JQN3Q2YW52WjVEMVJvZkxwRmhqcmZhWXJRRlU?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPMkNaSVZuOXpHUXpsV21oN3lyQmQ2ajFxU3pVSlVIODdfcHRueTk4TzA1V293aVNpR1hoWEcwVlI0Qm5Nd2FlTmJKY2sxeHJ4bDROWkt6Sm5KQTNjYy1nLU0tZ0wzMzZRVUpFeEswbHROQ04yWVUtd2lmb1FiM3ZBTGpWSGQ0d1NXV3J3QnFWU0J0bnJCd0FaRklLMXJLbnpxd0hSSzg2R2RGb0NERnZRQURzazVrNVNZc0pCUHdPcHM1d3ZYRWdWVHFiRnE5dEFHNHQwRHd6aXdHUm9pNTVqTTFtR3JQN3Q2YW52WjVEMVJvZkxwRmhqcmZhWXJRRlU?oc=5",
+      "source": "lanouvellerepublique.fr",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T14:28:17Z",
+      "image": "",
+      "score": 122.64,
+      "matched_keywords": [
+        "ina",
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "fd671025ca42080bb5c0",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : ina, intelligence artificielle"
+      ]
+    },
+    {
       "id": "3f0cf666eb060b2e68",
       "title": "Zéna M’Déré : l’Assemblée nationale rejette la résolution sur l’entrée au Panthéon de la Chatouilleuse mahoraise",
       "summary": "Zéna M’Déré : l’Assemblée nationale rejette la résolution sur l’entrée au Panthéon de la Chatouilleuse mahoraise Outre-mer La 1ère",
@@ -590,7 +704,7 @@
       "category": "politique",
       "published_at": "2026-10-08T22:48:20Z",
       "image": "",
-      "score": 123.23,
+      "score": 122.29,
       "matched_keywords": [
         "assemblée nationale"
       ],
@@ -618,7 +732,7 @@
       "category": "local",
       "published_at": "2026-10-10T07:00:00Z",
       "image": "",
-      "score": 122.86,
+      "score": 121.91,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -636,34 +750,6 @@
       ]
     },
     {
-      "id": "6b253d3e7427a9f4a2",
-      "title": "De l'esclavage à l'hôpital, la \"négrophobie\" disséquée lors d'un colloque à l'Assemblée nationale",
-      "summary": "De l'esclavage à l'hôpital, la \"négrophobie\" disséquée lors d'un colloque à l'Assemblée nationale La Gazette France",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVXF0MHNhSWxfeFlzYXFxRUkwN19idkJadFE2SVF5X3RJVlY1M3JCeWVVQkd5RFVkSkVIa2UzYVU0WjllbHFfYWVoU0lpZ0tvM0pCb2IwcUZ0eUw4bkRidlR3aU1DdnA3ekU3U3BNWXB3eUQ0dWhlRFJwRUhvLVJjdDN4SGRVcG9UOTRGYjRZMUxlQ0lMY2o1UG1kMXh1eG40bUxlMjhvdkVkSXU2VWpXNlBxRzBLUi1IOXVNVFNxSmpzbnR3bkc0aHlLUWw3UQ?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVXF0MHNhSWxfeFlzYXFxRUkwN19idkJadFE2SVF5X3RJVlY1M3JCeWVVQkd5RFVkSkVIa2UzYVU0WjllbHFfYWVoU0lpZ0tvM0pCb2IwcUZ0eUw4bkRidlR3aU1DdnA3ekU3U3BNWXB3eUQ0dWhlRFJwRUhvLVJjdDN4SGRVcG9UOTRGYjRZMUxlQ0lMY2o1UG1kMXh1eG40bUxlMjhvdkVkSXU2VWpXNlBxRzBLUi1IOXVNVFNxSmpzbnR3bkc0aHlLUWw3UQ?oc=5",
-      "source": "La Gazette France",
-      "source_id": "politique-fr",
-      "category": "politique",
-      "published_at": "2026-10-08T19:37:57Z",
-      "image": "",
-      "score": 122.84,
-      "matched_keywords": [
-        "assemblée nationale"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "3accffe9e8ba16bae9a1",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : assemblée nationale"
-      ]
-    },
-    {
       "id": "8f05ff512ee9686d52",
       "title": "« Les gens n’ont plus de thunes ! » : à Clermont-Ferrand, les trois dimanches travaillés supplémentaires ne font pas l’unanimité",
       "summary": "« Les gens n’ont plus de thunes ! » : à Clermont-Ferrand, les trois dimanches travaillés supplémentaires ne font pas l’unanimité Le Parisien",
@@ -674,7 +760,7 @@
       "category": "local",
       "published_at": "2026-10-10T06:00:01Z",
       "image": "",
-      "score": 122.73,
+      "score": 121.79,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -702,7 +788,7 @@
       "category": "local",
       "published_at": "2026-10-10T06:00:00Z",
       "image": "",
-      "score": 122.73,
+      "score": 121.79,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -730,7 +816,7 @@
       "category": "local",
       "published_at": "2026-10-10T05:03:00Z",
       "image": "",
-      "score": 122.61,
+      "score": 121.67,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -758,7 +844,7 @@
       "category": "local",
       "published_at": "2026-10-10T04:02:00Z",
       "image": "",
-      "score": 122.49,
+      "score": 121.54,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -776,34 +862,6 @@
       ]
     },
     {
-      "id": "882c0b0718a52195dc",
-      "title": "Les services de garde à Clermont-Ferrand et dans son agglomération les samedi 10 et dimanche 11 octobre",
-      "summary": "Les services de garde à Clermont-Ferrand et dans son agglomération les samedi 10 et dimanche 11 octobre La Montagne",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPc0NpVTlKZG5yb2tzcHhOaDh1UGUzUmJYbFI0Q0ZGN2g2NXpTRENiM09Pejgyd3daWVpJSDRROTJKZlpPQ2FaWDZpaFFwMG1EUFpWdGlydHlNRlp3MU5PWEY3aEJaWktfektfVHk5T1J3bnNlNEJWeG9aSzZzTWhQUlVqY3NZMlBTTTJzek1xMWNHR19HT3oxRmx4d0cxNTdjMUxQZF9DcGNVN2dGemEwZXNKUGdyMVlqRUQ0U0lpb1NVTWJwanpqMWk2dVEtTUFaZHVGbUhVVHVCaWNTS0lKQ3ZXTGhlaWJBR1hCSkEzTkR4dkxPaGx1ckF3NmFWRTd6V0Rv?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPc0NpVTlKZG5yb2tzcHhOaDh1UGUzUmJYbFI0Q0ZGN2g2NXpTRENiM09Pejgyd3daWVpJSDRROTJKZlpPQ2FaWDZpaFFwMG1EUFpWdGlydHlNRlp3MU5PWEY3aEJaWktfektfVHk5T1J3bnNlNEJWeG9aSzZzTWhQUlVqY3NZMlBTTTJzek1xMWNHR19HT3oxRmx4d0cxNTdjMUxQZF9DcGNVN2dGemEwZXNKUGdyMVlqRUQ0U0lpb1NVTWJwanpqMWk2dVEtTUFaZHVGbUhVVHVCaWNTS0lKQ3ZXTGhlaWJBR1hCSkEzTkR4dkxPaGx1ckF3NmFWRTd6V0Rv?oc=5",
-      "source": "La Montagne",
-      "source_id": "news-clermont",
-      "category": "local",
-      "published_at": "2026-10-10T04:01:00Z",
-      "image": "",
-      "score": 122.48,
-      "matched_keywords": [
-        "clermont-ferrand"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "8fe4f22583c6676b1a63",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMigwJBVV95cUxPc0NpVTlKZG5yb2tzcHhOaDh1UGUzUmJYbFI0Q0ZGN2g2NXpTRENiM09Pejgyd3daWVpJSDRROTJKZlpPQ2FaWDZpaFFwMG1EUFpWdGlydHlNRlp3MU5PWEY3aEJaWktfektfVHk5T1J3bnNlNEJWeG9aSzZzTWhQUlVqY3NZMlBTTTJzek1xMWNHR19HT3oxRmx4d0cxNTdjMUxQZF9DcGNVN2dGemEwZXNKUGdyMVlqRUQ0U0lpb1NVTWJwanpqMWk2dVEtTUFaZHVGbUhVVHVCaWNTS0lKQ3ZXTGhlaWJBR1hCSkEzTkR4dkxPaGx1ckF3NmFWRTd6V0Rv?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : clermont-ferrand"
-      ]
-    },
-    {
       "id": "e97b4059dffbdafd5d",
       "title": "A89 fermeture direction Clermont-Ferrand entre Chazay d'Azergues n°37 et Tarare-Est n°35",
       "summary": "A89 fermeture direction Clermont-Ferrand entre Chazay d'Azergues n°37 et Tarare-Est n°35 Radio VINCI Autoroutes",
@@ -814,7 +872,7 @@
       "category": "local",
       "published_at": "2026-10-10T04:00:00Z",
       "image": "",
-      "score": 122.48,
+      "score": 121.54,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -842,7 +900,7 @@
       "category": "local",
       "published_at": "2026-10-10T03:58:00Z",
       "image": "",
-      "score": 122.48,
+      "score": 121.53,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -870,7 +928,7 @@
       "category": "local",
       "published_at": "2026-10-10T03:30:00Z",
       "image": "",
-      "score": 122.42,
+      "score": 121.47,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -888,34 +946,6 @@
       ]
     },
     {
-      "id": "b5f1c990e25020cb94",
-      "title": "Météo. Quel temps est-il prévu à Clermont-Ferrand et ses environs le samedi 10 octobre 2026 ?",
-      "summary": "Météo. Quel temps est-il prévu à Clermont-Ferrand et ses environs le samedi 10 octobre 2026 ? Ouest-France",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLU9jV0UtMDFfXzUtVGQxcHMyR01UWk45YTFCakRQNkVibFlsTkdmZnM1Y0V0R08wSWRSYlI4RE5VMXFXOEd2eEJ0a21qTThaOFFfTmh5bE5mN2RUYlBqbEZpZngzUl9xZHpWOHkxTmlNa2xPNzNkdmpselROMFFLcHNSNGxSQXRQUk8tLUNMVVBxUXYwRVl1WTI5T0N3WGRNbVhrMTgtR0RSSk52TUw3SmR5WGVzdVRMQWtLTHZhSlBKTE9lQ1dKbU9YTUdvUW1SWmRjOHUyN2pHMmFnUWNrcXc3cWY?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLU9jV0UtMDFfXzUtVGQxcHMyR01UWk45YTFCakRQNkVibFlsTkdmZnM1Y0V0R08wSWRSYlI4RE5VMXFXOEd2eEJ0a21qTThaOFFfTmh5bE5mN2RUYlBqbEZpZngzUl9xZHpWOHkxTmlNa2xPNzNkdmpselROMFFLcHNSNGxSQXRQUk8tLUNMVVBxUXYwRVl1WTI5T0N3WGRNbVhrMTgtR0RSSk52TUw3SmR5WGVzdVRMQWtLTHZhSlBKTE9lQ1dKbU9YTUdvUW1SWmRjOHUyN2pHMmFnUWNrcXc3cWY?oc=5",
-      "source": "Ouest-France",
-      "source_id": "news-clermont",
-      "category": "local",
-      "published_at": "2026-10-10T03:24:54Z",
-      "image": "",
-      "score": 122.41,
-      "matched_keywords": [
-        "clermont-ferrand"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "8ecc41fb263b01c223cf",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : clermont-ferrand"
-      ]
-    },
-    {
       "id": "ef1817a1f47733ce0f",
       "title": "Barrage à l'Assemblée nationale : la résolution du RN sur l’accès à l’eau en Outre-mer rejetée",
       "summary": "Barrage à l'Assemblée nationale : la résolution du RN sur l’accès à l’eau en Outre-mer rejetée Outre-mer La 1ère",
@@ -926,7 +956,7 @@
       "category": "politique",
       "published_at": "2026-10-08T16:15:26Z",
       "image": "",
-      "score": 122.41,
+      "score": 121.47,
       "matched_keywords": [
         "assemblée nationale"
       ],
@@ -944,6 +974,34 @@
       ]
     },
     {
+      "id": "b5f1c990e25020cb94",
+      "title": "Météo. Quel temps est-il prévu à Clermont-Ferrand et ses environs le samedi 10 octobre 2026 ?",
+      "summary": "Météo. Quel temps est-il prévu à Clermont-Ferrand et ses environs le samedi 10 octobre 2026 ? Ouest-France",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLU9jV0UtMDFfXzUtVGQxcHMyR01UWk45YTFCakRQNkVibFlsTkdmZnM1Y0V0R08wSWRSYlI4RE5VMXFXOEd2eEJ0a21qTThaOFFfTmh5bE5mN2RUYlBqbEZpZngzUl9xZHpWOHkxTmlNa2xPNzNkdmpselROMFFLcHNSNGxSQXRQUk8tLUNMVVBxUXYwRVl1WTI5T0N3WGRNbVhrMTgtR0RSSk52TUw3SmR5WGVzdVRMQWtLTHZhSlBKTE9lQ1dKbU9YTUdvUW1SWmRjOHUyN2pHMmFnUWNrcXc3cWY?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNLU9jV0UtMDFfXzUtVGQxcHMyR01UWk45YTFCakRQNkVibFlsTkdmZnM1Y0V0R08wSWRSYlI4RE5VMXFXOEd2eEJ0a21qTThaOFFfTmh5bE5mN2RUYlBqbEZpZngzUl9xZHpWOHkxTmlNa2xPNzNkdmpselROMFFLcHNSNGxSQXRQUk8tLUNMVVBxUXYwRVl1WTI5T0N3WGRNbVhrMTgtR0RSSk52TUw3SmR5WGVzdVRMQWtLTHZhSlBKTE9lQ1dKbU9YTUdvUW1SWmRjOHUyN2pHMmFnUWNrcXc3cWY?oc=5",
+      "source": "Ouest-France",
+      "source_id": "news-clermont",
+      "category": "local",
+      "published_at": "2026-10-10T03:24:54Z",
+      "image": "",
+      "score": 121.46,
+      "matched_keywords": [
+        "clermont-ferrand"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "8ecc41fb263b01c223cf",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : clermont-ferrand"
+      ]
+    },
+    {
       "id": "43df5aecaa99340f6c",
       "title": "Clermont-Ferrand : trois expositions sur l'exil des républicains espagnols à la Chapelle des Cordeliers",
       "summary": "Clermont-Ferrand : trois expositions sur l'exil des républicains espagnols à la Chapelle des Cordeliers La Montagne",
@@ -954,7 +1012,7 @@
       "category": "local",
       "published_at": "2026-10-10T03:20:00Z",
       "image": "",
-      "score": 122.4,
+      "score": 121.45,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -982,7 +1040,7 @@
       "category": "politique",
       "published_at": "2026-10-08T14:33:57Z",
       "image": "",
-      "score": 122.2,
+      "score": 121.26,
       "matched_keywords": [
         "assemblée nationale"
       ],
@@ -1008,9 +1066,9 @@
       "source": "TL7, Télévision loire 7",
       "source_id": "news-loire-roannais",
       "category": "local",
-      "published_at": "2026-10-10T07:40:39Z",
+      "published_at": "2026-10-10T07:49:51Z",
       "image": "",
-      "score": 120.34,
+      "score": 119.41,
       "matched_keywords": [
         "roanne",
         "télévision"
@@ -1039,7 +1097,7 @@
       "category": "local",
       "published_at": "2026-10-09T10:30:00Z",
       "image": "",
-      "score": 120.29,
+      "score": 119.35,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1057,34 +1115,6 @@
       ]
     },
     {
-      "id": "76dc4a5e94ef81d7ef",
-      "title": "Présidentielle 2027 : le débat de la primaire socialiste aura lieu le jeudi 1er octobre sur France 2 et France Inter",
-      "summary": "Présidentielle 2027 : le débat de la primaire socialiste aura lieu le jeudi 1er octobre sur France 2 et France Inter franceinfo",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNWY4Z2FmdnVFeEF2VXIwdTV5MHh3dTdSQ1FpM3V3czFkRUhWN2doQ2FlT1gwWThMMXJfWnVBNnVORW0xWTJkT2ozQkhtbHlwSmNmbVg2N3BhbjFIa0E3SUZPSzRha0hSQnVlVGd1RndGVFpEaC1lNWZBWnBTUTVYcmNfeVdGTDhGMGFqcHdqcHdodEdKYVF3djRoWTVUSXUweWZMY0JYRlFKdTNZQ3JWM1I2S3k3TG9vVHZIckV0bXAwYlhsM1RQN2dfR3dqRnJjN0ZqZ1UtTTV6cElrdFVJVktCWkYyS2xFRjMxYVFBUW93ellqRlNfQ3M0YkQ2MWVJVVpYcGFLNDJJOURMMmpZdy1FcDc?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNWY4Z2FmdnVFeEF2VXIwdTV5MHh3dTdSQ1FpM3V3czFkRUhWN2doQ2FlT1gwWThMMXJfWnVBNnVORW0xWTJkT2ozQkhtbHlwSmNmbVg2N3BhbjFIa0E3SUZPSzRha0hSQnVlVGd1RndGVFpEaC1lNWZBWnBTUTVYcmNfeVdGTDhGMGFqcHdqcHdodEdKYVF3djRoWTVUSXUweWZMY0JYRlFKdTNZQ3JWM1I2S3k3TG9vVHZIckV0bXAwYlhsM1RQN2dfR3dqRnJjN0ZqZ1UtTTV6cElrdFVJVktCWkYyS2xFRjMxYVFBUW93ellqRlNfQ3M0YkQ2MWVJVVpYcGFLNDJJOURMMmpZdy1FcDc?oc=5",
-      "source": "franceinfo",
-      "source_id": "politique-partis",
-      "category": "politique",
-      "published_at": "2026-10-10T08:56:48Z",
-      "image": "",
-      "score": 119.9,
-      "matched_keywords": [
-        "primaire"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "b12d9d8421400c924729",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : primaire"
-      ]
-    },
-    {
       "id": "5a90ac89981b3d1264",
       "title": "Près de Clermont-Ferrand : un jeune de 25 ans perd la vie dans un accident",
       "summary": "Près de Clermont-Ferrand : un jeune de 25 ans perd la vie dans un accident Radio SCOOP",
@@ -1095,7 +1125,7 @@
       "category": "local",
       "published_at": "2026-10-09T06:40:00Z",
       "image": "",
-      "score": 119.82,
+      "score": 118.87,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1123,7 +1153,7 @@
       "category": "local",
       "published_at": "2026-10-09T06:02:00Z",
       "image": "",
-      "score": 119.74,
+      "score": 118.79,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1141,6 +1171,34 @@
       ]
     },
     {
+      "id": "31c1edf7db043e6736",
+      "title": "Une commune du Puy-de-Dôme condamnée pour avoir construit un parking sur une zone Natura 2000",
+      "summary": "Une commune du Puy-de-Dôme condamnée pour avoir construit un parking sur une zone Natura 2000 La Montagne",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOb1dZa0tFM3VtQk5maWlUZXlWS05FZ2F6c1RLNnZLU2VQNkVJd0lrU21fcDZIMVppNTJjN2VUa0NLbVZvT3FVWVFPZmdUNFhnOGJuNnRuRTVuY29OeGtxMXRhTXZsMVNnSE0xWjNPN0NJczBzN29ybTFsSDhyanBmNGZ1Z2U0djlWZW5GcTF1S3dxZFltQlNBWEtFUFUxLXMtcVFqUDA0dWdIN3lzRjFCdjZNSUx2Y2RabW0wWFVCempraVp1eURWTEwxQUZFLTZPaFNyRUFadXRiM214Rm1YUm1KTU9IT1dKcDRfVVZNS2dDeFhCS0E?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOb1dZa0tFM3VtQk5maWlUZXlWS05FZ2F6c1RLNnZLU2VQNkVJd0lrU21fcDZIMVppNTJjN2VUa0NLbVZvT3FVWVFPZmdUNFhnOGJuNnRuRTVuY29OeGtxMXRhTXZsMVNnSE0xWjNPN0NJczBzN29ybTFsSDhyanBmNGZ1Z2U0djlWZW5GcTF1S3dxZFltQlNBWEtFUFUxLXMtcVFqUDA0dWdIN3lzRjFCdjZNSUx2Y2RabW0wWFVCempraVp1eURWTEwxQUZFLTZPaFNyRUFadXRiM214Rm1YUm1KTU9IT1dKcDRfVVZNS2dDeFhCS0E?oc=5",
+      "source": "La Montagne",
+      "source_id": "news-clermont",
+      "category": "local",
+      "published_at": "2026-10-10T05:49:00Z",
+      "image": "",
+      "score": 117.76,
+      "matched_keywords": [
+        "puy-de-dôme"
+      ],
+      "watch_matches": [],
+      "paywalled": true,
+      "content_hash": "1e974cce76e709ddd1e9",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi9gFBVV95cUxOb1dZa0tFM3VtQk5maWlUZXlWS05FZ2F6c1RLNnZLU2VQNkVJd0lrU21fcDZIMVppNTJjN2VUa0NLbVZvT3FVWVFPZmdUNFhnOGJuNnRuRTVuY29OeGtxMXRhTXZsMVNnSE0xWjNPN0NJczBzN29ybTFsSDhyanBmNGZ1Z2U0djlWZW5GcTF1S3dxZFltQlNBWEtFUFUxLXMtcVFqUDA0dWdIN3lzRjFCdjZNSUx2Y2RabW0wWFVCempraVp1eURWTEwxQUZFLTZPaFNyRUFadXRiM214Rm1YUm1KTU9IT1dKcDRfVVZNS2dDeFhCS0E?oc=5",
+      "archive_status": "unknown",
+      "why_for_you": [
+        "mots-clés : puy-de-dôme"
+      ]
+    },
+    {
       "id": "332ec459b992bff6f1",
       "title": "Clermont-Ferrand : le sens d’accès du parking Vercingétorix va être inversé",
       "summary": "Clermont-Ferrand : le sens d’accès du parking Vercingétorix va être inversé Radio SCOOP",
@@ -1151,7 +1209,7 @@
       "category": "local",
       "published_at": "2026-10-08T13:07:00Z",
       "image": "",
-      "score": 117.62,
+      "score": 116.68,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1179,7 +1237,7 @@
       "category": "local",
       "published_at": "2026-10-09T17:49:00Z",
       "image": "",
-      "score": 117.21,
+      "score": 116.26,
       "matched_keywords": [
         "puy-de-dôme"
       ],
@@ -1207,7 +1265,7 @@
       "category": "local",
       "published_at": "2026-10-08T08:56:00Z",
       "image": "",
-      "score": 117.1,
+      "score": 116.15,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1235,7 +1293,7 @@
       "category": "politique",
       "published_at": "2026-10-09T10:12:02Z",
       "image": "",
-      "score": 117.06,
+      "score": 116.11,
       "matched_keywords": [
         "primaire"
       ],
@@ -1253,6 +1311,34 @@
       ]
     },
     {
+      "id": "c56d7f568b209febe2",
+      "title": "Jean-Luc Mélenchon s'est exprimé sur la mobilisation lycéenne depuis le Puy-de-Dôme",
+      "summary": "Jean-Luc Mélenchon s'est exprimé sur la mobilisation lycéenne depuis le Puy-de-Dôme BFM",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOU21CLXpaUW1IYWxvMW93THlwQl9NMEN1eE1yV3dzVzhTdVF0ZUY2UVpYLURNdm5VdndFSW5NWGR6RWRBX1VlWDBqNUE0R2lCZDQ4NmlaUkpKbmxJeko3bmQ4OUFVMFJSQnhOOVNUVDh0LWdtaDhkTVQ2MU1xNk1ZYjhGaklGV3J4VUtCc0p4X0d3RHlXUVptZHQxay1VNGpvemZ1RUdDWGw4RVMtWURBSmV4LUhZZmt0eXI4MXlPLTFiakdLOEt0aENqVDA5ZTZIOFZ1ZXJiUnFxdEI4TlZnVVZBYzNRak4waFN0YlR6dUdTeW1Jb1hLSXZ0VQ?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOU21CLXpaUW1IYWxvMW93THlwQl9NMEN1eE1yV3dzVzhTdVF0ZUY2UVpYLURNdm5VdndFSW5NWGR6RWRBX1VlWDBqNUE0R2lCZDQ4NmlaUkpKbmxJeko3bmQ4OUFVMFJSQnhOOVNUVDh0LWdtaDhkTVQ2MU1xNk1ZYjhGaklGV3J4VUtCc0p4X0d3RHlXUVptZHQxay1VNGpvemZ1RUdDWGw4RVMtWURBSmV4LUhZZmt0eXI4MXlPLTFiakdLOEt0aENqVDA5ZTZIOFZ1ZXJiUnFxdEI4TlZnVVZBYzNRak4waFN0YlR6dUdTeW1Jb1hLSXZ0VQ?oc=5",
+      "source": "BFM",
+      "source_id": "news-puy-de-dome",
+      "category": "local",
+      "published_at": "2026-10-10T11:24:37Z",
+      "image": "",
+      "score": 116.06,
+      "matched_keywords": [
+        "puy-de-dôme"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : puy-de-dôme"
+      ]
+    },
+    {
       "id": "25b0ef718fbab3cc69",
       "title": "Présidentielle 2027 : Le Pen, Mélenchon, Philippe… À sept mois du scrutin, malgré les sondages, les jeux ne sont pas faits",
       "summary": "Présidentielle 2027 : Le Pen, Mélenchon, Philippe… À sept mois du scrutin, malgré les sondages, les jeux ne sont pas faits Midi Libre",
@@ -1263,7 +1349,7 @@
       "category": "sondages",
       "published_at": "2026-10-04T05:01:00Z",
       "image": "",
-      "score": 117.01,
+      "score": 116.06,
       "matched_keywords": [
         "sondage"
       ],
@@ -1291,7 +1377,7 @@
       "category": "local",
       "published_at": "2026-10-08T07:58:49Z",
       "image": "",
-      "score": 116.98,
+      "score": 116.03,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1309,6 +1395,118 @@
       ]
     },
     {
+      "id": "5c43a2afadec6afa9d",
+      "title": "Puy-de-Dôme. Retrouvez l'actualité culturelle du département en bref",
+      "summary": "Puy-de-Dôme. Retrouvez l'actualité culturelle du département en bref semeur.com",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVGhRdVNlWU1fZVhxaUpLbWJuemc4MHQ5SjFQa1NBTlZnRmlIVmtMWG1uZXRJUXl3WU9hZXNybTBRWUs5VmszSGJSeVR3X2xQNTk1TXE0QWZSRm92eVdKR01DZmR4N0ZyV2ZheGpKZTVYQUgzNnIxRHR3aFRqQXZXcWViRWJlbHlJQWR5anc4R29yRjZ6NDZMSkdWM2ZpY0xkWkFZQXhLblE?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVGhRdVNlWU1fZVhxaUpLbWJuemc4MHQ5SjFQa1NBTlZnRmlIVmtMWG1uZXRJUXl3WU9hZXNybTBRWUs5VmszSGJSeVR3X2xQNTk1TXE0QWZSRm92eVdKR01DZmR4N0ZyV2ZheGpKZTVYQUgzNnIxRHR3aFRqQXZXcWViRWJlbHlJQWR5anc4R29yRjZ6NDZMSkdWM2ZpY0xkWkFZQXhLblE?oc=5",
+      "source": "semeur.com",
+      "source_id": "news-puy-de-dome",
+      "category": "local",
+      "published_at": "2026-10-10T10:00:00Z",
+      "image": "",
+      "score": 115.89,
+      "matched_keywords": [
+        "puy-de-dôme"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : puy-de-dôme"
+      ]
+    },
+    {
+      "id": "f851c53cf262d332b2",
+      "title": "Puy-de-Dôme : une commune condamnée pour avoir aménagé un parking en zone Natura 2000",
+      "summary": "Puy-de-Dôme : une commune condamnée pour avoir aménagé un parking en zone Natura 2000 Radio RVA",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNVdTeGlRa0JqaURfaC03ZmhmMng2S2NlaTFDQkNBTWZBYjAtMVBpVml0aEZFZFhUMWJ0aElwUUw3UU9qaHJWV1hUMjYwTXA2cHZZbXpGMGx3cVlwV1B2YTVKbXk5SnhTSmxteW5KX25LYWxlWjRuNTYyM1hXSEwyVXdQemd1ekgzRVlIWEdRYm5hMEFoMkZoeWx6VWo3a3ozVHpoVFRTUjlGTXJ5eUxHX3Q2dXU5dVlSQlVGNVVXelJXREMyalE?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPNVdTeGlRa0JqaURfaC03ZmhmMng2S2NlaTFDQkNBTWZBYjAtMVBpVml0aEZFZFhUMWJ0aElwUUw3UU9qaHJWV1hUMjYwTXA2cHZZbXpGMGx3cVlwV1B2YTVKbXk5SnhTSmxteW5KX25LYWxlWjRuNTYyM1hXSEwyVXdQemd1ekgzRVlIWEdRYm5hMEFoMkZoeWx6VWo3a3ozVHpoVFRTUjlGTXJ5eUxHX3Q2dXU5dVlSQlVGNVVXelJXREMyalE?oc=5",
+      "source": "Radio RVA",
+      "source_id": "news-puy-de-dome",
+      "category": "local",
+      "published_at": "2026-10-10T09:57:00Z",
+      "image": "",
+      "score": 115.88,
+      "matched_keywords": [
+        "puy-de-dôme"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "ee6a7bebfb2081997499",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : puy-de-dôme"
+      ]
+    },
+    {
+      "id": "fe2ba9f721e916cdd1",
+      "title": "Comment cette commune du Puy-de-Dôme a adapté ses arbres au climat de demain",
+      "summary": "Comment cette commune du Puy-de-Dôme a adapté ses arbres au climat de demain La Montagne",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeU5VcnI0ZnN3NFFVTkQ5ekV4VFBESmJRbUsyNlNzUU1RMUtsR2dtLTlkTFhrSVlzSzdBOTRvRWNxUEdaWmZWZTlEbE8yR0MxbGpMbzNsZUNsRUFENEZxTmJIVDIwWm1KaHJKSVp4ekJfNkFyQi1TMFFUenFsZGVfSjdPRlVhQ3kyUGdJd19BeWt2U3VzQ0NsVkRTZlBXUW9WNjFSNWQ3YkFqWnBCcUNxZks5WUNHenc4bzAzM3c0U3dYaEFUNWRaNmlYZzExNXhlOEpYeg?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeU5VcnI0ZnN3NFFVTkQ5ekV4VFBESmJRbUsyNlNzUU1RMUtsR2dtLTlkTFhrSVlzSzdBOTRvRWNxUEdaWmZWZTlEbE8yR0MxbGpMbzNsZUNsRUFENEZxTmJIVDIwWm1KaHJKSVp4ekJfNkFyQi1TMFFUenFsZGVfSjdPRlVhQ3kyUGdJd19BeWt2U3VzQ0NsVkRTZlBXUW9WNjFSNWQ3YkFqWnBCcUNxZks5WUNHenc4bzAzM3c0U3dYaEFUNWRaNmlYZzExNXhlOEpYeg?oc=5",
+      "source": "La Montagne",
+      "source_id": "news-puy-de-dome",
+      "category": "local",
+      "published_at": "2026-10-10T09:55:00Z",
+      "image": "",
+      "score": 115.88,
+      "matched_keywords": [
+        "puy-de-dôme"
+      ],
+      "watch_matches": [],
+      "paywalled": true,
+      "content_hash": "",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi1AFBVV95cUxOeU5VcnI0ZnN3NFFVTkQ5ekV4VFBESmJRbUsyNlNzUU1RMUtsR2dtLTlkTFhrSVlzSzdBOTRvRWNxUEdaWmZWZTlEbE8yR0MxbGpMbzNsZUNsRUFENEZxTmJIVDIwWm1KaHJKSVp4ekJfNkFyQi1TMFFUenFsZGVfSjdPRlVhQ3kyUGdJd19BeWt2U3VzQ0NsVkRTZlBXUW9WNjFSNWQ3YkFqWnBCcUNxZks5WUNHenc4bzAzM3c0U3dYaEFUNWRaNmlYZzExNXhlOEpYeg?oc=5",
+      "archive_status": "unknown",
+      "why_for_you": [
+        "mots-clés : puy-de-dôme"
+      ]
+    },
+    {
+      "id": "76dc4a5e94ef81d7ef",
+      "title": "Présidentielle 2027 : le débat de la primaire socialiste aura lieu le jeudi 1er octobre sur France 2 et France Inter",
+      "summary": "Présidentielle 2027 : le débat de la primaire socialiste aura lieu le jeudi 1er octobre sur France 2 et France Inter franceinfo",
+      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNWY4Z2FmdnVFeEF2VXIwdTV5MHh3dTdSQ1FpM3V3czFkRUhWN2doQ2FlT1gwWThMMXJfWnVBNnVORW0xWTJkT2ozQkhtbHlwSmNmbVg2N3BhbjFIa0E3SUZPSzRha0hSQnVlVGd1RndGVFpEaC1lNWZBWnBTUTVYcmNfeVdGTDhGMGFqcHdqcHdodEdKYVF3djRoWTVUSXUweWZMY0JYRlFKdTNZQ3JWM1I2S3k3TG9vVHZIckV0bXAwYlhsM1RQN2dfR3dqRnJjN0ZqZ1UtTTV6cElrdFVJVktCWkYyS2xFRjMxYVFBUW93ellqRlNfQ3M0YkQ2MWVJVVpYcGFLNDJJOURMMmpZdy1FcDc?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPNWY4Z2FmdnVFeEF2VXIwdTV5MHh3dTdSQ1FpM3V3czFkRUhWN2doQ2FlT1gwWThMMXJfWnVBNnVORW0xWTJkT2ozQkhtbHlwSmNmbVg2N3BhbjFIa0E3SUZPSzRha0hSQnVlVGd1RndGVFpEaC1lNWZBWnBTUTVYcmNfeVdGTDhGMGFqcHdqcHdodEdKYVF3djRoWTVUSXUweWZMY0JYRlFKdTNZQ3JWM1I2S3k3TG9vVHZIckV0bXAwYlhsM1RQN2dfR3dqRnJjN0ZqZ1UtTTV6cElrdFVJVktCWkYyS2xFRjMxYVFBUW93ellqRlNfQ3M0YkQ2MWVJVVpYcGFLNDJJOURMMmpZdy1FcDc?oc=5",
+      "source": "franceinfo",
+      "source_id": "politique-partis",
+      "category": "politique",
+      "published_at": "2026-10-09T07:00:00Z",
+      "image": "",
+      "score": 115.71,
+      "matched_keywords": [
+        "primaire"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "b12d9d8421400c924729",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : primaire"
+      ]
+    },
+    {
       "id": "55c1a3a5c1b7e163d7",
       "title": "les prix de l’immobilier à Clermont-Ferrand : des opportunités à saisir aux portes des volcans",
       "summary": "les prix de l’immobilier à Clermont-Ferrand : des opportunités à saisir aux portes des volcans Le Nouvel Obs",
@@ -1319,7 +1517,7 @@
       "category": "local",
       "published_at": "2026-10-08T04:00:09Z",
       "image": "",
-      "score": 116.48,
+      "score": 115.54,
       "matched_keywords": [
         "clermont-ferrand"
       ],
@@ -1337,202 +1535,6 @@
       ]
     },
     {
-      "id": "8205e4ea32f793604e",
-      "title": "Le mouvement des lycéens met l'Assemblée nationale en ébullition",
-      "summary": "Le mouvement des lycéens met l'Assemblée nationale en ébullition Les Echos",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnZ5SGJuWEdOT0RtQkNCNHZPdUtVQXpwbHMxSF90RnlEd3NNaVRwdkxQRDEyX2g2bUlhbi1Pa1o4WVpmWkUxSXhJU0M3RE8zVEg5RUxFVmVMRnhJSEtFTE1kVnV5Y3dHS2FiYjNudnBpN2xRWUdwQnZ4cXJaOE5JT3psdWZuTUJsdFkyYVhsb0U0QURDU3hNV0phTUFGWXA3d19RYTFKSldzbzdlWkszcEMtQ3JFZXVSMll5ZHdHSnY4dy05?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnZ5SGJuWEdOT0RtQkNCNHZPdUtVQXpwbHMxSF90RnlEd3NNaVRwdkxQRDEyX2g2bUlhbi1Pa1o4WVpmWkUxSXhJU0M3RE8zVEg5RUxFVmVMRnhJSEtFTE1kVnV5Y3dHS2FiYjNudnBpN2xRWUdwQnZ4cXJaOE5JT3psdWZuTUJsdFkyYVhsb0U0QURDU3hNV0phTUFGWXA3d19RYTFKSldzbzdlWkszcEMtQ3JFZXVSMll5ZHdHSnY4dy05?oc=5",
-      "source": "Les Echos",
-      "source_id": "politique-fr",
-      "category": "politique",
-      "published_at": "2026-10-06T15:32:42Z",
-      "image": "",
-      "score": 116.33,
-      "matched_keywords": [
-        "assemblée nationale"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMixAFBVV95cUxNTnZ5SGJuWEdOT0RtQkNCNHZPdUtVQXpwbHMxSF90RnlEd3NNaVRwdkxQRDEyX2g2bUlhbi1Pa1o4WVpmWkUxSXhJU0M3RE8zVEg5RUxFVmVMRnhJSEtFTE1kVnV5Y3dHS2FiYjNudnBpN2xRWUdwQnZ4cXJaOE5JT3psdWZuTUJsdFkyYVhsb0U0QURDU3hNV0phTUFGWXA3d19RYTFKSldzbzdlWkszcEMtQ3JFZXVSMll5ZHdHSnY4dy05?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : assemblée nationale"
-      ]
-    },
-    {
-      "id": "9bc85611b22404e3ce",
-      "title": "Une commune du Puy-de-Dôme condamnée pour avoir construit un parking sur une zone Natura 2000",
-      "summary": "Une commune du Puy-de-Dôme condamnée pour avoir construit un parking sur une zone Natura 2000 La Montagne",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOb1dZa0tFM3VtQk5maWlUZXlWS05FZ2F6c1RLNnZLU2VQNkVJd0lrU21fcDZIMVppNTJjN2VUa0NLbVZvT3FVWVFPZmdUNFhnOGJuNnRuRTVuY29OeGtxMXRhTXZsMVNnSE0xWjNPN0NJczBzN29ybTFsSDhyanBmNGZ1Z2U0djlWZW5GcTF1S3dxZFltQlNBWEtFUFUxLXMtcVFqUDA0dWdIN3lzRjFCdjZNSUx2Y2RabW0wWFVCempraVp1eURWTEwxQUZFLTZPaFNyRUFadXRiM214Rm1YUm1KTU9IT1dKcDRfVVZNS2dDeFhCS0E?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOb1dZa0tFM3VtQk5maWlUZXlWS05FZ2F6c1RLNnZLU2VQNkVJd0lrU21fcDZIMVppNTJjN2VUa0NLbVZvT3FVWVFPZmdUNFhnOGJuNnRuRTVuY29OeGtxMXRhTXZsMVNnSE0xWjNPN0NJczBzN29ybTFsSDhyanBmNGZ1Z2U0djlWZW5GcTF1S3dxZFltQlNBWEtFUFUxLXMtcVFqUDA0dWdIN3lzRjFCdjZNSUx2Y2RabW0wWFVCempraVp1eURWTEwxQUZFLTZPaFNyRUFadXRiM214Rm1YUm1KTU9IT1dKcDRfVVZNS2dDeFhCS0E?oc=5",
-      "source": "La Montagne",
-      "source_id": "news-puy-de-dome",
-      "category": "local",
-      "published_at": "2026-10-10T05:49:00Z",
-      "image": "",
-      "score": 116.31,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "1e974cce76e709ddd1e9",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi9gFBVV95cUxOb1dZa0tFM3VtQk5maWlUZXlWS05FZ2F6c1RLNnZLU2VQNkVJd0lrU21fcDZIMVppNTJjN2VUa0NLbVZvT3FVWVFPZmdUNFhnOGJuNnRuRTVuY29OeGtxMXRhTXZsMVNnSE0xWjNPN0NJczBzN29ybTFsSDhyanBmNGZ1Z2U0djlWZW5GcTF1S3dxZFltQlNBWEtFUFUxLXMtcVFqUDA0dWdIN3lzRjFCdjZNSUx2Y2RabW0wWFVCempraVp1eURWTEwxQUZFLTZPaFNyRUFadXRiM214Rm1YUm1KTU9IT1dKcDRfVVZNS2dDeFhCS0E?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
-      "id": "63006d51cd6d77aee0",
-      "title": "\"Aucun territoire n'est épargné\" : les forêts du Puy-de-Dôme ont souffert de cet été chaud et sec",
-      "summary": "\"Aucun territoire n'est épargné\" : les forêts du Puy-de-Dôme ont souffert de cet été chaud et sec La Montagne",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNeTk4MGpxdlJ6UmtIYWlzYU5sSFRMQjB1YlJPTE9JVFF2RUZTdnZkV211bFRQdkxkX0VtWF8tOHRLcHJxdXowRDBTRjVzMnRJVWNWZ1dsSC0wSlU3ei1WSHJHU1lPNlhIdnN0VFdyeXlubTR5UnlvMWRGZlRWVFBmbGZLNkx0R2U3YzhOb2VhR0EwS3l5dEs5TC0zeV9BNGtxT3NMR25OLUtFeDYyT1FfNlY3LUU3SjlmM29EeEpodmJLR0VMWHJuOXB6U0ZETGVSdTlCRzBBcldBdmdJN1pLeEtWb28ySEtMSjdBdmhNSWltbk81R2c?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNeTk4MGpxdlJ6UmtIYWlzYU5sSFRMQjB1YlJPTE9JVFF2RUZTdnZkV211bFRQdkxkX0VtWF8tOHRLcHJxdXowRDBTRjVzMnRJVWNWZ1dsSC0wSlU3ei1WSHJHU1lPNlhIdnN0VFdyeXlubTR5UnlvMWRGZlRWVFBmbGZLNkx0R2U3YzhOb2VhR0EwS3l5dEs5TC0zeV9BNGtxT3NMR25OLUtFeDYyT1FfNlY3LUU3SjlmM29EeEpodmJLR0VMWHJuOXB6U0ZETGVSdTlCRzBBcldBdmdJN1pLeEtWb28ySEtMSjdBdmhNSWltbk81R2c?oc=5",
-      "source": "La Montagne",
-      "source_id": "news-puy-de-dome",
-      "category": "local",
-      "published_at": "2026-10-10T05:04:00Z",
-      "image": "",
-      "score": 116.22,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "89c521ef4d1535c66b3c",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi9gFBVV95cUxNeTk4MGpxdlJ6UmtIYWlzYU5sSFRMQjB1YlJPTE9JVFF2RUZTdnZkV211bFRQdkxkX0VtWF8tOHRLcHJxdXowRDBTRjVzMnRJVWNWZ1dsSC0wSlU3ei1WSHJHU1lPNlhIdnN0VFdyeXlubTR5UnlvMWRGZlRWVFBmbGZLNkx0R2U3YzhOb2VhR0EwS3l5dEs5TC0zeV9BNGtxT3NMR25OLUtFeDYyT1FfNlY3LUU3SjlmM29EeEpodmJLR0VMWHJuOXB6U0ZETGVSdTlCRzBBcldBdmdJN1pLeEtWb28ySEtMSjdBdmhNSWltbk81R2c?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
-      "id": "9bc637eb9e5a3d4790",
-      "title": "Puy-de-Dôme : un club local révolutionne l'entraînement trail avec une méthode inédite",
-      "summary": "Puy-de-Dôme : un club local révolutionne l'entraînement trail avec une méthode inédite La Montagne",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWHJ3MENWRFJmLWF6OTRfNkxGS2ZoZ3BmWnZkak15UkdIODFaaEtydjJWTHNoUWtwejBoclkyR3lLejY2WlQ1cVRObFJrOGdOemQyS19EUW92OVBKUjFjdGpfNjhmTVpQZ1hJS0hrQnNoYWdPb19rSkRYRnk2aWV0bTFqOXB6czREUVdvajRRSTUxMVdJQ0NOenBSSy1vVDM2WWJFYlRuank3MjNrdjdYSmxnZnhobnR2WW9wVVZWM09BdVVTcXp2OUlqRXMtZktEOUVPaklMc2o?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWHJ3MENWRFJmLWF6OTRfNkxGS2ZoZ3BmWnZkak15UkdIODFaaEtydjJWTHNoUWtwejBoclkyR3lLejY2WlQ1cVRObFJrOGdOemQyS19EUW92OVBKUjFjdGpfNjhmTVpQZ1hJS0hrQnNoYWdPb19rSkRYRnk2aWV0bTFqOXB6czREUVdvajRRSTUxMVdJQ0NOenBSSy1vVDM2WWJFYlRuank3MjNrdjdYSmxnZnhobnR2WW9wVVZWM09BdVVTcXp2OUlqRXMtZktEOUVPaklMc2o?oc=5",
-      "source": "La Montagne",
-      "source_id": "news-puy-de-dome",
-      "category": "local",
-      "published_at": "2026-10-10T04:53:00Z",
-      "image": "",
-      "score": 116.19,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "a3b3dbf7d74dffcb194c",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi2AFBVV95cUxPWHJ3MENWRFJmLWF6OTRfNkxGS2ZoZ3BmWnZkak15UkdIODFaaEtydjJWTHNoUWtwejBoclkyR3lLejY2WlQ1cVRObFJrOGdOemQyS19EUW92OVBKUjFjdGpfNjhmTVpQZ1hJS0hrQnNoYWdPb19rSkRYRnk2aWV0bTFqOXB6czREUVdvajRRSTUxMVdJQ0NOenBSSy1vVDM2WWJFYlRuank3MjNrdjdYSmxnZnhobnR2WW9wVVZWM09BdVVTcXp2OUlqRXMtZktEOUVPaklMc2o?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
-      "id": "d4fd93b8489d124809",
-      "title": "Un automobiliste de 33 ans tué dans un accident près de Clermont, l'hécatombe se poursuit dans le Puy-de-Dôme",
-      "summary": "Un automobiliste de 33 ans tué dans un accident près de Clermont, l'hécatombe se poursuit dans le Puy-de-Dôme Actu.fr",
-      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOUU1HMm01VTBDaTNxLVlMU3MtWVJTODFJVVBWdEVBcloyS3FWTjZTc1IwME05dnhNQjV0RXFkdVAzeG16cXY1UjdhYTA3aDFicXJUNW1pZHJVS2tiUXpQYkdlWE91Q1lsNGdRT0pISUNFc0prVXhVLVROek0xYm9VZFJtTEdtbWM0MWFVS1VvVF9nV29vcGcwcG4zTXpvM0tFMldsRDY4dWRVMG5MaXoyakk3SDlvUmtTbUM2c1lmRFltdUczZDdteUNhTDRjd2dkSDMzOTBiZy1TVHkyS3VfLTRnRkNQTkpBNVdpLThIRkIzOHVpclcyWnRpZHlGOXpDS1VB?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOUU1HMm01VTBDaTNxLVlMU3MtWVJTODFJVVBWdEVBcloyS3FWTjZTc1IwME05dnhNQjV0RXFkdVAzeG16cXY1UjdhYTA3aDFicXJUNW1pZHJVS2tiUXpQYkdlWE91Q1lsNGdRT0pISUNFc0prVXhVLVROek0xYm9VZFJtTEdtbWM0MWFVS1VvVF9nV29vcGcwcG4zTXpvM0tFMldsRDY4dWRVMG5MaXoyakk3SDlvUmtTbUM2c1lmRFltdUczZDdteUNhTDRjd2dkSDMzOTBiZy1TVHkyS3VfLTRnRkNQTkpBNVdpLThIRkIzOHVpclcyWnRpZHlGOXpDS1VB?oc=5",
-      "source": "Actu.fr",
-      "source_id": "news-clermont",
-      "category": "local",
-      "published_at": "2026-10-09T07:50:20Z",
-      "image": "",
-      "score": 115.96,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "e0822c8e6ed75a782ca3",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
-      "id": "c3c164ea8a8554ce8c",
-      "title": "Un homme de 33 ans tué dans un accident de la route dans le Puy-de-Dôme",
-      "summary": "Un homme de 33 ans tué dans un accident de la route dans le Puy-de-Dôme La Montagne",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ1htLW5lUTJjWXNJRmFXNGE1cnVLbFFXeE8xbzlTeklBcC1heGZZWU05OGI2Z21pa0hiS2JoYTBiVVAycVlDOVhpVmJyZXFLU05hd2RvZGRjYWJQS3g2cEY0SlptclByNU5WVTB2MF9iT2hnNXh2aU45MHBWQUhHd3JlX1BvUGxCRjhTRzMtT1RzMDRNM0JPYTByWXJ6TWNSNmcxUlYyZHRfRGxIQlJHNjJNMVVhMng5TVdvZ1AtTFI4ZXluWlhUZ19NYVFZMXktZ2pFSHVtMGgyVjA?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ1htLW5lUTJjWXNJRmFXNGE1cnVLbFFXeE8xbzlTeklBcC1heGZZWU05OGI2Z21pa0hiS2JoYTBiVVAycVlDOVhpVmJyZXFLU05hd2RvZGRjYWJQS3g2cEY0SlptclByNU5WVTB2MF9iT2hnNXh2aU45MHBWQUhHd3JlX1BvUGxCRjhTRzMtT1RzMDRNM0JPYTByWXJ6TWNSNmcxUlYyZHRfRGxIQlJHNjJNMVVhMng5TVdvZ1AtTFI4ZXluWlhUZ19NYVFZMXktZ2pFSHVtMGgyVjA?oc=5",
-      "source": "La Montagne",
-      "source_id": "news-clermont",
-      "category": "local",
-      "published_at": "2026-10-09T06:27:00Z",
-      "image": "",
-      "score": 115.79,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi2wFBVV95cUxNQ1htLW5lUTJjWXNJRmFXNGE1cnVLbFFXeE8xbzlTeklBcC1heGZZWU05OGI2Z21pa0hiS2JoYTBiVVAycVlDOVhpVmJyZXFLU05hd2RvZGRjYWJQS3g2cEY0SlptclByNU5WVTB2MF9iT2hnNXh2aU45MHBWQUhHd3JlX1BvUGxCRjhTRzMtT1RzMDRNM0JPYTByWXJ6TWNSNmcxUlYyZHRfRGxIQlJHNjJNMVVhMng5TVdvZ1AtTFI4ZXluWlhUZ19NYVFZMXktZ2pFSHVtMGgyVjA?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
-      "id": "becb8617f929d778d9",
-      "title": "Week-end du 10-11 octobre : que faire dans le Puy-de-Dôme et l'Allier ?",
-      "summary": "Week-end du 10-11 octobre : que faire dans le Puy-de-Dôme et l'Allier ? Radio SCOOP",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaW4yek9seUJwaC1pOXZuVXZMem5uSzdIN3RweHQ4M2tNVks0aGtURWp6ZGxOdHRPUXJkLUxyd3JXZG4tSlVoYXpTMktMNzFZNk1WSVczMHh2U3hOeW9QUEJvX1U0YTM1MWZ3dEFRdk9tVURDMnZzc2p0SHFfTmF4YWlmVDJfeTRkUlRIWnNVNkhHaDRGV3B3eGVyNTFhMmgtdkxvWF9HT25SWnc?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaW4yek9seUJwaC1pOXZuVXZMem5uSzdIN3RweHQ4M2tNVks0aGtURWp6ZGxOdHRPUXJkLUxyd3JXZG4tSlVoYXpTMktMNzFZNk1WSVczMHh2U3hOeW9QUEJvX1U0YTM1MWZ3dEFRdk9tVURDMnZzc2p0SHFfTmF4YWlmVDJfeTRkUlRIWnNVNkhHaDRGV3B3eGVyNTFhMmgtdkxvWF9HT25SWnc?oc=5",
-      "source": "Radio SCOOP",
-      "source_id": "news-puy-de-dome",
-      "category": "local",
-      "published_at": "2026-10-09T15:46:00Z",
-      "image": "",
-      "score": 114.55,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
       "id": "f455569b49da86d0db",
       "title": "\"On met de la chair sur les os\" : grand salon de la généalogie et du patrimoine en Côtes-d'Armor",
       "summary": "\"On met de la chair sur les os\" : grand salon de la généalogie et du patrimoine en Côtes-d'Armor Actu.fr",
@@ -1543,7 +1545,7 @@
       "category": "genealogie",
       "published_at": "2026-10-10T08:56:41Z",
       "image": "",
-      "score": 114.5,
+      "score": 113.55,
       "matched_keywords": [
         "généalogie",
         "patrimoine"
@@ -1562,34 +1564,6 @@
       ]
     },
     {
-      "id": "add0c57e71a371d68a",
-      "title": "Puy-de-Dôme. Un jeune homme condamné après une agression « totalement gratuite » visant des personnes LGBT",
-      "summary": "Puy-de-Dôme. Un jeune homme condamné après une agression « totalement gratuite » visant des personnes LGBT Ouest-France",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNaVdqX0lMN0s0THg2OXlUVnlkcmNlRFhsdVYyeEF6WkZzRnZXbnFDbG11OTJzb2J2SFdLdXFkUmlRSWpqVDdrdjlFRDNYeXVlUVluQ2E3eGI5RkZfV2xTZHQwNTJPNFFjbDJwZlR6WXFMT1owNlVkRUdBaWlFQzQtQjBSYzBjOTBnRVAyc0FwRmF0WHd0cnI0eHR1NzNlb2x4dXVJUlR1ME85b2xHaDdWd3hYY2FRaGlSZ1VLeExJTFNvcmFfY1BrRkdna2RiRjN0UjFwUFZiV0s4NUs4M2RWd085OFZXS2poaW1fTGFTbXZ2b1VRbTZtd0xrRHJ5ZnlfZWNmRF9oRW1IWkhmTnY4aFdKazBKZw?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNaVdqX0lMN0s0THg2OXlUVnlkcmNlRFhsdVYyeEF6WkZzRnZXbnFDbG11OTJzb2J2SFdLdXFkUmlRSWpqVDdrdjlFRDNYeXVlUVluQ2E3eGI5RkZfV2xTZHQwNTJPNFFjbDJwZlR6WXFMT1owNlVkRUdBaWlFQzQtQjBSYzBjOTBnRVAyc0FwRmF0WHd0cnI0eHR1NzNlb2x4dXVJUlR1ME85b2xHaDdWd3hYY2FRaGlSZ1VLeExJTFNvcmFfY1BrRkdna2RiRjN0UjFwUFZiV0s4NUs4M2RWd085OFZXS2poaW1fTGFTbXZ2b1VRbTZtd0xrRHJ5ZnlfZWNmRF9oRW1IWkhmTnY4aFdKazBKZw?oc=5",
-      "source": "Ouest-France",
-      "source_id": "news-puy-de-dome",
-      "category": "local",
-      "published_at": "2026-10-09T14:10:11Z",
-      "image": "",
-      "score": 114.35,
-      "matched_keywords": [
-        "puy-de-dôme"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "30e85abad4b7c5eaac3f",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : puy-de-dôme"
-      ]
-    },
-    {
       "id": "3895ee38c665bffcbb",
       "title": "Comment fonctionne une primaire de parti politique en France ?",
       "summary": "Comment fonctionne une primaire de parti politique en France ? Lumni Enseignement",
@@ -1600,7 +1574,7 @@
       "category": "politique",
       "published_at": "2026-10-07T07:45:00Z",
       "image": "",
-      "score": 110.75,
+      "score": 109.8,
       "matched_keywords": [
         "primaire"
       ],
@@ -1628,7 +1602,7 @@
       "category": "politique",
       "published_at": "2026-10-07T07:00:00Z",
       "image": "",
-      "score": 110.66,
+      "score": 109.71,
       "matched_keywords": [
         "primaire"
       ],
@@ -1656,7 +1630,7 @@
       "category": "politique",
       "published_at": "2026-10-01T09:16:26Z",
       "image": "",
-      "score": 108.54,
+      "score": 107.6,
       "matched_keywords": [
         "gouvernement",
         "ina"
@@ -1685,7 +1659,7 @@
       "category": "sondages",
       "published_at": "2026-10-01T07:00:00Z",
       "image": "",
-      "score": 108.26,
+      "score": 107.6,
       "matched_keywords": [
         "sondage"
       ],
@@ -1713,7 +1687,7 @@
       "category": "politique",
       "published_at": "2026-10-03T18:30:00Z",
       "image": "",
-      "score": 108.09,
+      "score": 107.15,
       "matched_keywords": [
         "sondage"
       ],
@@ -1741,7 +1715,7 @@
       "category": "politique",
       "published_at": "2026-10-07T16:32:08Z",
       "image": "",
-      "score": 107.45,
+      "score": 106.5,
       "matched_keywords": [
         "gouvernement"
       ],
@@ -1759,23 +1733,23 @@
       ]
     },
     {
-      "id": "962fbde6aafef26cf0",
-      "title": "Invectives, retraites, soutien aux lycéens... Ce qu'il faut retenir du dernier débat de la primaire socialiste",
-      "summary": "Invectives, retraites, soutien aux lycéens... Ce qu'il faut retenir du dernier débat de la primaire socialiste franceinfo",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOckEyMi1LLWlPZWktTEdfTHRraENWUWRPLXVHNWtlclVmRFRPaDJIeWZzNFljd3FhV0VCeWptUXE1V1JaTklJQ3VvRC1SNHlINUctUkR3cmJmb1J6NzBZQ0E2RzNsSjdOZTZTbEc0TGZWcXRZMER3OTAyMXFYaFJoUHhkVWRpNUNxSzVzNUtkT1FIWkF2amRvNHRFSzFTa0xFcENDa3lNbTJ0TGczcjBEOGZzYnJRN1hBdF90cExlUXdVTFctX0pOWFF0bzIxNlZHYlNuaVNVZUN6ZnFwTXU0VnF6dENiQmZxNjlXbDlNRnZuNm5VQ1BkRkU5RG5UR0RGdTVqM0F3?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOckEyMi1LLWlPZWktTEdfTHRraENWUWRPLXVHNWtlclVmRFRPaDJIeWZzNFljd3FhV0VCeWptUXE1V1JaTklJQ3VvRC1SNHlINUctUkR3cmJmb1J6NzBZQ0E2RzNsSjdOZTZTbEc0TGZWcXRZMER3OTAyMXFYaFJoUHhkVWRpNUNxSzVzNUtkT1FIWkF2amRvNHRFSzFTa0xFcENDa3lNbTJ0TGczcjBEOGZzYnJRN1hBdF90cExlUXdVTFctX0pOWFF0bzIxNlZHYlNuaVNVZUN6ZnFwTXU0VnF6dENiQmZxNjlXbDlNRnZuNm5VQ1BkRkU5RG5UR0RGdTVqM0F3?oc=5",
-      "source": "franceinfo",
-      "source_id": "politique-partis",
-      "category": "politique",
-      "published_at": "2026-10-04T21:52:32Z",
+      "id": "8e45c22793cf21ec2c",
+      "title": "Une intelligence artificielle a déchiffré en six heures une lettre cryptée vieille de 217 ans contenant les ordres de Napoléon",
+      "summary": "Une intelligence artificielle a déchiffré en six heures une lettre cryptée vieille de 217 ans contenant les ordres de Napoléon Science et vie",
+      "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOTWItYTR4Vy11VXBGTEU2SDRLb2ZENGhGTzRoRU16eW8xUWFBLWhJRElCM19jdzRrdnpuTUQxRXZ2QzFNbnhKVFdkc0hBbW9pdHI5T3hiSExlQnJnbml5VzZkSEpSSlRvN2NDS2FPbWlCWHNhWUVEMDg2Y19QMnUtT0dhdVdETHVWMWhUaWk0cUxLTEdkdnRZME5WWXRqR3JnMnNQOFdPekJRVlRwNkxEVDVUenRJRFdfVERZTXV6QUlGeTM1RmVJVEEtQmZ4eXZXOE9ZVFJoNVAtWnBXUHNaZVpiRGl3V0lIWTdkRWJZcnROTDlXZnZRekRtMHhBVDlJU1Q3T1FLYktOYV9kek52REN2M19QMW8?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxOTWItYTR4Vy11VXBGTEU2SDRLb2ZENGhGTzRoRU16eW8xUWFBLWhJRElCM19jdzRrdnpuTUQxRXZ2QzFNbnhKVFdkc0hBbW9pdHI5T3hiSExlQnJnbml5VzZkSEpSSlRvN2NDS2FPbWlCWHNhWUVEMDg2Y19QMnUtT0dhdVdETHVWMWhUaWk0cUxLTEdkdnRZME5WWXRqR3JnMnNQOFdPekJRVlRwNkxEVDVUenRJRFdfVERZTXV6QUlGeTM1RmVJVEEtQmZ4eXZXOE9ZVFJoNVAtWnBXUHNaZVpiRGl3V0lIWTdkRWJZcnROTDlXZnZRekRtMHhBVDlJU1Q3T1FLYktOYV9kek52REN2M19QMW8?oc=5",
+      "source": "Science et vie",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T17:00:53Z",
       "image": "",
-      "score": 103.52,
+      "score": 102.96,
       "matched_keywords": [
-        "primaire"
+        "intelligence artificielle"
       ],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "b2fc8225686efa2df485",
+      "content_hash": "a083029bedfa34215fa1",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -1783,33 +1757,145 @@
       "archive_url": "",
       "archive_status": "not_needed",
       "why_for_you": [
-        "mots-clés : primaire"
+        "mots-clés : intelligence artificielle"
       ]
     },
     {
-      "id": "3455f92608cb5c088f",
-      "title": "Slipknot : Clown poursuit ses expérimentations avec l’intelligence artificielle et dévoile un nouveau morceau, Let Me Out",
-      "summary": "Slipknot : Clown poursuit ses expérimentations avec l’intelligence artificielle et dévoile un nouveau morceau, Let Me Out MetalZone",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbzh1VTIzVHhUUlFuZFAyN2lXdlA2UlJWUWQwWE81SGZ0emQ2YmxMTURaRkhXMWRDMGVsTmZhQ19aeGNlR0RwdDZUbnVwYU9fUEVpUmpFWWMxRUtpV0pJOEZFa2R0bWtLbHJvWWJoNzdDUG16Z3FkcmxtZnB5LUFNSzhUbEJXUVd4NjR3cnF2c3hiQmNUQUhBYVNtRUxpd3h2TGd6bHowdGxuNmF4ejdJa0pRcw?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPbzh1VTIzVHhUUlFuZFAyN2lXdlA2UlJWUWQwWE81SGZ0emQ2YmxMTURaRkhXMWRDMGVsTmZhQ19aeGNlR0RwdDZUbnVwYU9fUEVpUmpFWWMxRUtpV0pJOEZFa2R0bWtLbHJvWWJoNzdDUG16Z3FkcmxtZnB5LUFNSzhUbEJXUVd4NjR3cnF2c3hiQmNUQUhBYVNtRUxpd3h2TGd6bHowdGxuNmF4ejdJa0pRcw?oc=5",
-      "source": "MetalZone",
+      "id": "a0e8f3c5517300b312",
+      "title": "D’Anthropic à OpenAI, ces «gourous de l’IA» biberonnés à l’idéologie qui façonnent notre futur",
+      "summary": "D’Anthropic à OpenAI, ces «gourous de l’IA» biberonnés à l’idéologie qui façonnent notre futur Le Figaro",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSXBNRUl6aEhLTWRVekozMUtSaEdXV0w5Y0MtbFgwclVLaENibmdfR2h4MHd4UGRJc0FqQlRsMmprODI5aTBKMWJUOGNhS2Q5WUFBekxYa0QyYVl0Y3hRUnpqY2g2eXp1SENUaUtaYzR4TGtfTTJveXJPZmNLUEUxcUZaWWRmMk5CVHBFRHJpY285aDhiS0N5Y29SM1Byalh4MEhiVUNzb05UMjFIY0N2UU1rbVhHTEMzUGx0ZDRmYU9MUHhpVkU4VTVialFfYkUxRklLMFNadVE2QQ?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSXBNRUl6aEhLTWRVekozMUtSaEdXV0w5Y0MtbFgwclVLaENibmdfR2h4MHd4UGRJc0FqQlRsMmprODI5aTBKMWJUOGNhS2Q5WUFBekxYa0QyYVl0Y3hRUnpqY2g2eXp1SENUaUtaYzR4TGtfTTJveXJPZmNLUEUxcUZaWWRmMk5CVHBFRHJpY285aDhiS0N5Y29SM1Byalh4MEhiVUNzb05UMjFIY0N2UU1rbVhHTEMzUGx0ZDRmYU9MUHhpVkU4VTVialFfYkUxRklLMFNadVE2QQ?oc=5",
+      "source": "Le Figaro",
       "source_id": "news-tech-ai",
       "category": "tech",
-      "published_at": "2026-10-10T09:04:36Z",
+      "published_at": "2026-10-10T17:00:00Z",
       "image": "",
-      "score": 102.92,
+      "score": 102.96,
+      "matched_keywords": [
+        "openai"
+      ],
+      "watch_matches": [],
+      "paywalled": true,
+      "content_hash": "9e6ac2b25cb5560a1d33",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSXBNRUl6aEhLTWRVekozMUtSaEdXV0w5Y0MtbFgwclVLaENibmdfR2h4MHd4UGRJc0FqQlRsMmprODI5aTBKMWJUOGNhS2Q5WUFBekxYa0QyYVl0Y3hRUnpqY2g2eXp1SENUaUtaYzR4TGtfTTJveXJPZmNLUEUxcUZaWWRmMk5CVHBFRHJpY285aDhiS0N5Y29SM1Byalh4MEhiVUNzb05UMjFIY0N2UU1rbVhHTEMzUGx0ZDRmYU9MUHhpVkU4VTVialFfYkUxRklLMFNadVE2QQ?oc=5",
+      "archive_status": "unknown",
+      "why_for_you": [
+        "mots-clés : openai"
+      ]
+    },
+    {
+      "id": "6b99757c6e888e141a",
+      "title": "Stiring-Wendel. Il crée une centaine de titres grâce à l’intelligence artificielle",
+      "summary": "Stiring-Wendel. Il crée une centaine de titres grâce à l’intelligence artificielle Le Republicain Lorrain",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVXlHeFZwUFB6UTN6dFlaMy03Qko0Tm16cW11NXhxOWlXSjNkQnpIbFVQRmFLYkt4aGlINWJtZHNjdGxqdHRDYm9BSXphd1JvdG9IYU1tSXQzX2lNcEVQVUJGQ1Axblp4TlA0aDlrcjBROVkxZkV4WG5GT1YtZ1FPcEt5MGlGNjViN1FmSVdJTmprZTh4M1daZGtUZWhucVdBSi1JWmtGNjF2dTJQdnJQN0djTTBuOEEzZEhvZnkxSFdSRXpzSUdr?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVXlHeFZwUFB6UTN6dFlaMy03Qko0Tm16cW11NXhxOWlXSjNkQnpIbFVQRmFLYkt4aGlINWJtZHNjdGxqdHRDYm9BSXphd1JvdG9IYU1tSXQzX2lNcEVQVUJGQ1Axblp4TlA0aDlrcjBROVkxZkV4WG5GT1YtZ1FPcEt5MGlGNjViN1FmSVdJTmprZTh4M1daZGtUZWhucVdBSi1JWmtGNjF2dTJQdnJQN0djTTBuOEEzZEhvZnkxSFdSRXpzSUdr?oc=5",
+      "source": "Le Republicain Lorrain",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T16:36:31Z",
+      "image": "",
+      "score": 102.91,
       "matched_keywords": [
         "intelligence artificielle"
       ],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "719047d4f89c627bf387",
+      "content_hash": "75d347dc05ba3e22a7cb",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
       "ai_summary_model": "",
       "archive_url": "",
       "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "a545c544550b48d7d5",
+      "title": "Intelligence artificielle : comment les mairies des Yvelines s’adaptent-elles ?",
+      "summary": "Intelligence artificielle : comment les mairies des Yvelines s’adaptent-elles ? tv78",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa1RJRnY5dWNGOTA1akNvMk9sQjQtQndYeFdiak1hVWhGVkZqQVJkRUJzT3l2Y1JmMC1Mc0YyR01DRVoxNVRHcVVXdlptOFoxRjg2SHo4dkNuVFRMUHFVYnF6NTM0VmwtTDhqeGdvYWdjdmc0a3MtQTlHVEZINHZRU1RJblh3NFltMVp1Y0xBbG1DY1VCV29j?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOa1RJRnY5dWNGOTA1akNvMk9sQjQtQndYeFdiak1hVWhGVkZqQVJkRUJzT3l2Y1JmMC1Mc0YyR01DRVoxNVRHcVVXdlptOFoxRjg2SHo4dkNuVFRMUHFVYnF6NTM0VmwtTDhqeGdvYWdjdmc0a3MtQTlHVEZINHZRU1RJblh3NFltMVp1Y0xBbG1DY1VCV29j?oc=5",
+      "source": "tv78",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T16:33:56Z",
+      "image": "",
+      "score": 102.91,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "18938392339715482f",
+      "title": "Intelligence artificielle : On a demandé à Claude ce qu’il pense de l’interdiction de l’insulter",
+      "summary": "Intelligence artificielle : On a demandé à Claude ce qu’il pense de l’interdiction de l’insulter 20 Minutes",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSURQRU1VSzEzQzc4YXhyeWZrdDd3WGNhSXNCTWgyaElSTW8xZVM5MUxWYnZuVHRIcWRuRlRZMzJSejVhVWl6YlRGZENRV044U3lHV1FmTHlQQXN4RWNYVWc0UVduVmZoa2hCZG5ZMHFqSjFUSkxDbUQ2NGVRV1FadHJKU1V0UG9aeW04YXJBWmZUUklXNktKMTVGaW56c3cyRWxNUkVRVzFRSHB1NW1iejJMM2Ytem1uemhTWg?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOSURQRU1VSzEzQzc4YXhyeWZrdDd3WGNhSXNCTWgyaElSTW8xZVM5MUxWYnZuVHRIcWRuRlRZMzJSejVhVWl6YlRGZENRV044U3lHV1FmTHlQQXN4RWNYVWc0UVduVmZoa2hCZG5ZMHFqSjFUSkxDbUQ2NGVRV1FadHJKU1V0UG9aeW04YXJBWmZUUklXNktKMTVGaW56c3cyRWxNUkVRVzFRSHB1NW1iejJMM2Ytem1uemhTWg?oc=5",
+      "source": "20 Minutes",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T15:58:00Z",
+      "image": "",
+      "score": 102.83,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "3a715c480cf585bd6ff6",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "7a6ad6c712c3ee8d5e",
+      "title": "Intelligence artificielle : comment Xavier Boileau veut guider les entreprises face à la dépendance",
+      "summary": "Intelligence artificielle : comment Xavier Boileau veut guider les entreprises face à la dépendance l'Opinion",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWmlFMHNBZzVzNlhUS2o1RkN5N1JFa1haYlpTOU1BcnEtV0JvdWUzeTFoSGRWQjEwX3lEU2diTm5tSFpnWkxfbC1NTGN4eHVBa01qeUQwNHAzTTdoTklYNy0zcVlvRW5tb2pURjRFQXJ2QzFrSFduQlFTZk1HQldRc3FzdThJc0xCM19KUW16QU45WVo1T2NLU3BnQXZrbXJQTHVCS1FxR0dMS1NfaHhsRUdiMVA3UWowMzlXRUR5RWRPX1hqS0VQMFBVRnV6aXJ3aThIbEhVX3loU3VWbjV3cXBGUnBrUDItUWN1SQ?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWmlFMHNBZzVzNlhUS2o1RkN5N1JFa1haYlpTOU1BcnEtV0JvdWUzeTFoSGRWQjEwX3lEU2diTm5tSFpnWkxfbC1NTGN4eHVBa01qeUQwNHAzTTdoTklYNy0zcVlvRW5tb2pURjRFQXJ2QzFrSFduQlFTZk1HQldRc3FzdThJc0xCM19KUW16QU45WVo1T2NLU3BnQXZrbXJQTHVCS1FxR0dMS1NfaHhsRUdiMVA3UWowMzlXRUR5RWRPX1hqS0VQMFBVRnV6aXJ3aThIbEhVX3loU3VWbjV3cXBGUnBrUDItUWN1SQ?oc=5",
+      "source": "l'Opinion",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T15:00:00Z",
+      "image": "",
+      "score": 102.71,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": true,
+      "content_hash": "9eba005beccb25c0b1d4",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWmlFMHNBZzVzNlhUS2o1RkN5N1JFa1haYlpTOU1BcnEtV0JvdWUzeTFoSGRWQjEwX3lEU2diTm5tSFpnWkxfbC1NTGN4eHVBa01qeUQwNHAzTTdoTklYNy0zcVlvRW5tb2pURjRFQXJ2QzFrSFduQlFTZk1HQldRc3FzdThJc0xCM19KUW16QU45WVo1T2NLU3BnQXZrbXJQTHVCS1FxR0dMS1NfaHhsRUdiMVA3UWowMzlXRUR5RWRPX1hqS0VQMFBVRnV6aXJ3aThIbEhVX3loU3VWbjV3cXBGUnBrUDItUWN1SQ?oc=5",
+      "archive_status": "unknown",
       "why_for_you": [
         "mots-clés : intelligence artificielle"
       ]
@@ -1823,9 +1909,9 @@
       "source": "Goal.com",
       "source_id": "news-tech-ai",
       "category": "tech",
-      "published_at": "2026-10-10T08:19:39Z",
+      "published_at": "2026-10-10T14:16:18Z",
       "image": "",
-      "score": 102.82,
+      "score": 102.62,
       "matched_keywords": [
         "intelligence artificielle"
       ],
@@ -1843,6 +1929,202 @@
       ]
     },
     {
+      "id": "9e6c0830a94799f7d1",
+      "title": "Liverdun. Intelligence artificielle : Jacques Jaray décrypte cette révolution",
+      "summary": "Liverdun. Intelligence artificielle : Jacques Jaray décrypte cette révolution L'Est Républicain",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOFA1ZEJsTHBBNnpidXBFZFlORXZkM0w0TEZZeWYzVmhOVnRSenE4ek1pOFY5SnZqRHY1QUhSMTdQbXNPRnF5dnA3Wkd1QkIyaGpNNzJWaW15Z3c2NUY4ejMySmJ4REVqaDNkZGNrTlYyRUpySW9Gdzh0X09neC15dlpMX25WeEgwZWFMa3NXNXNZTlVQa0FYaUtXSGxKV0NLc0dYdVRZdHJrcURzS2xyaWhMcF9mMFBUM01XaDlXWFBtTGdHVnRmNg?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOFA1ZEJsTHBBNnpidXBFZFlORXZkM0w0TEZZeWYzVmhOVnRSenE4ek1pOFY5SnZqRHY1QUhSMTdQbXNPRnF5dnA3Wkd1QkIyaGpNNzJWaW15Z3c2NUY4ejMySmJ4REVqaDNkZGNrTlYyRUpySW9Gdzh0X09neC15dlpMX25WeEgwZWFMa3NXNXNZTlVQa0FYaUtXSGxKV0NLc0dYdVRZdHJrcURzS2xyaWhMcF9mMFBUM01XaDlXWFBtTGdHVnRmNg?oc=5",
+      "source": "L'Est Républicain",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T13:54:36Z",
+      "image": "",
+      "score": 102.57,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "09e97fa35b112fba8641",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "962fbde6aafef26cf0",
+      "title": "Invectives, retraites, soutien aux lycéens... Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+      "summary": "Invectives, retraites, soutien aux lycéens... Ce qu'il faut retenir du dernier débat de la primaire socialiste franceinfo",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOckEyMi1LLWlPZWktTEdfTHRraENWUWRPLXVHNWtlclVmRFRPaDJIeWZzNFljd3FhV0VCeWptUXE1V1JaTklJQ3VvRC1SNHlINUctUkR3cmJmb1J6NzBZQ0E2RzNsSjdOZTZTbEc0TGZWcXRZMER3OTAyMXFYaFJoUHhkVWRpNUNxSzVzNUtkT1FIWkF2amRvNHRFSzFTa0xFcENDa3lNbTJ0TGczcjBEOGZzYnJRN1hBdF90cExlUXdVTFctX0pOWFF0bzIxNlZHYlNuaVNVZUN6ZnFwTXU0VnF6dENiQmZxNjlXbDlNRnZuNm5VQ1BkRkU5RG5UR0RGdTVqM0F3?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxOckEyMi1LLWlPZWktTEdfTHRraENWUWRPLXVHNWtlclVmRFRPaDJIeWZzNFljd3FhV0VCeWptUXE1V1JaTklJQ3VvRC1SNHlINUctUkR3cmJmb1J6NzBZQ0E2RzNsSjdOZTZTbEc0TGZWcXRZMER3OTAyMXFYaFJoUHhkVWRpNUNxSzVzNUtkT1FIWkF2amRvNHRFSzFTa0xFcENDa3lNbTJ0TGczcjBEOGZzYnJRN1hBdF90cExlUXdVTFctX0pOWFF0bzIxNlZHYlNuaVNVZUN6ZnFwTXU0VnF6dENiQmZxNjlXbDlNRnZuNm5VQ1BkRkU5RG5UR0RGdTVqM0F3?oc=5",
+      "source": "franceinfo",
+      "source_id": "politique-partis",
+      "category": "politique",
+      "published_at": "2026-10-04T21:52:32Z",
+      "image": "",
+      "score": 102.57,
+      "matched_keywords": [
+        "primaire"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "b2fc8225686efa2df485",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : primaire"
+      ]
+    },
+    {
+      "id": "6294489fd4694bc119",
+      "title": "Intelligence artificielle : un modèle d’Anthropic envoie un faux signalement sur un meurtre, une affaire « grave » selon la police de Philadelphie",
+      "summary": "Intelligence artificielle : un modèle d’Anthropic envoie un faux signalement sur un meurtre, une affaire « grave » selon la police de Philadelphie Sud Ouest",
+      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxObTBsUHNfZzZmWWJ6OHBnV3lUMEYtZkJoVGZTZk5kRXZwdE9QVV9MbF9kR0t6MTA3bk5hYVNsU1VxazZoZVE0NmpoQmQ2U3VVT0Z5S2FiN2J4S2FZelRELVZiazFwcTZPZ3laeXR4bC1Rc0ZfUW5FQ2N2RFR3dUlxamozSTBMaERONXk0MUkyUFZ5TkM0bFhFcWlwejEzMWc2SndaSUl0S1ZJTmRCVW9hMWhXNG11MWZIcHhRckpUT0tUM1VOQkhfQm4yM0JLSFdsdHpMbFJPal93Unp6RkxMOHA4SGxaLTNCcVZvaWx0U2FSekF4OWQyRmhxQkc5dENoWmNYYWtvNnpyVkhxNC1RTHBDckVsYkxfMC0zRldSYnVINEFwTFdweG1DdFFPYU1sLUczY0RpY1VqMG9yODFkcmxPaUF6VXFra2c?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxObTBsUHNfZzZmWWJ6OHBnV3lUMEYtZkJoVGZTZk5kRXZwdE9QVV9MbF9kR0t6MTA3bk5hYVNsU1VxazZoZVE0NmpoQmQ2U3VVT0Z5S2FiN2J4S2FZelRELVZiazFwcTZPZ3laeXR4bC1Rc0ZfUW5FQ2N2RFR3dUlxamozSTBMaERONXk0MUkyUFZ5TkM0bFhFcWlwejEzMWc2SndaSUl0S1ZJTmRCVW9hMWhXNG11MWZIcHhRckpUT0tUM1VOQkhfQm4yM0JLSFdsdHpMbFJPal93Unp6RkxMOHA4SGxaLTNCcVZvaWx0U2FSekF4OWQyRmhxQkc5dENoWmNYYWtvNnpyVkhxNC1RTHBDckVsYkxfMC0zRldSYnVINEFwTFdweG1DdFFPYU1sLUczY0RpY1VqMG9yODFkcmxPaUF6VXFra2c?oc=5",
+      "source": "Sud Ouest",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T12:57:39Z",
+      "image": "",
+      "score": 102.46,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "9ccda8a70b9e0cc1b50f",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "73469af1e9d5eb14b2",
+      "title": "D’ici 2030, l’intelligence artificielle pourrait peser sept fois plus lourd sur l’environnement",
+      "summary": "D’ici 2030, l’intelligence artificielle pourrait peser sept fois plus lourd sur l’environnement Météocity",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSEN1X2pvUVEwMnZtVU1sQW9kRlVLMXVtVm1jaWdYeFBhTS1CeVAtdE1mX3laV0tBbnVTSVdjS2VLZnU0OG5uX3R0ZDUwaFZ5MjhRSXhpVU9xc2hEVzRXeURkdTNlMEZGd2lEU2xPenFvdzJ1dVo1SnZRWEpzSVNEeHM2UUN5amJWTTVwek1CdTNUNkpkTlRjZHE3ajg2VldsSll2Y2FaSV9naDZSdnR0SVRXeV9SLXNnc1gzcld5WC1Mcy1jRGJsdHQ1dFg2SF9sX01PWHk1cXRTQQ?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSEN1X2pvUVEwMnZtVU1sQW9kRlVLMXVtVm1jaWdYeFBhTS1CeVAtdE1mX3laV0tBbnVTSVdjS2VLZnU0OG5uX3R0ZDUwaFZ5MjhRSXhpVU9xc2hEVzRXeURkdTNlMEZGd2lEU2xPenFvdzJ1dVo1SnZRWEpzSVNEeHM2UUN5amJWTTVwek1CdTNUNkpkTlRjZHE3ajg2VldsSll2Y2FaSV9naDZSdnR0SVRXeV9SLXNnc1gzcld5WC1Mcy1jRGJsdHQ1dFg2SF9sX01PWHk1cXRTQQ?oc=5",
+      "source": "Météocity",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T12:23:00Z",
+      "image": "",
+      "score": 102.38,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "50a53235c285a08ec213",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "6ab4755b65209f85ff",
+      "title": "Afrique : la Banque mondiale appelle à investir dans le numérique afin de tirer profit de l’intelligence artificielle",
+      "summary": "Afrique : la Banque mondiale appelle à investir dans le numérique afin de tirer profit de l’intelligence artificielle Anadolu Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOM3o3aVV1MWdPT25EaDNmOGJQV0lMWTR6X1RpZWFjbHctWmNMMmpiRE83YzhFZFM3UHZmaHE3dVNBTF8zbTczdmc1WlpVMVUxU3pJR1labGNuM1VPekQ4Vy1Mc3N0bDR4SlV6aHl3S3NoU1JDOXV5TnI4UWsyRjJOcGU4LU1oZzRxSk5OVTlGbWxVWDRxbHlhWnJoUE5INkR4dGEyOEJ1Wk9OckpFMDNSVTI1UXNCU3B3MTZRU01GcFBUTGxMWlVqMlFudFhuUXA4STdFRkdKNGdObHg3VVdSdlBxa1N6dDdTbm93UVNkQmwwM0VqMW45aGVqRGY3cl9lcXhBQjhWSnd3Q2F0aEE?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxOM3o3aVV1MWdPT25EaDNmOGJQV0lMWTR6X1RpZWFjbHctWmNMMmpiRE83YzhFZFM3UHZmaHE3dVNBTF8zbTczdmc1WlpVMVUxU3pJR1labGNuM1VPekQ4Vy1Mc3N0bDR4SlV6aHl3S3NoU1JDOXV5TnI4UWsyRjJOcGU4LU1oZzRxSk5OVTlGbWxVWDRxbHlhWnJoUE5INkR4dGEyOEJ1Wk9OckpFMDNSVTI1UXNCU3B3MTZRU01GcFBUTGxMWlVqMlFudFhuUXA4STdFRkdKNGdObHg3VVdSdlBxa1N6dDdTbm93UVNkQmwwM0VqMW45aGVqRGY3cl9lcXhBQjhWSnd3Q2F0aEE?oc=5",
+      "source": "Anadolu Ajansı",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T11:48:10Z",
+      "image": "",
+      "score": 102.31,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "9b48dd95866c3df5a476",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "8f4fa010cc432892e1",
+      "title": "Intelligence artificielle et expériences multisensorielles au cœur de la Science Fair 2026",
+      "summary": "Intelligence artificielle et expériences multisensorielles au cœur de la Science Fair 2026 lecourrier.vn",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNTRSZkM5ajg3S3RPRHBjWXZPLWhNSGpPTndLbU14OXNsN29SY3pMRE5HM0dyX3lFbFdfQkdQNTg0ZXc0M0FSSk1PakN4WGNnOFh5TnM1SUtfY0R6UEFUb1R0TmFxV2l0QlA0eXQ1bHphdjRjWUpWU1FyZnNPOFZNTmVDRm9nNkZCUnQwaVJTNDJ2QUx5YWFLYnEtWGxzVEEza21UMDNmejlXZmZLN2NQdTBud0FCYjBnLXZHaXZOMnNSTWJpOThGYmFR?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNTRSZkM5ajg3S3RPRHBjWXZPLWhNSGpPTndLbU14OXNsN29SY3pMRE5HM0dyX3lFbFdfQkdQNTg0ZXc0M0FSSk1PakN4WGNnOFh5TnM1SUtfY0R6UEFUb1R0TmFxV2l0QlA0eXQ1bHphdjRjWUpWU1FyZnNPOFZNTmVDRm9nNkZCUnQwaVJTNDJ2QUx5YWFLYnEtWGxzVEEza21UMDNmejlXZmZLN2NQdTBud0FCYjBnLXZHaXZOMnNSTWJpOThGYmFR?oc=5",
+      "source": "lecourrier.vn",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T10:17:00Z",
+      "image": "",
+      "score": 102.12,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "5a320836fb7070d67c69",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
+      "id": "c16561e5dc1f5187a3",
+      "title": "«L’intelligence artificielle ne nous fait pas du tout peur : nous avons d’ailleurs décidé de ne pas réduire les embauches»",
+      "summary": "«L’intelligence artificielle ne nous fait pas du tout peur : nous avons d’ailleurs décidé de ne pas réduire les embauches» Le Figaro",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONnEtdnZReTN3aW5FLTFoMU5BWXFfR0ZfbG0ybDB3b0xiTzJpb1RHT1czZGU2eWtZeFh3bUlxdmZzNXc0RGJxVGVCZWM2WHB0ekdSU180WVNoQmR3ZV9vczBGNm1LQkRGRkdJWF9FMUVfblpXNmpodk5ucFhEZmFzVUNUNDRpcmtaRjJNS1U5R2MtWE9pYUlGWXAzM0VkRW0zQVAtQkdfcThERkVlX3ZqZjdZQ1hzMDhnbnVqUVpWa0VmUUl6ZWE4NFQ1UFRyTTkyZk14TW9QTm1wLXNkRmxLalVZSklvd3BaWjMyd0VCTUFWYlVpVm1oTUdtc0xJQzZ4ZlE?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxONnEtdnZReTN3aW5FLTFoMU5BWXFfR0ZfbG0ybDB3b0xiTzJpb1RHT1czZGU2eWtZeFh3bUlxdmZzNXc0RGJxVGVCZWM2WHB0ekdSU180WVNoQmR3ZV9vczBGNm1LQkRGRkdJWF9FMUVfblpXNmpodk5ucFhEZmFzVUNUNDRpcmtaRjJNS1U5R2MtWE9pYUlGWXAzM0VkRW0zQVAtQkdfcThERkVlX3ZqZjdZQ1hzMDhnbnVqUVpWa0VmUUl6ZWE4NFQ1UFRyTTkyZk14TW9QTm1wLXNkRmxLalVZSklvd3BaWjMyd0VCTUFWYlVpVm1oTUdtc0xJQzZ4ZlE?oc=5",
+      "source": "Le Figaro",
+      "source_id": "news-tech-ai",
+      "category": "tech",
+      "published_at": "2026-10-10T10:00:00Z",
+      "image": "",
+      "score": 102.09,
+      "matched_keywords": [
+        "intelligence artificielle"
+      ],
+      "watch_matches": [],
+      "paywalled": true,
+      "content_hash": "df85c4d68e30d3a2188c",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMiggJBVV95cUxONnEtdnZReTN3aW5FLTFoMU5BWXFfR0ZfbG0ybDB3b0xiTzJpb1RHT1czZGU2eWtZeFh3bUlxdmZzNXc0RGJxVGVCZWM2WHB0ekdSU180WVNoQmR3ZV9vczBGNm1LQkRGRkdJWF9FMUVfblpXNmpodk5ucFhEZmFzVUNUNDRpcmtaRjJNS1U5R2MtWE9pYUlGWXAzM0VkRW0zQVAtQkdfcThERkVlX3ZqZjdZQ1hzMDhnbnVqUVpWa0VmUUl6ZWE4NFQ1UFRyTTkyZk14TW9QTm1wLXNkRmxLalVZSklvd3BaWjMyd0VCTUFWYlVpVm1oTUdtc0xJQzZ4ZlE?oc=5",
+      "archive_status": "unknown",
+      "why_for_you": [
+        "mots-clés : intelligence artificielle"
+      ]
+    },
+    {
       "id": "15ed7b2da3166a6606",
       "title": "Elle va prendre de plus en plus de place dans nos vies : l’intelligence artificielle peut-elle se retourner contre son créateur",
       "summary": "Elle va prendre de plus en plus de place dans nos vies : l’intelligence artificielle peut-elle se retourner contre son créateur Midi Libre",
@@ -1853,69 +2135,13 @@
       "category": "tech",
       "published_at": "2026-10-10T06:03:00Z",
       "image": "",
-      "score": 102.54,
+      "score": 101.59,
       "matched_keywords": [
         "intelligence artificielle"
       ],
       "watch_matches": [],
       "paywalled": false,
       "content_hash": "721ac00acaad206794af",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "763d9125ed468423d3",
-      "title": "L’intelligence artificielle améliore le dépistage, mais ses bénéfices restent à confirmer",
-      "summary": "L’intelligence artificielle améliore le dépistage, mais ses bénéfices restent à confirmer Docteur Imago",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdkttUjdQNjBUMG5kNGZmeEtOdU1wRXZVSUFudkc1TXdaMVBJU0dRekZvUHBfaFhHTHI3b1NJRUNKcE84STFiWGNqR1BnemtRRjJ0b0R1Mm4tZWdyZV84TklQXzIwYllWOFVRM05OSXM0RTE1VDdGQl9ySy1oektEVWdOS0gxMWozUWdmcXFVNFp2UlFidFdlcGZxNS16aG10aGdISUpHU1ZZRXBZU1NnUU9aeGM3czJ5UXJwTEoxam9EbmlKV1pHak5HVlhqa2pwWWpJekNjdw?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNdkttUjdQNjBUMG5kNGZmeEtOdU1wRXZVSUFudkc1TXdaMVBJU0dRekZvUHBfaFhHTHI3b1NJRUNKcE84STFiWGNqR1BnemtRRjJ0b0R1Mm4tZWdyZV84TklQXzIwYllWOFVRM05OSXM0RTE1VDdGQl9ySy1oektEVWdOS0gxMWozUWdmcXFVNFp2UlFidFdlcGZxNS16aG10aGdISUpHU1ZZRXBZU1NnUU9aeGM3czJ5UXJwTEoxam9EbmlKV1pHak5HVlhqa2pwWWpJekNjdw?oc=5",
-      "source": "Docteur Imago",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-10T05:02:28Z",
-      "image": "",
-      "score": 102.41,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "e3aa5e645efdfc566696",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "1ec915132fbd1d2667",
-      "title": "« Apprendre à composer avec » : quatre réunions publiques portant sur l’intelligence artificielle sont prévues à Bréhal",
-      "summary": "« Apprendre à composer avec » : quatre réunions publiques portant sur l’intelligence artificielle sont prévues à Bréhal Ouest-France",
-      "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNb3lRLS0wRDdoWWVfVGlNWVdWZi1wWHduMzN5bzQtYTU1eXJVcWRMTEdGN3A4UmpXVXAwOGUxUDFON3haVDNXTmpCaXA3MThxZ0VicFVNbHJySFFuSmZzSUZmZm56VUJHVHh6eEtuVDZxeElxcjlYNXhCcWpXYlBwNFlqc2RCWExkS1V6ZGRZaWx6UF9UQTE0UUpCYm5Nbkl2bmwxTks2dHQ2YW92Y2g5UjNNOERSSzQwLV96c2htdW9yWllfSVA4QVB0eWVpMUd1Zk9YRXlKVWotZ29uZGRpak1wX3dMSnVfeE9JOTktQ18tejZicXZlVS1mNzhMYktBNzJ0M1gycDVPTmxIUjd3dEIyMGpWNFNkbGJ6NWFuYkVwNkZJc3JB?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxNb3lRLS0wRDdoWWVfVGlNWVdWZi1wWHduMzN5bzQtYTU1eXJVcWRMTEdGN3A4UmpXVXAwOGUxUDFON3haVDNXTmpCaXA3MThxZ0VicFVNbHJySFFuSmZzSUZmZm56VUJHVHh6eEtuVDZxeElxcjlYNXhCcWpXYlBwNFlqc2RCWExkS1V6ZGRZaWx6UF9UQTE0UUpCYm5Nbkl2bmwxTks2dHQ2YW92Y2g5UjNNOERSSzQwLV96c2htdW9yWllfSVA4QVB0eWVpMUd1Zk9YRXlKVWotZ29uZGRpak1wX3dMSnVfeE9JOTktQ18tejZicXZlVS1mNzhMYktBNzJ0M1gycDVPTmxIUjd3dEIyMGpWNFNkbGJ6NWFuYkVwNkZJc3JB?oc=5",
-      "source": "Ouest-France",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-10T04:59:01Z",
-      "image": "",
-      "score": 102.41,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "e22a27cfacd7f9f2f087",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -1937,7 +2163,7 @@
       "category": "tech",
       "published_at": "2026-10-10T04:47:08Z",
       "image": "",
-      "score": 102.38,
+      "score": 101.43,
       "matched_keywords": [
         "intelligence artificielle"
       ],
@@ -1965,7 +2191,7 @@
       "category": "tech",
       "published_at": "2026-10-10T04:36:59Z",
       "image": "",
-      "score": 102.36,
+      "score": 101.41,
       "matched_keywords": [
         "intelligence artificielle"
       ],
@@ -1983,34 +2209,6 @@
       ]
     },
     {
-      "id": "70ee8409648bb49ebf",
-      "title": "Nouveau coup de massue d’OpenAI sur les mathématiciens : « Ils ont annihilé mon domaine de recherche »",
-      "summary": "Nouveau coup de massue d’OpenAI sur les mathématiciens : « Ils ont annihilé mon domaine de recherche » Le Monde.fr",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxONU5rMEcySklTVW9uOGk3bDVxWmVvLW92OV9EMzU1N0tyZHM1S0RCS29keVdFNWtJRFBNTlF6cHBicGNoQmp2emdBaFhBQk0xclNqSTNXcmY5cEY4V0VlcXhaRTBqQ2RjMXluUDY2MmdPZXE5Xy0xeWFndXc0WlI2bkpRWXVTVkVkSmh3WjRvSTZwMXphTnZoREM0MGxaY0kzeW9ZTndIenRiUEh0UVBwMnFPOUZlWFVWb2lfb29LbXFzZG96Y216ZUloUzZzb2pzWVpMSXdUYm1UWmQzWnVpUVBSaU9ZdVo2b1FiNnZCWTliNnVwNmIzcDRWNnE?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxONU5rMEcySklTVW9uOGk3bDVxWmVvLW92OV9EMzU1N0tyZHM1S0RCS29keVdFNWtJRFBNTlF6cHBicGNoQmp2emdBaFhBQk0xclNqSTNXcmY5cEY4V0VlcXhaRTBqQ2RjMXluUDY2MmdPZXE5Xy0xeWFndXc0WlI2bkpRWXVTVkVkSmh3WjRvSTZwMXphTnZoREM0MGxaY0kzeW9ZTndIenRiUEh0UVBwMnFPOUZlWFVWb2lfb29LbXFzZG96Y216ZUloUzZzb2pzWVpMSXdUYm1UWmQzWnVpUVBSaU9ZdVo2b1FiNnZCWTliNnVwNmIzcDRWNnE?oc=5",
-      "source": "Le Monde.fr",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-10T04:30:09Z",
-      "image": "",
-      "score": 102.34,
-      "matched_keywords": [
-        "openai"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "a5e22d2212ff2cedd1c7",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi_AFBVV95cUxONU5rMEcySklTVW9uOGk3bDVxWmVvLW92OV9EMzU1N0tyZHM1S0RCS29keVdFNWtJRFBNTlF6cHBicGNoQmp2emdBaFhBQk0xclNqSTNXcmY5cEY4V0VlcXhaRTBqQ2RjMXluUDY2MmdPZXE5Xy0xeWFndXc0WlI2bkpRWXVTVkVkSmh3WjRvSTZwMXphTnZoREM0MGxaY0kzeW9ZTndIenRiUEh0UVBwMnFPOUZlWFVWb2lfb29LbXFzZG96Y216ZUloUzZzb2pzWVpMSXdUYm1UWmQzWnVpUVBSaU9ZdVo2b1FiNnZCWTliNnVwNmIzcDRWNnE?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : openai"
-      ]
-    },
-    {
       "id": "556f8177ed9d223599",
       "title": "Présidentielle 2027 : les cinq candidats de la primaire socialiste se sont affrontés à l'occasion d'un dernier débat télévisé avant le scrutin",
       "summary": "Présidentielle 2027 : les cinq candidats de la primaire socialiste se sont affrontés à l'occasion d'un dernier débat télévisé avant le scrutin franceinfo",
@@ -2021,7 +2219,7 @@
       "category": "politique",
       "published_at": "2026-10-04T11:54:24Z",
       "image": "",
-      "score": 102.27,
+      "score": 101.32,
       "matched_keywords": [
         "primaire"
       ],
@@ -2049,7 +2247,7 @@
       "category": "politique",
       "published_at": "2026-10-04T08:24:00Z",
       "image": "",
-      "score": 101.83,
+      "score": 100.89,
       "matched_keywords": [
         "primaire"
       ],
@@ -2067,51 +2265,23 @@
       ]
     },
     {
-      "id": "bb0a77c3cc98c6510e",
-      "title": "La Chine adopte de nouvelles orientations encadrant le développement de l’intelligence artificielle",
-      "summary": "La Chine adopte de nouvelles orientations encadrant le développement de l’intelligence artificielle Le Figaro",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOV0ZkU2xHME1HUmdwcVJoUHYxMEF6SHRxM3FxT2FYbjZmSWVhYXA4aTJuSGhyYS1kelhVUi1YeVE2SWJyc2RzYzhaOVY3Y295MlNjVHJueWoxd29CZWxaOGJQMjc4ZGhsVEQ2ZGNSNWNRUThwdENhZERPdE1iOWF1c2FDX3Myc3BYZ0dnUFIwSDJOakFsQlR5WVA5VDh6bnVET291N09xa2ZlYUQwUFdRVTBtanlxUnFsaTRVdGZHV3ozUy1tN084VzMzS0pRbkNGT1dZeTRQb2o1dEhtdUFfSTdveVU?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOV0ZkU2xHME1HUmdwcVJoUHYxMEF6SHRxM3FxT2FYbjZmSWVhYXA4aTJuSGhyYS1kelhVUi1YeVE2SWJyc2RzYzhaOVY3Y295MlNjVHJueWoxd29CZWxaOGJQMjc4ZGhsVEQ2ZGNSNWNRUThwdENhZERPdE1iOWF1c2FDX3Myc3BYZ0dnUFIwSDJOakFsQlR5WVA5VDh6bnVET291N09xa2ZlYUQwUFdRVTBtanlxUnFsaTRVdGZHV3ozUy1tN084VzMzS0pRbkNGT1dZeTRQb2o1dEhtdUFfSTdveVU?oc=5",
-      "source": "Le Figaro",
+      "id": "eaff9f7ecbef6bea12",
+      "title": "Intelligence artificielle en santé. Futur de nos cerveaux : perdons-nous l’esprit ?",
+      "summary": "Intelligence artificielle en santé. Futur de nos cerveaux : perdons-nous l’esprit ? Université de Montpellier",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSUV4UEppS1dWOV9KZkw0M0F5RWFfM05uZFNJcGtzX0Jtekx4ZWZMdGNVNWEwV2MzSXhLb2hPakpUenpxTVZiSGUxT0NQakIyZjZORHN4cDVTcVQtZF9lb21uTzVFOUJjWGxqRUFYRWZtUnp0NnJUMW1CMU1vTy0zLVhCQUlKaDVILWk4WFVrQzcyaGRxZEdEOTZHcjNVcWNwS0ZuZ21NSFhmaGVMRDI2TzZR?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSUV4UEppS1dWOV9KZkw0M0F5RWFfM05uZFNJcGtzX0Jtekx4ZWZMdGNVNWEwV2MzSXhLb2hPakpUenpxTVZiSGUxT0NQakIyZjZORHN4cDVTcVQtZF9lb21uTzVFOUJjWGxqRUFYRWZtUnp0NnJUMW1CMU1vTy0zLVhCQUlKaDVILWk4WFVrQzcyaGRxZEdEOTZHcjNVcWNwS0ZuZ21NSFhmaGVMRDI2TzZR?oc=5",
+      "source": "Université de Montpellier",
       "source_id": "news-tech-ai",
       "category": "tech",
-      "published_at": "2026-10-09T19:24:13Z",
+      "published_at": "2026-10-09T12:57:18Z",
       "image": "",
-      "score": 101.21,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "32caa8305e0d8d21a0a5",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi5AFBVV95cUxOV0ZkU2xHME1HUmdwcVJoUHYxMEF6SHRxM3FxT2FYbjZmSWVhYXA4aTJuSGhyYS1kelhVUi1YeVE2SWJyc2RzYzhaOVY3Y295MlNjVHJueWoxd29CZWxaOGJQMjc4ZGhsVEQ2ZGNSNWNRUThwdENhZERPdE1iOWF1c2FDX3Myc3BYZ0dnUFIwSDJOakFsQlR5WVA5VDh6bnVET291N09xa2ZlYUQwUFdRVTBtanlxUnFsaTRVdGZHV3ozUy1tN084VzMzS0pRbkNGT1dZeTRQb2o1dEhtdUFfSTdveVU?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "4fdf98de7a08b7b5de",
-      "title": "Ici l'Europe - L'intelligence artificielle défie l'humanité : l'Europe doit garder le contrôle sur l'IA",
-      "summary": "Ici l'Europe - L'intelligence artificielle défie l'humanité : l'Europe doit garder le contrôle sur l'IA France 24",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPbGlBazN0WG0yOTVwRmJUQTY5SjFOV2p2bUtvUjlFSGR0VE9JMzJWVFFEckgwYUktTThnU1I1cEtRRnJMYUpBNE0tNkxxQ2t6Zzg0aHR5VVQ4SGRSVVAyclZrdm52T2FRRTE3ZTlPdVB2Wk9iN1dKYW5GV3BSaEw1WWVhS1NwQzl2bDRJOW0xVWktYTRaWHl0eWE3by1nbmVWR0tWd3hTaGxPdFdCRVFwWE9MbFQxMEJ2aDZ2WnVFVkZFR0VBRzZxeC1xSHJDeHJKYzNYU3RyeldIbUNoY1JyRV9wZjV1Ulg0UWNIdVBncVJuMXZwWDdiWXB3?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPbGlBazN0WG0yOTVwRmJUQTY5SjFOV2p2bUtvUjlFSGR0VE9JMzJWVFFEckgwYUktTThnU1I1cEtRRnJMYUpBNE0tNkxxQ2t6Zzg0aHR5VVQ4SGRSVVAyclZrdm52T2FRRTE3ZTlPdVB2Wk9iN1dKYW5GV3BSaEw1WWVhS1NwQzl2bDRJOW0xVWktYTRaWHl0eWE3by1nbmVWR0tWd3hTaGxPdFdCRVFwWE9MbFQxMEJ2aDZ2WnVFVkZFR0VBRzZxeC1xSHJDeHJKYzNYU3RyeldIbUNoY1JyRV9wZjV1Ulg0UWNIdVBncVJuMXZwWDdiWXB3?oc=5",
-      "source": "France 24",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-09T16:00:44Z",
-      "image": "",
-      "score": 100.78,
+      "score": 99.46,
       "matched_keywords": [
         "intelligence artificielle"
       ],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "936c439a4c2a05590c73",
+      "content_hash": "a064d46a9e02d8b47e00",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -2120,146 +2290,6 @@
       "archive_status": "not_needed",
       "why_for_you": [
         "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "6eee4e7383e1ade619",
-      "title": "L’intelligence artificielle ne doit pas effacer la création humaine",
-      "summary": "L’intelligence artificielle ne doit pas effacer la création humaine Ville de Sète",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSFlqMlY2YjIwUy1WcV9MNjdrSm5fbzJkTzZOVlV4UmtKQWRneHBYM282Sl9hXzhxMVJUeC0tWFptSzYtcW15U2xZWmQ3R0RKS0JpV3MtRGxQTkVqZUpINEFlSXF5UHRJYWwwbkVFNGNJemV1WmEyQjlPWkM3eWV0ck41ZmZrZGxlUldNQW9hUHF6eU1rc09DWW40VQ?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSFlqMlY2YjIwUy1WcV9MNjdrSm5fbzJkTzZOVlV4UmtKQWRneHBYM282Sl9hXzhxMVJUeC0tWFptSzYtcW15U2xZWmQ3R0RKS0JpV3MtRGxQTkVqZUpINEFlSXF5UHRJYWwwbkVFNGNJemV1WmEyQjlPWkM3eWV0ck41ZmZrZGxlUldNQW9hUHF6eU1rc09DWW40VQ?oc=5",
-      "source": "Ville de Sète",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-09T15:12:37Z",
-      "image": "",
-      "score": 100.68,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "c56b0935833f33d706",
-      "title": "Emploi : 75.000 CDI en moins par an à cause de l'intelligence artificielle",
-      "summary": "Emploi : 75.000 CDI en moins par an à cause de l'intelligence artificielle TF1 Info",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPR3lZclRjT0xQXzVXWFRfTTN3TDl0WTBYazF0MFdvV01MMHc4NDZtVHdQNVNtM05PYXp4V0dMdG16RkdjSFFfbTlGQ1V4eG42RjFvZ3pQalJSeERyMV9sQXBoaE9iNHRBWXRGczg3SmxzV2gtQ1RqbnNOMXFFVWV4UWN4a0t1WjEtUzNlanFpV2k4enkyejhtY1F5Wk5nV3ZUSEVtakc2WmtieXZ4WlA1M3hucm42b1E?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPR3lZclRjT0xQXzVXWFRfTTN3TDl0WTBYazF0MFdvV01MMHc4NDZtVHdQNVNtM05PYXp4V0dMdG16RkdjSFFfbTlGQ1V4eG42RjFvZ3pQalJSeERyMV9sQXBoaE9iNHRBWXRGczg3SmxzV2gtQ1RqbnNOMXFFVWV4UWN4a0t1WjEtUzNlanFpV2k4enkyejhtY1F5Wk5nV3ZUSEVtakc2WmtieXZ4WlA1M3hucm42b1E?oc=5",
-      "source": "TF1 Info",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-09T14:36:11Z",
-      "image": "",
-      "score": 100.61,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "092cc62571af44b4b4",
-      "title": "Le chiffre d’affaires d’OpenAI se révèle inférieur de 20 milliards de dollars aux projections",
-      "summary": "Le chiffre d’affaires d’OpenAI se révèle inférieur de 20 milliards de dollars aux projections Courrier international",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQ0FrbmpYRjlNdzZsOGNDTFd1OUN2ZnE0WXREd1NCeXdkZmJGUlIwdlJxRE1MRzVDeXlrOVlQWF9NNmJvYm13ZDRTMld4alRNZy04QmRZQ2xDV0gtdUhyX2k5VDFNV0p0QkozUFBOTjVqM0tZTEZwVTBSOVAxVnlvamVrZjFKSnhMazZWRWRFX0dnNG0yanprOFVsN1hOeUZQazlxYzNMVWszRGJYUUNMNXRQTENfRllFemJKanJkNEpjeUxDQ2VKQUxLNVlfbDRtbFpvZVpGQ1dhT3Bidi1ybV96RQ?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQ0FrbmpYRjlNdzZsOGNDTFd1OUN2ZnE0WXREd1NCeXdkZmJGUlIwdlJxRE1MRzVDeXlrOVlQWF9NNmJvYm13ZDRTMld4alRNZy04QmRZQ2xDV0gtdUhyX2k5VDFNV0p0QkozUFBOTjVqM0tZTEZwVTBSOVAxVnlvamVrZjFKSnhMazZWRWRFX0dnNG0yanprOFVsN1hOeUZQazlxYzNMVWszRGJYUUNMNXRQTENfRllFemJKanJkNEpjeUxDQ2VKQUxLNVlfbDRtbFpvZVpGQ1dhT3Bidi1ybV96RQ?oc=5",
-      "source": "Courrier international",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-09T14:32:30Z",
-      "image": "",
-      "score": 100.6,
-      "matched_keywords": [
-        "openai"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "943a971d2ab90435c7eb",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : openai"
-      ]
-    },
-    {
-      "id": "2005eee24902e2589f",
-      "title": "Colloque d’éthique hospitalière - « L’intelligence artificielle : partenaire du soin ? »",
-      "summary": "Colloque d’éthique hospitalière - « L’intelligence artificielle : partenaire du soin ? » Mairie d'Aix-en-Provence",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQnJ0Vk9UZjhlaXpyMEFfWW9mbFc1T19TNkZzUDJyNnpGWm1MNjY3T0NHZnhfcHJDOXhyLWJ3WjNzNGxJczQ2MHZwZVhvMk9uemN2Ujh1blFEMjc5U2JZdTN0YTJfU3V5cjRpSlhWS1Z1aGNVX0lKcjNOYlVXZHpjRGRxZ2lBcXBLbGJFTHZqOHUxUlFneGROYXM4MExQeWZTR1ExeTdEUDNoY2s?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQnJ0Vk9UZjhlaXpyMEFfWW9mbFc1T19TNkZzUDJyNnpGWm1MNjY3T0NHZnhfcHJDOXhyLWJ3WjNzNGxJczQ2MHZwZVhvMk9uemN2Ujh1blFEMjc5U2JZdTN0YTJfU3V5cjRpSlhWS1Z1aGNVX0lKcjNOYlVXZHpjRGRxZ2lBcXBLbGJFTHZqOHUxUlFneGROYXM4MExQeWZTR1ExeTdEUDNoY2s?oc=5",
-      "source": "Mairie d'Aix-en-Provence",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-09T08:21:16Z",
-      "image": "",
-      "score": 99.83,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "e42e0c1f5f2a7a7a33fd",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
-      "id": "fdb5105004625aacd7",
-      "title": "Annonces d’OpenAI sur les maths : «L’aventure scientifique ne va pas s’arrêter avec l’IA, elle va s’accélérer",
-      "summary": "Annonces d’OpenAI sur les maths : «L’aventure scientifique ne va pas s’arrêter avec l’IA, elle va s’accélérer Libération",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUFpLVFRNWHd2OFYzSFdaMWlLUkFCb3l5UlV5b042VkhENjFRak0yUmZaSHNGOTA4WEZUZGJoRExQTTVROWluODFZQjM0S2VFeWh0LU9ISDB5dW9uZWFzYXhZM2VCc3JrdUQtOFFOZExVenUxel9DYkRub0swSzF1WG4xU3loOWpWY3BuRTZEdDJFNm9hbFVZazh5b3FoNlFhUnFobU5sbzU5OFNhZHhMYkpOU0s3bk9fQmRTUktSc3F4bExQX2NlNW4wR05kY3NxSTRGUDVhckxfTUJibW5fUG5fb1dRNUlYQnJ2WXdrbUxscXFkV285N0FwOGtkYl80UXc?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUFpLVFRNWHd2OFYzSFdaMWlLUkFCb3l5UlV5b042VkhENjFRak0yUmZaSHNGOTA4WEZUZGJoRExQTTVROWluODFZQjM0S2VFeWh0LU9ISDB5dW9uZWFzYXhZM2VCc3JrdUQtOFFOZExVenUxel9DYkRub0swSzF1WG4xU3loOWpWY3BuRTZEdDJFNm9hbFVZazh5b3FoNlFhUnFobU5sbzU5OFNhZHhMYkpOU0s3bk9fQmRTUktSc3F4bExQX2NlNW4wR05kY3NxSTRGUDVhckxfTUJibW5fUG5fb1dRNUlYQnJ2WXdrbUxscXFkV285N0FwOGtkYl80UXc?oc=5",
-      "source": "Libération",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-09T05:10:00Z",
-      "image": "",
-      "score": 99.43,
-      "matched_keywords": [
-        "openai"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "e98ba569dc499559f403",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : openai"
       ]
     },
     {
@@ -2273,7 +2303,7 @@
       "category": "tech",
       "published_at": "2026-10-09T04:32:05Z",
       "image": "",
-      "score": 99.35,
+      "score": 98.4,
       "matched_keywords": [
         "intelligence artificielle"
       ],
@@ -2291,6 +2321,34 @@
       ]
     },
     {
+      "id": "c85c4b3e89f81911b8",
+      "title": "Entretien. \" En généalogie, il est indispensable de vérifier ses sources\" : les conseils de Victoire Delory",
+      "summary": "Entretien. \" En généalogie, il est indispensable de vérifier ses sources\" : les conseils de Victoire Delory lamanchelibre.fr",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNLW04QmJWeFdjdFdpX0FRU1R0YTFuc3pHUUJuaS1ZS1NYbG1JeEltT1dSTVhpamMyajlJRmZ0dHkzZlNOUnZqcGQySndZZXRySDI2bDlMY1JTY0loUEhrc2FoZmFWbzIwSDNlUEM5X1ktbG9rN3NoUnItSjN1blRLaDVxMnlJUU1PRG1ZUUNzYUpScmpMNERTZm1oXy1jbTdMTWRUV3FJbE5ZcERDVExNRWNZazhWRURwN2VoeEJQTjdaamZzSHhySjF3MFZ3OWI3MFVKLWNOWVdYTXFyS3c0Yw?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNLW04QmJWeFdjdFdpX0FRU1R0YTFuc3pHUUJuaS1ZS1NYbG1JeEltT1dSTVhpamMyajlJRmZ0dHkzZlNOUnZqcGQySndZZXRySDI2bDlMY1JTY0loUEhrc2FoZmFWbzIwSDNlUEM5X1ktbG9rN3NoUnItSjN1blRLaDVxMnlJUU1PRG1ZUUNzYUpScmpMNERTZm1oXy1jbTdMTWRUV3FJbE5ZcERDVExNRWNZazhWRURwN2VoeEJQTjdaamZzSHhySjF3MFZ3OWI3MFVKLWNOWVdYTXFyS3c0Yw?oc=5",
+      "source": "lamanchelibre.fr",
+      "source_id": "news-genealogie",
+      "category": "genealogie",
+      "published_at": "2026-10-10T10:30:00Z",
+      "image": "",
+      "score": 97.75,
+      "matched_keywords": [
+        "généalogie"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "fd41105e842c1d4d861a",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : généalogie"
+      ]
+    },
+    {
       "id": "3daed193acad3e59b3",
       "title": "Des paysans aux notables, ce passionné de généalogie raconte les familles du Cantal",
       "summary": "Des paysans aux notables, ce passionné de généalogie raconte les familles du Cantal Actu.fr",
@@ -2301,7 +2359,7 @@
       "category": "genealogie",
       "published_at": "2026-10-10T08:26:01Z",
       "image": "",
-      "score": 98.44,
+      "score": 97.49,
       "matched_keywords": [
         "généalogie"
       ],
@@ -2329,7 +2387,7 @@
       "category": "genealogie",
       "published_at": "2026-10-10T07:00:03Z",
       "image": "",
-      "score": 98.26,
+      "score": 97.31,
       "matched_keywords": [
         "état civil"
       ],
@@ -2357,7 +2415,7 @@
       "category": "genealogie",
       "published_at": "2026-10-10T03:56:00Z",
       "image": "",
-      "score": 97.87,
+      "score": 96.93,
       "matched_keywords": [
         "archives"
       ],
@@ -2385,7 +2443,7 @@
       "category": "genealogie",
       "published_at": "2026-10-10T03:34:00Z",
       "image": "",
-      "score": 97.83,
+      "score": 96.88,
       "matched_keywords": [
         "généalogie"
       ],
@@ -2413,11 +2471,37 @@
       "category": "sondages",
       "published_at": "2026-10-08T08:02:00Z",
       "image": "",
-      "score": 97.39,
+      "score": 96.44,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
       "content_hash": "b76b5264204c8f5826c8",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "rubrique prioritaire"
+      ]
+    },
+    {
+      "id": "7198678aed33a1cbe8",
+      "title": "Les députés votent contre la création d'un congé pour les victimes de violences sexuelles, dans le cadre de la loi intégrale",
+      "summary": "Les députés votent contre la création d'un congé pour les victimes de violences sexuelles, dans le cadre de la loi intégrale franceinfo",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNeXp6X05rRkJqLWFwZVRhdlU3bzA4ZWhSbWZQdnRlMUsyZkl4MXhjNE9wRnRoZmZzbDRXN0t5bXpIYWhGSnNMU1hud2c3QlEyQ05MSUtiWVZBQ0N5TG5LR0hxTDlFVjFYbC1xZkVjdjNCTUJqOVRyWXBVbnBTdVdYZTlTNk83YXZUanMybVB6ckFLM1k2UllMVHJQMk5wRmN3b0FxLWpNc3drQWxobjV2ektSZmF4TG1kRVdZVDAwMUhXdjloNi04WmN5NlcwczRWVGlnRlBLUTlHc1F1OTNsRnZKQ2VvbGhSNklNalFiSGRheGl3QTRTU0FTeFlNdkc2ajU3dnBoM2tMNkdya3YyUGI3X1dLTy1GX0E?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNeXp6X05rRkJqLWFwZVRhdlU3bzA4ZWhSbWZQdnRlMUsyZkl4MXhjNE9wRnRoZmZzbDRXN0t5bXpIYWhGSnNMU1hud2c3QlEyQ05MSUtiWVZBQ0N5TG5LR0hxTDlFVjFYbC1xZkVjdjNCTUJqOVRyWXBVbnBTdVdYZTlTNk83YXZUanMybVB6ckFLM1k2UllMVHJQMk5wRmN3b0FxLWpNc3drQWxobjV2ektSZmF4TG1kRVdZVDAwMUhXdjloNi04WmN5NlcwczRWVGlnRlBLUTlHc1F1OTNsRnZKQ2VvbGhSNklNalFiSGRheGl3QTRTU0FTeFlNdkc2ajU3dnBoM2tMNkdya3YyUGI3X1dLTy1GX0E?oc=5",
+      "source": "franceinfo",
+      "source_id": "politique-fr",
+      "category": "politique",
+      "published_at": "2026-10-09T11:41:04Z",
+      "image": "",
+      "score": 95.9,
+      "matched_keywords": [],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "9b168c4951a1afd6ba8d",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -2439,41 +2523,13 @@
       "category": "genealogie",
       "published_at": "2026-10-09T17:15:00Z",
       "image": "",
-      "score": 96.54,
+      "score": 95.59,
       "matched_keywords": [
         "généalogie"
       ],
       "watch_matches": [],
       "paywalled": false,
       "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : généalogie"
-      ]
-    },
-    {
-      "id": "eeab8ab74e7cacdd87",
-      "title": "Sydney Sweeney et Marilyn Monroe sont cousines : ce que révèle un site de généalogie",
-      "summary": "Sydney Sweeney et Marilyn Monroe sont cousines : ce que révèle un site de généalogie Europe 1",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd2x2ZWdsMWNVWWhVR0ZXeDZZLThTYUN4bWozbk5CbWlHQ29iYjRvclJrTHFBMjB5SVQtaXJjVXc1eWNHMXoxRVRwWTJuejFUQUUwVFFUVU1XR29CTllSa1U3SVRBMVZaVFA2Vy1rVmxiRDJKOEZmdk05am5HSUhzWHN1VlBxdUFzR2pFOVE3UmprYW9iRFN5RmkydWhSLThuYzAwOC1LaDdVdXJfcU01aUxraC1SR1c5dkExQdIBwgFBVV95cUxNRThTRnVSWnlvVFphempneG1KUDVybzFON1BvNVJsUEV6T3l4Qno0V1VVQnBmV0xIdDJONDN4ekpQQUd2dHFRVUhOVXRpTEd2UGZKQjdpVXZVVk9FckhZVDNrb1hTR1FIRC1wQ3ZSQjhhN1pVV1pENldVLWh5c191dUt3V0xjdVZyNjE5cTdMLWwwYjVKWEw5Ui1FeVlZZzA4VEMyODZzekV0QnY0bXhueTFHUWRaUldMZnFsTENESC1sZw?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd2x2ZWdsMWNVWWhVR0ZXeDZZLThTYUN4bWozbk5CbWlHQ29iYjRvclJrTHFBMjB5SVQtaXJjVXc1eWNHMXoxRVRwWTJuejFUQUUwVFFUVU1XR29CTllSa1U3SVRBMVZaVFA2Vy1rVmxiRDJKOEZmdk05am5HSUhzWHN1VlBxdUFzR2pFOVE3UmprYW9iRFN5RmkydWhSLThuYzAwOC1LaDdVdXJfcU01aUxraC1SR1c5dkExQdIBwgFBVV95cUxNRThTRnVSWnlvVFphempneG1KUDVybzFON1BvNVJsUEV6T3l4Qno0V1VVQnBmV0xIdDJONDN4ekpQQUd2dHFRVUhOVXRpTEd2UGZKQjdpVXZVVk9FckhZVDNrb1hTR1FIRC1wQ3ZSQjhhN1pVV1pENldVLWh5c191dUt3V0xjdVZyNjE5cTdMLWwwYjVKWEw5Ui1FeVlZZzA4VEMyODZzekV0QnY0bXhueTFHUWRaUldMZnFsTENESC1sZw?oc=5",
-      "source": "Europe 1",
-      "source_id": "news-genealogie",
-      "category": "genealogie",
-      "published_at": "2026-10-09T15:52:00Z",
-      "image": "",
-      "score": 96.37,
-      "matched_keywords": [
-        "généalogie"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "9260f3ff1ca37e09938b",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -2495,7 +2551,7 @@
       "category": "genealogie",
       "published_at": "2026-10-09T15:39:52Z",
       "image": "",
-      "score": 96.34,
+      "score": 95.39,
       "matched_keywords": [
         "état civil"
       ],
@@ -2523,7 +2579,7 @@
       "category": "genealogie",
       "published_at": "2026-10-09T14:09:22Z",
       "image": "",
-      "score": 96.15,
+      "score": 95.21,
       "matched_keywords": [
         "état civil"
       ],
@@ -2551,7 +2607,7 @@
       "category": "genealogie",
       "published_at": "2026-10-09T14:03:21Z",
       "image": "",
-      "score": 96.14,
+      "score": 95.19,
       "matched_keywords": [
         "généalogie"
       ],
@@ -2579,7 +2635,7 @@
       "category": "genealogie",
       "published_at": "2026-10-09T13:01:37Z",
       "image": "",
-      "score": 96.01,
+      "score": 95.06,
       "matched_keywords": [
         "état civil"
       ],
@@ -2607,7 +2663,7 @@
       "category": "politique",
       "published_at": "2026-10-02T07:00:00Z",
       "image": "",
-      "score": 95.66,
+      "score": 94.71,
       "matched_keywords": [
         "primaire"
       ],
@@ -2635,7 +2691,7 @@
       "category": "medias",
       "published_at": "2026-10-08T14:39:00Z",
       "image": "",
-      "score": 95.61,
+      "score": 94.67,
       "matched_keywords": [
         "télévision"
       ],
@@ -2663,7 +2719,7 @@
       "category": "genealogie",
       "published_at": "2026-10-09T09:05:05Z",
       "image": "",
-      "score": 95.52,
+      "score": 94.57,
       "matched_keywords": [
         "archives"
       ],
@@ -2691,7 +2747,7 @@
       "category": "medias",
       "published_at": "2026-10-08T13:15:59Z",
       "image": "",
-      "score": 95.44,
+      "score": 94.49,
       "matched_keywords": [
         "télévision"
       ],
@@ -2719,7 +2775,7 @@
       "category": "genealogie",
       "published_at": "2026-10-09T07:59:08Z",
       "image": "",
-      "score": 95.38,
+      "score": 94.43,
       "matched_keywords": [
         "état civil"
       ],
@@ -2747,7 +2803,7 @@
       "category": "sondages",
       "published_at": "2026-10-07T07:48:00Z",
       "image": "",
-      "score": 94.36,
+      "score": 93.41,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -2763,34 +2819,6 @@
       ]
     },
     {
-      "id": "8beb235e7edcc6e916",
-      "title": "L'intelligence artificielle pour éclairer les décisions face au changement climatique",
-      "summary": "L'intelligence artificielle pour éclairer les décisions face au changement climatique BRGM",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcV9pejFlTVFDUzY0Rzl4N2g5cHZaelpPZVBJZ0RYcTFvcl84X3cyY2xRZVpselMyeFVMOXBaeEN5WjlqUmVuVmZFbVVBNHJfSXFXZENEanowbXFEUUItTjdOMVBCTDljWDlxdVRrOWhoRWw3eWN2WHdqWi01RnlkN1ZhbUk0YUl2VzBnajdxaC1rb0pJU2xzalh5bk91Q2J0V3pNWWUxUjBkQzgyLVAxdnQybGN3cmZF?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcV9pejFlTVFDUzY0Rzl4N2g5cHZaelpPZVBJZ0RYcTFvcl84X3cyY2xRZVpselMyeFVMOXBaeEN5WjlqUmVuVmZFbVVBNHJfSXFXZENEanowbXFEUUItTjdOMVBCTDljWDlxdVRrOWhoRWw3eWN2WHdqWi01RnlkN1ZhbUk0YUl2VzBnajdxaC1rb0pJU2xzalh5bk91Q2J0V3pNWWUxUjBkQzgyLVAxdnQybGN3cmZF?oc=5",
-      "source": "BRGM",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-07T08:32:00Z",
-      "image": "",
-      "score": 93.85,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "0f457e5eabf167d4b563",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
       "id": "8b546f42bec31f2e62",
       "title": "Sydney Sweeney et Marilyn Monroe sont de la même famille, la généalogie le prouve",
       "summary": "Sydney Sweeney et Marilyn Monroe sont de la même famille, la généalogie le prouve Le Parisien",
@@ -2801,7 +2829,7 @@
       "category": "genealogie",
       "published_at": "2026-10-08T18:03:00Z",
       "image": "",
-      "score": 93.64,
+      "score": 92.69,
       "matched_keywords": [
         "généalogie"
       ],
@@ -2829,7 +2857,7 @@
       "category": "tech",
       "published_at": "2026-10-07T03:02:38Z",
       "image": "",
-      "score": 93.16,
+      "score": 92.22,
       "matched_keywords": [
         "intelligence artificielle"
       ],
@@ -2847,6 +2875,34 @@
       ]
     },
     {
+      "id": "fc7a4f53fa7c88ac9c",
+      "title": "Les naissances et décès selon l’état civil de Vannes du jeudi 8 octobre",
+      "summary": "Les naissances et décès selon l’état civil de Vannes du jeudi 8 octobre Le Télégramme",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTXNpSXJocjE0R0JjMUo2NzN6MmJpZ05wMzdCMUFlUlo5bkppMHFrbG1pS0xDbmU4a2JGLW0yeVpIajJpb1Q2bHlMQklVRlhGZHBxb295bm56bm96ZnZmaE5ldnBOVmhwQVN3SkM4UmpjWEZCbjJZM2IwR00tVC1ncTV4ZXFCd2Y1Z2RCeGgxQzhRUmRZSUZpZTlxV2VRRjFyQ2FBWUJEd0JUM2ZkN1IxbEhnREJRUGRDNnIySWRMU1FuaUdoZDFTaXl3c1U?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTXNpSXJocjE0R0JjMUo2NzN6MmJpZ05wMzdCMUFlUlo5bkppMHFrbG1pS0xDbmU4a2JGLW0yeVpIajJpb1Q2bHlMQklVRlhGZHBxb295bm56bm96ZnZmaE5ldnBOVmhwQVN3SkM4UmpjWEZCbjJZM2IwR00tVC1ncTV4ZXFCd2Y1Z2RCeGgxQzhRUmRZSUZpZTlxV2VRRjFyQ2FBWUJEd0JUM2ZkN1IxbEhnREJRUGRDNnIySWRMU1FuaUdoZDFTaXl3c1U?oc=5",
+      "source": "Le Télégramme",
+      "source_id": "news-genealogie",
+      "category": "genealogie",
+      "published_at": "2026-10-08T13:51:52Z",
+      "image": "",
+      "score": 92.17,
+      "matched_keywords": [
+        "état civil"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : état civil"
+      ]
+    },
+    {
       "id": "f068d49d4458ce7911",
       "title": "Victor, Oria, Mona... Quatre naissances à l'état civil du 7 octobre dans le pays de Quimper",
       "summary": "Victor, Oria, Mona... Quatre naissances à l'état civil du 7 octobre dans le pays de Quimper Le Télégramme",
@@ -2857,7 +2913,7 @@
       "category": "genealogie",
       "published_at": "2026-10-08T13:34:25Z",
       "image": "",
-      "score": 93.08,
+      "score": 92.13,
       "matched_keywords": [
         "état civil"
       ],
@@ -2875,34 +2931,6 @@
       ]
     },
     {
-      "id": "7ebfcebe99f55ecd62",
-      "title": "« L'Heure de vérité » : France Télévisions mise sur l'émission culte pour accélérer son offensive numérique",
-      "summary": "« L'Heure de vérité » : France Télévisions mise sur l'émission culte pour accélérer son offensive numérique Les Echos",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVWozRnA4YnROM0xSMGVTcm8yeEFvcG1oZTQzZzRIcjJzME0wMjd5SEd0Rk5CcGs0OGxDakVuT1RhVE95ak1LQ0RWLXFiWXFrZGU5bUtZaF95blVwX3hnT2JDYXNKaWVwYUhfcTFGWWV4UUpQY1JZNkNsSTJCODVoVDAxVm9MbGlRaHItM0VDbkNla2Q4SmJsakprVmtkNDVMWmZGZ0FGZ0pZYnJyMFNaQVZFeDFaTHU4MWstUzQ4d2g0ZEJnZUNLSllRUlhhUE5PUDdydEh2UFZEaDhhMllpdGhnUTE?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVWozRnA4YnROM0xSMGVTcm8yeEFvcG1oZTQzZzRIcjJzME0wMjd5SEd0Rk5CcGs0OGxDakVuT1RhVE95ak1LQ0RWLXFiWXFrZGU5bUtZaF95blVwX3hnT2JDYXNKaWVwYUhfcTFGWWV4UUpQY1JZNkNsSTJCODVoVDAxVm9MbGlRaHItM0VDbkNla2Q4SmJsakprVmtkNDVMWmZGZ0FGZ0pZYnJyMFNaQVZFeDFaTHU4MWstUzQ4d2g0ZEJnZUNLSllRUlhhUE5PUDdydEh2UFZEaDhhMllpdGhnUTE?oc=5",
-      "source": "Les Echos",
-      "source_id": "news-medias-tv",
-      "category": "medias",
-      "published_at": "2026-10-07T12:56:17Z",
-      "image": "",
-      "score": 92.4,
-      "matched_keywords": [
-        "télévision"
-      ],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "86111c37412c0f9bb4c9",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVWozRnA4YnROM0xSMGVTcm8yeEFvcG1oZTQzZzRIcjJzME0wMjd5SEd0Rk5CcGs0OGxDakVuT1RhVE95ak1LQ0RWLXFiWXFrZGU5bUtZaF95blVwX3hnT2JDYXNKaWVwYUhfcTFGWWV4UUpQY1JZNkNsSTJCODVoVDAxVm9MbGlRaHItM0VDbkNla2Q4SmJsakprVmtkNDVMWmZGZ0FGZ0pZYnJyMFNaQVZFeDFaTHU4MWstUzQ4d2g0ZEJnZUNLSllRUlhhUE5PUDdydEh2UFZEaDhhMllpdGhnUTE?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "mots-clés : télévision"
-      ]
-    },
-    {
       "id": "afaf9d62a67b48893e",
       "title": "Biesheim. Pierre Marck : la généalogie pour passion",
       "summary": "Biesheim. Pierre Marck : la généalogie pour passion dna.fr",
@@ -2913,7 +2941,7 @@
       "category": "genealogie",
       "published_at": "2026-10-08T06:26:35Z",
       "image": "",
-      "score": 92.19,
+      "score": 91.24,
       "matched_keywords": [
         "généalogie"
       ],
@@ -2941,7 +2969,7 @@
       "category": "medias",
       "published_at": "2026-10-07T10:52:07Z",
       "image": "",
-      "score": 92.14,
+      "score": 91.19,
       "matched_keywords": [
         "télévision"
       ],
@@ -2969,7 +2997,7 @@
       "category": "tech",
       "published_at": "2026-10-09T16:00:00Z",
       "image": "",
-      "score": 91.98,
+      "score": 91.04,
       "matched_keywords": [
         "github"
       ],
@@ -2997,7 +3025,7 @@
       "category": "medias",
       "published_at": "2026-10-07T07:00:00Z",
       "image": "",
-      "score": 91.66,
+      "score": 90.71,
       "matched_keywords": [
         "télévision"
       ],
@@ -3015,34 +3043,6 @@
       ]
     },
     {
-      "id": "bcbaab893897231792",
-      "title": "L’intelligence artificielle dans les services publics : une accélération technologique sans véritable cap politique",
-      "summary": "L’intelligence artificielle dans les services publics : une accélération technologique sans véritable cap politique Fondation Jean-Jaurès",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaWVmbmZacTBLNTh6YUNWYmhwbl93STRaZmV3VjQ3NlY2elBPdjMxOHRGbGRlT0dnbnZUTGpPWmJZcGw1M1hYcFpuYnBQUkhzeFhzYi1WN3l0ZEF6UU1WTkVaRFlxczMySjVvMGN2dnlMOFRYQnFlVmtfVXhSb3dQdXYzX0lkRktCRERERzg0NmlOR214aUpsakxtUFhUOHVWcFQyemNGSVY2SnFPN1FDV0otdlVWLTRrMHlNaDRrQmtNcXZLN0lsR0swdG4zRlhJSGdqejRqbEExbVNYa1hUbkloaU13bW51?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQaWVmbmZacTBLNTh6YUNWYmhwbl93STRaZmV3VjQ3NlY2elBPdjMxOHRGbGRlT0dnbnZUTGpPWmJZcGw1M1hYcFpuYnBQUkhzeFhzYi1WN3l0ZEF6UU1WTkVaRFlxczMySjVvMGN2dnlMOFRYQnFlVmtfVXhSb3dQdXYzX0lkRktCRERERzg0NmlOR214aUpsakxtUFhUOHVWcFQyemNGSVY2SnFPN1FDV0otdlVWLTRrMHlNaDRrQmtNcXZLN0lsR0swdG4zRlhJSGdqejRqbEExbVNYa1hUbkloaU13bW51?oc=5",
-      "source": "Fondation Jean-Jaurès",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-06T14:27:58Z",
-      "image": "",
-      "score": 91.59,
-      "matched_keywords": [
-        "intelligence artificielle"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "dae1521cb1e47fe9572e",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : intelligence artificielle"
-      ]
-    },
-    {
       "id": "1d410c783a181db84e",
       "title": "Les « ateliers du mardi » se poursuivent aux Archives départementales",
       "summary": "Les « ateliers du mardi » se poursuivent aux Archives départementales Département de la Haute-Savoie",
@@ -3053,7 +3053,7 @@
       "category": "genealogie",
       "published_at": "2026-10-07T15:36:45Z",
       "image": "",
-      "score": 90.33,
+      "score": 89.39,
       "matched_keywords": [
         "archives"
       ],
@@ -3081,7 +3081,7 @@
       "category": "genealogie",
       "published_at": "2026-10-07T14:28:43Z",
       "image": "",
-      "score": 90.19,
+      "score": 89.25,
       "matched_keywords": [
         "état civil"
       ],
@@ -3099,6 +3099,34 @@
       ]
     },
     {
+      "id": "50f7966b4a29abe08c",
+      "title": "Maison imaginaire, parole et dissidence avec Arnaud Desplechin",
+      "summary": "Carte blanche au cinéaste et metteur en scène Arnaud Desplechin, qui signe à la Comédie Française la mise en scène de La Musica deuxième. Une discussion sous le signe de la littérature, en compagnie des écrivain.es Geneviève Brisac et Jean Rouaud.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/comme-un-samedi/maison-imaginaire-parole-et-dissidence-avec-arnaud-desplechin-9976609",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/comme-un-samedi/maison-imaginaire-parole-et-dissidence-avec-arnaud-desplechin-9976609",
+      "source": "France Culture",
+      "source_id": "france-culture",
+      "category": "histoire",
+      "published_at": "2026-10-10T16:10:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/50a8151f-69fa-4fe6-ac21-3597fa60202d/720x405?webp=false",
+      "score": 89.06,
+      "matched_keywords": [
+        "ina"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "300315e0d21fd1170502",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : ina"
+      ]
+    },
+    {
       "id": "df2691568532ab5f50",
       "title": "\"L'abandon de l'école publique, pour la France, c'est l'abandon de soi-même\", affirme Raphaël Glucksmann, cofondateur de Place publique",
       "summary": "\"L'abandon de l'école publique, pour la France, c'est l'abandon de soi-même\", affirme Raphaël Glucksmann, cofondateur de Place publique franceinfo",
@@ -3109,7 +3137,7 @@
       "category": "politique",
       "published_at": "2026-10-08T07:15:27Z",
       "image": "",
-      "score": 89.69,
+      "score": 88.74,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3125,6 +3153,34 @@
       ]
     },
     {
+      "id": "ad4fe333c8231159fd",
+      "title": "\"L'Espèce explosive\" de Sarah Arnold : \"saisir des forces incanalisables, et proposer un film indomptable\"",
+      "summary": "Avec \"L'Espèce explosive\", Sarah Arnold signe un premier film inassignable, entre polar, drame rural, comédie romantique borderline et fantastique façon folk horror, traversé par la question du désir.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/le-film-de-la-semaine/l-espece-explosive-de-sarah-arnold-7007280",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/le-film-de-la-semaine/l-espece-explosive-de-sarah-arnold-7007280",
+      "source": "France Culture",
+      "source_id": "france-culture",
+      "category": "histoire",
+      "published_at": "2026-10-10T11:32:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/221df8c2-ca63-4b7b-86d0-020a77a9bb54/720x405?webp=false",
+      "score": 88.48,
+      "matched_keywords": [
+        "ina"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "881464cb12b9e0399a79",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : ina"
+      ]
+    },
+    {
       "id": "9c6350c198dbe0e155",
       "title": "Le Grand Raid 2026 à vivre sur les antennes de France Télévisions",
       "summary": "Le Grand Raid 2026 à vivre sur les antennes de France Télévisions FranceTvPro.fr",
@@ -3135,7 +3191,7 @@
       "category": "medias",
       "published_at": "2026-10-06T12:26:08Z",
       "image": "",
-      "score": 89.34,
+      "score": 88.39,
       "matched_keywords": [
         "télévision"
       ],
@@ -3163,7 +3219,7 @@
       "category": "tech",
       "published_at": "2026-10-08T17:02:52Z",
       "image": "",
-      "score": 89.11,
+      "score": 88.17,
       "matched_keywords": [
         "github"
       ],
@@ -3191,7 +3247,7 @@
       "category": "genealogie",
       "published_at": "2026-10-07T05:01:40Z",
       "image": "",
-      "score": 89.01,
+      "score": 88.06,
       "matched_keywords": [
         "état civil"
       ],
@@ -3219,7 +3275,7 @@
       "category": "histoire",
       "published_at": "2026-10-10T06:40:00Z",
       "image": "https://www.radiofrance.fr/pikapi/images/31015e81-ce22-409b-a26a-5dbe72a75c5c/720x405?webp=false",
-      "score": 88.82,
+      "score": 87.87,
       "matched_keywords": [
         "ina"
       ],
@@ -3247,7 +3303,7 @@
       "category": "histoire",
       "published_at": "2026-10-09T18:55:54Z",
       "image": "https://france3-regions.franceinfo.fr/image/u0BivznfmlcXA0zysbG_HIpQTOE/930x620/filters:format(webp)/regions/2026/10/09/6ac8d10a584dc350378362.jpg",
-      "score": 87.95,
+      "score": 87.0,
       "matched_keywords": [
         "archives"
       ],
@@ -3275,7 +3331,7 @@
       "category": "histoire",
       "published_at": "2026-10-09T15:19:51Z",
       "image": "https://france3-regions.franceinfo.fr/image/F7tvlqKQfVynN47e1eZMIJMhpFc/930x620/filters:format(webp)/regions/2026/10/09/6ac8b1f4bcf48249329271.jpg",
-      "score": 87.5,
+      "score": 86.55,
       "matched_keywords": [
         "archives"
       ],
@@ -3303,7 +3359,7 @@
       "category": "genealogie",
       "published_at": "2026-10-06T16:16:00Z",
       "image": "",
-      "score": 87.42,
+      "score": 86.47,
       "matched_keywords": [
         "état civil"
       ],
@@ -3331,7 +3387,7 @@
       "category": "genealogie",
       "published_at": "2026-10-06T14:22:56Z",
       "image": "",
-      "score": 87.18,
+      "score": 86.23,
       "matched_keywords": [
         "état civil"
       ],
@@ -3359,7 +3415,7 @@
       "category": "politique",
       "published_at": "2026-10-07T07:00:00Z",
       "image": "",
-      "score": 86.66,
+      "score": 85.71,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3375,34 +3431,6 @@
       ]
     },
     {
-      "id": "a1664050d9f577ad20",
-      "title": "Découvrez la nouvelle exposition des Archives départementales",
-      "summary": "Découvrez la nouvelle exposition des Archives départementales Département des Alpes-Maritimes",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLVdOandVcGVGbGp4SmEyWGU2S0dGQS11ZndFZVhtbWlrQjh3ZTZ0cFlfMm84NGE2UVdudkh0RFpUdUNtbVJKckRmbldDNlRZOTROUXF2dDQzamM2eFhFa2RUb1lVRkRVUW9xRU9qX0IxVjJHQk41YmdxcUtkQlJlOHladkFnX3FMd0puc1h3RmhlNHd2Mnc5WlBwVUlueVJFeGVR?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNLVdOandVcGVGbGp4SmEyWGU2S0dGQS11ZndFZVhtbWlrQjh3ZTZ0cFlfMm84NGE2UVdudkh0RFpUdUNtbVJKckRmbldDNlRZOTROUXF2dDQzamM2eFhFa2RUb1lVRkRVUW9xRU9qX0IxVjJHQk41YmdxcUtkQlJlOHladkFnX3FMd0puc1h3RmhlNHd2Mnc5WlBwVUlueVJFeGVR?oc=5",
-      "source": "Département des Alpes-Maritimes",
-      "source_id": "news-genealogie",
-      "category": "genealogie",
-      "published_at": "2026-10-06T07:00:00Z",
-      "image": "",
-      "score": 86.26,
-      "matched_keywords": [
-        "archives"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "c71e144e526cfad7f2d6",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : archives"
-      ]
-    },
-    {
       "id": "5f0f9854a6a52bed18",
       "title": "Secret protection must scale with software",
       "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it. The post Secret protection must scale with software appeared first on The GitHub Blog .",
@@ -3413,7 +3441,7 @@
       "category": "tech",
       "published_at": "2026-10-07T17:45:34Z",
       "image": "",
-      "score": 86.2,
+      "score": 85.26,
       "matched_keywords": [
         "github"
       ],
@@ -3431,6 +3459,32 @@
       ]
     },
     {
+      "id": "6a5336e51e85cdd7a8",
+      "title": "TFX en direct live TV",
+      "summary": "TFX en direct live TV TF1+",
+      "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9DSGZUM21laWttc29YZ2NleG9qTVdBR0RaS2xJUkhHZXBIamV5d3hvSUlmdTlPaVVoQXN3bHFZa2tMdm8?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9DSGZUM21laWttc29YZ2NleG9qTVdBR0RaS2xJUkhHZXBIamV5d3hvSUlmdTlPaVVoQXN3bHFZa2tMdm8?oc=5",
+      "source": "TF1+",
+      "source_id": "news-medias-tv",
+      "category": "medias",
+      "published_at": "2026-10-10T16:01:37Z",
+      "image": "",
+      "score": 84.84,
+      "matched_keywords": [],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "rubrique prioritaire"
+      ]
+    },
+    {
       "id": "3f9812cd52e8a76475",
       "title": "Ingérence étrangère : le sulfureux prestataire israélien de France Télévisions",
       "summary": "Ingérence étrangère : le sulfureux prestataire israélien de France Télévisions Mediapart",
@@ -3441,7 +3495,7 @@
       "category": "medias",
       "published_at": "2026-10-05T05:10:19Z",
       "image": "",
-      "score": 85.43,
+      "score": 84.48,
       "matched_keywords": [
         "télévision"
       ],
@@ -3469,7 +3523,7 @@
       "category": "histoire",
       "published_at": "2026-10-10T06:17:00Z",
       "image": "https://www.radiofrance.fr/pikapi/images/e534a7b3-2aa4-4894-bc45-5dee8be8af06/720x405?webp=false",
-      "score": 84.77,
+      "score": 83.82,
       "matched_keywords": [
         "chatgpt"
       ],
@@ -3487,45 +3541,17 @@
       ]
     },
     {
-      "id": "3af2ecc884616d9428",
-      "title": "Building Git infrastructure for agent-scale development",
-      "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development. The post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog .",
-      "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
-      "resolved_url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
-      "source": "GitHub Blog",
-      "source_id": "github-blog",
+      "id": "7f5dc5720c7a361e0d",
+      "title": "France: l'essor de l'IA participe à la chute des visites des sites d'actualité",
+      "summary": "France: l'essor de l'IA participe à la chute des visites des sites d'actualité RFI",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ24tUjRxWl9PZk5XS1NiZUpWWUNJZjU3dy1INm12OS10bDVrX1h4dUtiWU5UYWJGRVF0THB1MDJwNVFZZEs3ZjJiSkZ2MEI0d3pFdXN0LTY4YnB5V3gwLS03V3dXdzl3R2s5OTNvTGRVUWZZdDlWS0NRd3NGUnFvaWQ0bWp2eVZOb2dROXFZSEhUSk9vbWF3bk1kZ3B6RGpPUmMxdVRGR18xbDVnVmZ4M1QxNWk4YUNBbW5JdUljZDJtM0E?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNQ24tUjRxWl9PZk5XS1NiZUpWWUNJZjU3dy1INm12OS10bDVrX1h4dUtiWU5UYWJGRVF0THB1MDJwNVFZZEs3ZjJiSkZ2MEI0d3pFdXN0LTY4YnB5V3gwLS03V3dXdzl3R2s5OTNvTGRVUWZZdDlWS0NRd3NGUnFvaWQ0bWp2eVZOb2dROXFZSEhUSk9vbWF3bk1kZ3B6RGpPUmMxdVRGR18xbDVnVmZ4M1QxNWk4YUNBbW5JdUljZDJtM0E?oc=5",
+      "source": "RFI",
+      "source_id": "news-tech-ai",
       "category": "tech",
-      "published_at": "2026-10-06T20:57:56Z",
+      "published_at": "2026-10-10T17:05:46Z",
       "image": "",
-      "score": 83.6,
-      "matched_keywords": [
-        "github"
-      ],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "ed7d002804b685bd9efa",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "mots-clés : github"
-      ]
-    },
-    {
-      "id": "da5d670f80da745c66",
-      "title": "LCI en direct : info du jour en direct",
-      "summary": "LCI en direct : info du jour en direct TF1 Info",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1mRGd5UklDQ2I5eDMxOTR3ZzFLRkJJcEtPOUxCdmJWeEg5R3B0c29nbHItd1VSNWlRRVFycm9rREtqZzFV?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1mRGd5UklDQ2I5eDMxOTR3ZzFLRkJJcEtPOUxCdmJWeEg5R3B0c29nbHItd1VSNWlRRVFycm9rREtqZzFV?oc=5",
-      "source": "TF1 Info",
-      "source_id": "news-medias-tv",
-      "category": "medias",
-      "published_at": "2026-10-09T18:35:33Z",
-      "image": "",
-      "score": 83.11,
+      "score": 82.97,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3541,32 +3567,6 @@
       ]
     },
     {
-      "id": "fbf3212c0050cb4a5e",
-      "title": "États-Unis : une IA d’Anthropic invente un témoignage sur un meurtre non élucidé et le transmet à la police",
-      "summary": "États-Unis : une IA d’Anthropic invente un témoignage sur un meurtre non élucidé et le transmet à la police Le Figaro",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZk15bVQyekxuNHZnOWZKNDJYVTVXZjlkYTdwdUttYU81di1SMHlMb3RucGdOUnlMZUNJWUh6QlM1VFNON3cyTHVzYnp0Z0hHcVNfWmZjSzBOSnBwV2Q1T1RmaU9LbDZCWnh5QjUxYndlUkhramFBTlkzcnVVRG5iZ3ZGQk1GQ1F0MmM1aXdMNXA2ZjNVODVlN0pKd3lpWWMwcnZOX09WSEZqVEFhN1k4bFRDNUFhUUIwd0JBQ3FDb29yOVd4VkVFU1dpU0VqVGU5MFZzN2hPSXJVcWQ3Nm5tMGxoTnJXSExlVEQ5Tw?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZk15bVQyekxuNHZnOWZKNDJYVTVXZjlkYTdwdUttYU81di1SMHlMb3RucGdOUnlMZUNJWUh6QlM1VFNON3cyTHVzYnp0Z0hHcVNfWmZjSzBOSnBwV2Q1T1RmaU9LbDZCWnh5QjUxYndlUkhramFBTlkzcnVVRG5iZ3ZGQk1GQ1F0MmM1aXdMNXA2ZjNVODVlN0pKd3lpWWMwcnZOX09WSEZqVEFhN1k4bFRDNUFhUUIwd0JBQ3FDb29yOVd4VkVFU1dpU0VqVGU5MFZzN2hPSXJVcWQ3Nm5tMGxoTnJXSExlVEQ5Tw?oc=5",
-      "source": "Le Figaro",
-      "source_id": "news-tech-ai",
-      "category": "tech",
-      "published_at": "2026-10-10T07:49:28Z",
-      "image": "",
-      "score": 82.76,
-      "matched_keywords": [],
-      "watch_matches": [],
-      "paywalled": true,
-      "content_hash": "e0990474f2f1156b1215",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "https://archive.is/https://news.google.com/rss/articles/CBMi7AFBVV95cUxPZk15bVQyekxuNHZnOWZKNDJYVTVXZjlkYTdwdUttYU81di1SMHlMb3RucGdOUnlMZUNJWUh6QlM1VFNON3cyTHVzYnp0Z0hHcVNfWmZjSzBOSnBwV2Q1T1RmaU9LbDZCWnh5QjUxYndlUkhramFBTlkzcnVVRG5iZ3ZGQk1GQ1F0MmM1aXdMNXA2ZjNVODVlN0pKd3lpWWMwcnZOX09WSEZqVEFhN1k4bFRDNUFhUUIwd0JBQ3FDb29yOVd4VkVFU1dpU0VqVGU5MFZzN2hPSXJVcWQ3Nm5tMGxoTnJXSExlVEQ5Tw?oc=5",
-      "archive_status": "unknown",
-      "why_for_you": [
-        "rubrique prioritaire"
-      ]
-    },
-    {
       "id": "f58f526c64b60290b7",
       "title": "\"Je suis dévasté, je passe pour un criminel\" : le gérant du site touristique du Rocher Branlant, jugé pour dénaturer le lieu",
       "summary": "Le 16 octobre 2026, Anthony Baron, le gérant du Rocher Branlant comparaîtra au tribunal correctionnel de Niort pour dénaturer les lieux classés au titre du patrimoine paysager national. La DREAL, les Bâtiments de France, L'OFB et l'association France Deux-Sèvres Environnement portent plainte pour la non-conformité du site avec la réglementation.",
@@ -3577,7 +3577,7 @@
       "category": "histoire",
       "published_at": "2026-10-09T07:21:56Z",
       "image": "https://france3-regions.franceinfo.fr/image/8QlY-zkV0JAJ4V0Mm0F3vF7Hf7Q/930x620/filters:format(webp)/regions/2026/10/06/6ac4bd125cf7c983059041.jpg",
-      "score": 82.5,
+      "score": 81.56,
       "matched_keywords": [
         "patrimoine"
       ],
@@ -3605,7 +3605,7 @@
       "category": "medias",
       "published_at": "2026-10-09T12:15:07Z",
       "image": "",
-      "score": 82.31,
+      "score": 81.37,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3631,7 +3631,7 @@
       "category": "medias",
       "published_at": "2026-10-09T10:30:00Z",
       "image": "",
-      "score": 82.09,
+      "score": 81.15,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3657,7 +3657,7 @@
       "category": "histoire",
       "published_at": "2026-10-07T17:25:58Z",
       "image": "https://france3-regions.franceinfo.fr/image/lYr1RqZlJYrV37Q4Lzq9mGyHNn0/930x620/filters:format(webp)/regions/2026/10/07/6ac5fb00aab1d269080750.png",
-      "score": 81.76,
+      "score": 80.82,
       "matched_keywords": [
         "archives"
       ],
@@ -3685,7 +3685,7 @@
       "category": "medias",
       "published_at": "2026-10-09T07:23:57Z",
       "image": "",
-      "score": 81.71,
+      "score": 80.76,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3711,7 +3711,7 @@
       "category": "histoire",
       "published_at": "2026-10-07T16:55:20Z",
       "image": "https://france3-regions.franceinfo.fr/image/obvEul6qHFOI6hrvKinRllHfn8w/930x620/filters:format(webp)/regions/2026/10/07/6ac66f00dc025592215474.jpg",
-      "score": 81.7,
+      "score": 80.75,
       "matched_keywords": [
         "ina"
       ],
@@ -3729,6 +3729,32 @@
       ]
     },
     {
+      "id": "c475ffe89c611d4b3c",
+      "title": "Le « 13 Heures » de France 2 s’explique après la diffusion de cette pancarte qui a froissé Macron",
+      "summary": "Le « 13 Heures » de France 2 s’explique après la diffusion de cette pancarte qui a froissé Macron Le HuffPost",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORWVYd05wN0VwMWx0ekZLR3NkZUE1NnpZMEZ4RlY3NUpmcVY4WEZKRjZ5aERWTWtVQjBaRGhpempXUTRSa0dNM054NjlsandnQlZDUlJCXzR4YjNfYlRTWnY2dnRYMXVEeUtMbFZaWlNIUHItOHRySlZrdXAyVGdBU3p6a3QwSkJhWjNjbE14Y1dnaV9PTXR2Q3dQVG5hM3dVdjNfR3dGOU1McDZjczZLQmxrWXlOZnM0emFzcWkwMXN4dl9QdmtSdlcwd1lBeHdNS2VucWNtWmRfaUo1SUpYVndHdk8?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxORWVYd05wN0VwMWx0ekZLR3NkZUE1NnpZMEZ4RlY3NUpmcVY4WEZKRjZ5aERWTWtVQjBaRGhpempXUTRSa0dNM054NjlsandnQlZDUlJCXzR4YjNfYlRTWnY2dnRYMXVEeUtMbFZaWlNIUHItOHRySlZrdXAyVGdBU3p6a3QwSkJhWjNjbE14Y1dnaV9PTXR2Q3dQVG5hM3dVdjNfR3dGOU1McDZjczZLQmxrWXlOZnM0emFzcWkwMXN4dl9QdmtSdlcwd1lBeHdNS2VucWNtWmRfaUo1SUpYVndHdk8?oc=5",
+      "source": "Le HuffPost",
+      "source_id": "news-medias-tv",
+      "category": "medias",
+      "published_at": "2026-10-08T20:10:58Z",
+      "image": "",
+      "score": 79.36,
+      "matched_keywords": [],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "ecce936e73f5502aa18f",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "rubrique prioritaire"
+      ]
+    },
+    {
       "id": "102a93ecae859583d1",
       "title": "Affaire de la pancarte sur Brigitte Macron au JT de France 2 : Fr ...",
       "summary": "Affaire de la pancarte sur Brigitte Macron au JT de France 2 : Fr ... Télé Star",
@@ -3739,7 +3765,7 @@
       "category": "medias",
       "published_at": "2026-10-08T14:00:55Z",
       "image": "",
-      "score": 79.53,
+      "score": 78.59,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3765,7 +3791,7 @@
       "category": "medias",
       "published_at": "2026-10-08T10:35:31Z",
       "image": "",
-      "score": 79.11,
+      "score": 78.16,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3791,37 +3817,11 @@
       "category": "medias",
       "published_at": "2026-10-08T07:00:00Z",
       "image": "",
-      "score": 78.66,
+      "score": 77.71,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
       "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "rubrique prioritaire"
-      ]
-    },
-    {
-      "id": "2fe8f28e7b4dde27d6",
-      "title": "« On aboie en silence » : en adaptant le livre de Gringe, France Télé offre un film magistral sur la maladie mentale",
-      "summary": "« On aboie en silence » : en adaptant le livre de Gringe, France Télé offre un film magistral sur la maladie mentale Programme TV Ouest-France",
-      "url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxONEp4MHY2blFqZy15M01RcXpsM1UtRm12YnZZYnFTUUJNaE83X1dSa0FoQUE5LWs1LWtQTjN0c3lONUtPM0ppblB2S0s0TEVOQ0xsZVZVeDN5STN0bXQ2VElhYmxzeG1nSVBPS1hOZ0tnQmgxblNmQWQyWnZlellHSTU2d3ZkVnd2VzFyd09GaVlxeGRaM3RUNkVmMjhMWUtQX0hhUHhUVDVTODJjckdTUFhPU2cydnpUQ1RLWlJiOXRxUUdWclBpYy04UTdPUEdFTG1VM29Xa0prN0Rzb3preXNGUmdGSWJQckVQM2ZsOUp3QURFdGhhZGZGU1dpYlJuWWRJb3pjbTAwRWV6ckkycGxKaDl0d205UktHM2E1cm9TOWh5X0FYM2JKWjFNanFRQVlQazd1RHZadw?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiugJBVV95cUxONEp4MHY2blFqZy15M01RcXpsM1UtRm12YnZZYnFTUUJNaE83X1dSa0FoQUE5LWs1LWtQTjN0c3lONUtPM0ppblB2S0s0TEVOQ0xsZVZVeDN5STN0bXQ2VElhYmxzeG1nSVBPS1hOZ0tnQmgxblNmQWQyWnZlellHSTU2d3ZkVnd2VzFyd09GaVlxeGRaM3RUNkVmMjhMWUtQX0hhUHhUVDVTODJjckdTUFhPU2cydnpUQ1RLWlJiOXRxUUdWclBpYy04UTdPUEdFTG1VM29Xa0prN0Rzb3preXNGUmdGSWJQckVQM2ZsOUp3QURFdGhhZGZGU1dpYlJuWWRJb3pjbTAwRWV6ckkycGxKaDl0d205UktHM2E1cm9TOWh5X0FYM2JKWjFNanFRQVlQazd1RHZadw?oc=5",
-      "source": "Programme TV Ouest-France",
-      "source_id": "news-medias-tv",
-      "category": "medias",
-      "published_at": "2026-10-08T05:10:04Z",
-      "image": "",
-      "score": 78.43,
-      "matched_keywords": [],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "8fcf6685457d5876672c",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -3843,7 +3843,7 @@
       "category": "medias",
       "published_at": "2026-10-02T15:53:37Z",
       "image": "",
-      "score": 77.77,
+      "score": 76.82,
       "matched_keywords": [
         "télévision"
       ],
@@ -3869,9 +3869,9 @@
       "source": "Télérama",
       "source_id": "news-medias-tv",
       "category": "medias",
-      "published_at": "2026-10-02T13:38:48Z",
+      "published_at": "2026-10-02T07:00:00Z",
       "image": "",
-      "score": 77.49,
+      "score": 75.71,
       "matched_keywords": [
         "télévision"
       ],
@@ -3889,32 +3889,6 @@
       ]
     },
     {
-      "id": "b02b68f98e8da51ba6",
-      "title": "Un an après l’annonce de son recrutement par TF1, on connaît la date et l’émission que Jarry animera sur la chaîne",
-      "summary": "Un an après l’annonce de son recrutement par TF1, on connaît la date et l’émission que Jarry animera sur la chaîne Programme TV Ouest-France",
-      "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNZTJLb1NDT21MU0xWNjh2NHZkSnZWVnRlMjRnMjF6UGtUeDJ1ZXBmNW9WbGRUZ1p3a05Qb0h5MkRCLVJRNkI3UnN2RmFJVm83QXZnM3JkTk04ZXdmYjB0bnpBRkNRMWtpUEh4TDBFVDVGZW5FblZmckExZUM0eEZmYV9IV2d1WVJjVVpEUVhrSWR0c2g4Vjh4VVdWd053TzNmMmw5RlAtWndvNmtvdmpBd3VJREdyZjdBTm14V2xBQXczVks5VkpiWmFDLWpFR0JrRXNTZWJkRmxxMENtSDZyQlNrYUp5b3pOaGFHM0lwN0E5MzdQYWM2WWp4WjJ3ZkJMQXF6bThXQkQ2NXhvNmgwa25hRE5ROUYtT0xUOUdYNlI1VXU1M0x6X210ZEEyM1BhMkl2a1VzWjM?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxNZTJLb1NDT21MU0xWNjh2NHZkSnZWVnRlMjRnMjF6UGtUeDJ1ZXBmNW9WbGRUZ1p3a05Qb0h5MkRCLVJRNkI3UnN2RmFJVm83QXZnM3JkTk04ZXdmYjB0bnpBRkNRMWtpUEh4TDBFVDVGZW5FblZmckExZUM0eEZmYV9IV2d1WVJjVVpEUVhrSWR0c2g4Vjh4VVdWd053TzNmMmw5RlAtWndvNmtvdmpBd3VJREdyZjdBTm14V2xBQXczVks5VkpiWmFDLWpFR0JrRXNTZWJkRmxxMENtSDZyQlNrYUp5b3pOaGFHM0lwN0E5MzdQYWM2WWp4WjJ3ZkJMQXF6bThXQkQ2NXhvNmgwa25hRE5ROUYtT0xUOUdYNlI1VXU1M0x6X210ZEEyM1BhMkl2a1VzWjM?oc=5",
-      "source": "Programme TV Ouest-France",
-      "source_id": "news-medias-tv",
-      "category": "medias",
-      "published_at": "2026-10-07T15:15:16Z",
-      "image": "",
-      "score": 76.69,
-      "matched_keywords": [],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "17cc107c675e7a28cace",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "rubrique prioritaire"
-      ]
-    },
-    {
       "id": "f77b1f7b9ea6d63103",
       "title": "Télécharger france.tv pour Web, iOS, Android - Telecharger.com",
       "summary": "Télécharger france.tv pour Web, iOS, Android - Telecharger.com 01net.com",
@@ -3925,7 +3899,7 @@
       "category": "medias",
       "published_at": "2026-10-07T07:00:00Z",
       "image": "",
-      "score": 75.66,
+      "score": 74.71,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -3951,7 +3925,7 @@
       "category": "histoire",
       "published_at": "2026-10-05T09:31:04Z",
       "image": "https://france3-regions.franceinfo.fr/image/2gD9ljP-8PiRUraSo5iDtB_DG50/930x620/filters:format(webp)/regions/2026/10/05/6ac3570d59188764411400.jpg",
-      "score": 74.77,
+      "score": 73.83,
       "matched_keywords": [
         "ina"
       ],
@@ -3979,7 +3953,7 @@
       "category": "histoire",
       "published_at": "2026-10-04T14:03:59Z",
       "image": "https://france3-regions.franceinfo.fr/image/L0GijnzglzHXuTze1zVdSgNwxJg/930x620/filters:format(webp)/regions/2026/10/04/6ac255b4c4ea9641957514.jpg",
-      "score": 72.34,
+      "score": 71.39,
       "matched_keywords": [
         "ina"
       ],
@@ -3997,21 +3971,21 @@
       ]
     },
     {
-      "id": "dc2293595851f2feb6",
-      "title": "La mondialisation du commerce et ses nouveaux acteurs",
-      "summary": "Guerre des tarifs douaniers sous Donald Trump, bras de fer commercial entre Bruxelles et Pékin, poids croissant des cartels : enregistrée en public depuis les Rendez-vous de l’histoire de Blois, cette émission spéciale interroge les mutations d'un commerce mondial sous tension.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/affaires-etrangeres/la-mondialisation-du-commerce-et-ses-nouveaux-acteurs-8413442",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/affaires-etrangeres/la-mondialisation-du-commerce-et-ses-nouveaux-acteurs-8413442",
-      "source": "France Culture",
-      "source_id": "france-culture",
+      "id": "49b7cba5983c7f3b7e",
+      "title": "Côte-d'Orienne ou Auvergnate ? Voici la gagnante du championnat du monde amateur de l'œuf en meurette",
+      "summary": "L'édition 2026 du championnat du monde de l'œuf en meurette s'est ouverte ce vendredi 9 octobre au château du Clos de Vougeot. Pendant trois jours, un jury composé de chefs renommés désigne les meilleures recettes, réalisées pour certaines, par des amateurs.",
+      "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/cote-d-or/cote-d-orienne-ou-auvergnate-voici-la-gagnante-du-championnat-du-monde-amateur-de-l-uf-en-meurette-3431574.html",
+      "resolved_url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/cote-d-or/cote-d-orienne-ou-auvergnate-voici-la-gagnante-du-championnat-du-monde-amateur-de-l-uf-en-meurette-3431574.html",
+      "source": "France 3 — Histoire",
+      "source_id": "france3-histoire",
       "category": "histoire",
-      "published_at": "2026-10-10T09:00:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/35918d33-daef-4cae-9570-137998b07d85/720x405?webp=false",
-      "score": 69.11,
+      "published_at": "2026-10-10T16:19:36Z",
+      "image": "https://france3-regions.franceinfo.fr/image/FmWC_JM3fZpfh40Vtzm60eU0vyo/930x620/filters:format(webp)/regions/2026/10/10/6aca60035850c762354902.jpg",
+      "score": 69.68,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "5e0af50b05beae8fd0d9",
+      "content_hash": "abbe0476fa3dc332fcd5",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4023,21 +3997,21 @@
       ]
     },
     {
-      "id": "ad5fb7538bcc8a3839",
-      "title": "L’artichaut, seigneur déchu ?",
-      "summary": "Pour Coluche, l’artichaut était « un plat de pauvre » : à la fin, il y en a plus dans l’assiette qu’au début... Pourtant, du chardon sauvage aux tables les plus raffinées, l'artichaut fut aussi un mets de choix et un marqueur social. Florent Quellier retrace son étonnante histoire.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/concordance-des-temps/l-artichaut-seigneur-dechu-5620511",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/concordance-des-temps/l-artichaut-seigneur-dechu-5620511",
-      "source": "France Culture",
-      "source_id": "france-culture",
+      "id": "b82e46300595c24e5e",
+      "title": "\"Provocation\" ou \"bruit des bottes\" : pourquoi l'idée de réintégrer l'Alsace et la Moselle à l'Allemagne refait surface outre-Rhin ?",
+      "summary": "Un cadre bavarois du parti d'extrême droite allemand AFD a posté, avant de la supprimer, une carte de l'Allemagne intégrant notamment l'Alsace et la Moselle. Une nouvelle provocation dont ce parti est coutumier mais qui est symptomatique de l'évolution du climat politique en Allemagne où l'AFD s'apprête à diriger un Land.",
+      "url": "https://france3-regions.franceinfo.fr/grand-est/bas-rhin/strasbourg-0/provocation-ou-bruit-des-bottes-pourquoi-l-idee-de-reintegrer-l-alsace-et-la-moselle-a-l-allemagne-refait-surface-outre-rhin-3431499.html",
+      "resolved_url": "https://france3-regions.franceinfo.fr/grand-est/bas-rhin/strasbourg-0/provocation-ou-bruit-des-bottes-pourquoi-l-idee-de-reintegrer-l-alsace-et-la-moselle-a-l-allemagne-refait-surface-outre-rhin-3431499.html",
+      "source": "France 3 — Histoire",
+      "source_id": "france3-histoire",
       "category": "histoire",
-      "published_at": "2026-10-10T08:00:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/dba6649a-ded4-4ae8-ad97-e0e2d033ec09/720x405?webp=false",
-      "score": 68.98,
+      "published_at": "2026-10-10T15:40:14Z",
+      "image": "https://france3-regions.franceinfo.fr/image/atPORP-0lUua-Bdw5VXphD64Bts/930x620/filters:format(webp)/regions/2026/10/10/6aca4e58a0bdf891164984.jpg",
+      "score": 69.59,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "e76cdb2ede7fda2b8dff",
+      "content_hash": "4bf6e9da10dc880bb0c2",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4049,21 +4023,49 @@
       ]
     },
     {
-      "id": "c5c6f86655ed655322",
-      "title": "L'état du monde",
-      "summary": "De la guerre en Ukraine aux tensions avec l’Iran, en passant par la dissuasion nucléaire, Emmanuel Todd et Bruno Tertrais débattent des conflits et des rapports de force qui traversent le monde contemporain.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/repliques/l-etat-du-monde-4845200",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/repliques/l-etat-du-monde-4845200",
+      "id": "373a716836879497f7",
+      "title": "Bicentenaire de la photographie : la collection Pinault explore le temps des images à la Bourse de commerce",
+      "summary": "Bicentenaire de la photographie : la collection Pinault explore le temps des images à la Bourse de commerce franceinfo",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxORG9HZDJTWWI3d2FFUWpuVzd4ci1KZnpfNEpxd1dyOW9Ra004bjdfZGpvcFU4Y1dwSnBVYmxBMFpnZWYtU2VleE55Rko1QWUyMDBIOUJtWUZvNnZoSl8zWlh5M3l1RkNYSXI4LWhBeXlVeHZDdGo1TjNzX29jMnkwWThGMi11X0xhNXJBZXVlc0JhbzVsd3ZxUFZSX3RtRjU3VWxBQTZaZmdoa25rMlNwUm5UQ3hMM1UxWWhVLVd3MlhvdnFNQm82QnNVNF9TTmxBRkJRek1ISVdfQTJfM05FSHNUaTZmU3U2QWtsZVZEb1RpTUhNd3ZtdWYxeDlwU1lTZi1Pa2g4MA?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxORG9HZDJTWWI3d2FFUWpuVzd4ci1KZnpfNEpxd1dyOW9Ra004bjdfZGpvcFU4Y1dwSnBVYmxBMFpnZWYtU2VleE55Rko1QWUyMDBIOUJtWUZvNnZoSl8zWlh5M3l1RkNYSXI4LWhBeXlVeHZDdGo1TjNzX29jMnkwWThGMi11X0xhNXJBZXVlc0JhbzVsd3ZxUFZSX3RtRjU3VWxBQTZaZmdoa25rMlNwUm5UQ3hMM1UxWWhVLVd3MlhvdnFNQm82QnNVNF9TTmxBRkJRek1ISVdfQTJfM05FSHNUaTZmU3U2QWtsZVZEb1RpTUhNd3ZtdWYxeDlwU1lTZi1Pa2g4MA?oc=5",
+      "source": "franceinfo",
+      "source_id": "news-culture",
+      "category": "culture",
+      "published_at": "2026-10-07T04:00:10Z",
+      "image": "",
+      "score": 69.34,
+      "matched_keywords": [
+        "ina"
+      ],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "9dd78849338ab17f5c16",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "mots-clés : ina"
+      ]
+    },
+    {
+      "id": "39696eb8541b8e1d2a",
+      "title": "Marianne Perrudin, vent de fraîcheur sur la folk francophone",
+      "summary": "Repérée. L'artiste normande Marianne Perrudin fait résonner les mots et sa guitare dans son premier EP \"Quand tombe le jour\" (promenades / Modulor).",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/comme-un-samedi-le-live/marianne-perrudin-vent-de-fraicheur-sur-la-folk-francophone-5087237",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/comme-un-samedi-le-live/marianne-perrudin-vent-de-fraicheur-sur-la-folk-francophone-5087237",
       "source": "France Culture",
       "source_id": "france-culture",
       "category": "histoire",
-      "published_at": "2026-10-10T07:07:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/f9970415-2ff2-49a3-96ac-b834b1cd5b1a/720x405?webp=false",
-      "score": 68.87,
+      "published_at": "2026-10-10T16:43:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/179f3599-2f0a-478a-b447-c87c1d309e34/720x405?webp=false",
+      "score": 69.13,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "11187757452c2dc012a1",
+      "content_hash": "7d3c55afe53469a3c745",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4075,21 +4077,21 @@
       ]
     },
     {
-      "id": "7f4b3d0cd005e18a8c",
-      "title": "JOURNAL DE 09H00 du samedi 10 octobre 2026",
-      "summary": "",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-9h/journal-de-09h00-du-samedi-10-octobre-2026-8237709",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-9h/journal-de-09h00-du-samedi-10-octobre-2026-8237709",
+      "id": "e6fb9bd86f1497b5ef",
+      "title": "Inde : manifestation historique réprimée par les forces de l'ordre",
+      "summary": "À New Delhi, plus de 5 000 personnes auraient été arrêtées lors d’une manifestation contre une réforme électorale. L’ONU réclame leur libération immédiate et inconditionnelle.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-18h/journal-de-18h-emission-du-samedi-10-octobre-2026-6583208",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-18h/journal-de-18h-emission-du-samedi-10-octobre-2026-6583208",
       "source": "France Culture",
       "source_id": "france-culture",
       "category": "histoire",
-      "published_at": "2026-10-10T07:00:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/c40977bc-bd76-466b-9912-39d4b0a1b7af/720x405?webp=false",
-      "score": 68.86,
+      "published_at": "2026-10-10T16:00:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/f5d52455-c3ee-4af7-8189-58d03cddb0f7/720x405?webp=false",
+      "score": 69.04,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "",
+      "content_hash": "3feca1efbd11f0c9e85e",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4101,21 +4103,21 @@
       ]
     },
     {
-      "id": "ea41bdeb24f953929e",
-      "title": "Le chantier de l'autoroute A69 touche à sa fin, mais les opposants, eux, n'ont pas fini de protester",
-      "summary": "Ils se réunissent pour une nouvelle mobilisation ce week-end. Plus de 1 000 personnes sont attendues dans le Tarn dès aujourd'hui, sous haute surveillance des forces de l'ordre.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-8-h/journal-de-8h-du-samedi-10-octobre-2026-5413606",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-8-h/journal-de-8h-du-samedi-10-octobre-2026-5413606",
+      "id": "d830c98e6bdf1e3043",
+      "title": "Simone Weil au pouvoir : défendons nos besoins essentiels !",
+      "summary": "Et si Simone Weil était au pouvoir ? Entre méfiance envers la politique, attention à l’autre, enracinement, sens du travail et beauté du monde, quelle société imaginerait-elle aujourd’hui ?",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/les-philosophes-au-pouvoir/simone-weil-au-pouvoir-reparons-le-monde-3346412",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/les-philosophes-au-pouvoir/simone-weil-au-pouvoir-reparons-le-monde-3346412",
       "source": "France Culture",
       "source_id": "france-culture",
       "category": "histoire",
-      "published_at": "2026-10-10T06:00:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/eca77896-59ec-40d2-889b-fd9458334f10/720x405?webp=false",
-      "score": 68.73,
+      "published_at": "2026-10-10T14:00:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/dc7b9976-5b4b-4f4e-8586-a28beb1f07c6/720x405?webp=false",
+      "score": 68.79,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "58f43da0b86f76297154",
+      "content_hash": "121bef70574f89b43256",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4127,21 +4129,21 @@
       ]
     },
     {
-      "id": "7b47f0ba5d0d1f2cc7",
-      "title": "Quelle souveraineté énergétique européenne en 2040 ?",
-      "summary": "Crises géopolitiques, flambée des prix : la dépendance énergétique fragilise l’Europe. Comment conquérir sa souveraineté en accélérant l’électrification sans remplacer une dépendance aux hydrocarbures par une autre, notamment envers la Chine ? Et à quel rythme avancer ?",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/l-invite-e-des-matins-d-apres/quelle-souverainete-energetique-europeenne-en-2040-2504220",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/l-invite-e-des-matins-d-apres/quelle-souverainete-energetique-europeenne-en-2040-2504220",
+      "id": "2efa7fc02354f19fd7",
+      "title": "En terres guiraudiennes",
+      "summary": "Ballade dans les territoires utopiques du cinéaste arpenteur et géographe Alain Guiraudie, avec Clément Schneider.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/grand-angle/en-terres-guiraudiennes-8342730",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/grand-angle/en-terres-guiraudiennes-8342730",
       "source": "France Culture",
       "source_id": "france-culture",
       "category": "histoire",
-      "published_at": "2026-10-10T05:38:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/b4f22d13-52ee-4988-bb4f-55b2ca9b4c10/720x405?webp=false",
-      "score": 68.69,
+      "published_at": "2026-10-10T11:45:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/e379b464-f4ba-468e-8231-b97a3011b69a/720x405?webp=false",
+      "score": 68.5,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "7ac834955f9cbaecab0d",
+      "content_hash": "ea30e3e0fb00a2d77142",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4153,21 +4155,21 @@
       ]
     },
     {
-      "id": "9f1fb21ad777259586",
-      "title": "Au Québec, le retour au pouvoir du Parti québécois ravive le débat sur l’indépendance",
-      "summary": "Après douze ans d’absence, le Parti québécois revient au pouvoir. Son chef, Paul St-Pierre Plamondon, promet un nouveau référendum sur l’indépendance. Entre ambitions souverainistes, urgences sociales et alliances politiques, cette victoire ouvre une nouvelle ère pour le Québec.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/la-revue-de-presse-internationale/quebec-le-retour-au-pouvoir-du-parti-quebecois-ravive-le-debat-sur-l-independance-2206649",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/la-revue-de-presse-internationale/quebec-le-retour-au-pouvoir-du-parti-quebecois-ravive-le-debat-sur-l-independance-2206649",
+      "id": "4b6ad3fa0fe2457675",
+      "title": "\"L’Espèce explosive\", et les territoires guiraudiens, avec Sarah Arnold et Clément Schneider",
+      "summary": "A l'occasion de la sortie en salles de \"L'Espèce explosive\", entretien avec la cinéaste Sarah Arnold, suivi d'un \"Grand Angle\" sur le cinéma d'Alain Guiraudie avec Clément Schneider, et aussi Mathieu Macheret.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/plan-large/l-espece-explosive-et-les-territoires-guiraudiens-avec-sarah-arnold-et-clement-schneider-5493495",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/plan-large/l-espece-explosive-et-les-territoires-guiraudiens-avec-sarah-arnold-et-clement-schneider-5493495",
       "source": "France Culture",
       "source_id": "france-culture",
       "category": "histoire",
-      "published_at": "2026-10-10T05:33:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/d693ca6e-6428-4e39-bbd6-e4f457d5f847/720x405?webp=false",
-      "score": 68.68,
+      "published_at": "2026-10-10T11:30:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/94c98ea9-2294-433f-8489-2ebf77cc213d/720x405?webp=false",
+      "score": 68.47,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "af938949c29bdbba3a5d",
+      "content_hash": "18c59222e74f9e81628c",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4179,21 +4181,47 @@
       ]
     },
     {
-      "id": "c7ddd29761106d4c58",
-      "title": "Roman Badanine : obsession Poutine",
-      "summary": "Le journaliste russe en exil publie avec Mikhail Roubine un livre enquête consacré à Vladimir Poutine : Le Tsar en personne. Comment enquêter sur Poutine lorsqu'on est en exil ? Quelle influence Vladimir Poutine a-t-il eu sur le journalisme russe ? Autant de questions qu'explore Roman Badanine.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/recits-d-enquete/roman-badanine-obsession-poutine-1903326",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/recits-d-enquete/roman-badanine-obsession-poutine-1903326",
+      "id": "35a0862b7898069a7a",
+      "title": "Regis Debray : notre mecontemporain ?",
+      "summary": "C’est l’histoire du lien complexe entre un intellectuel et son époque. L’intellectuel en question ? Regis Debray ? L’époque ? La notre ? Le premier est pour le moins inclassable.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/sans-prejuger/sans-prejuger-emission-du-samedi-10-octobre-2026-8861110",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/sans-prejuger/sans-prejuger-emission-du-samedi-10-octobre-2026-8861110",
       "source": "France Culture",
       "source_id": "france-culture",
       "category": "histoire",
-      "published_at": "2026-10-10T05:23:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/b2184bbb-7985-4ae4-b55f-bfdda37e21ca/720x405?webp=false",
-      "score": 68.66,
+      "published_at": "2026-10-10T10:46:10Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/0e9b8f13-1e6a-483c-8962-c3dbc910936e/720x405?webp=false",
+      "score": 68.38,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "3f02a9f572bf6397417b",
+      "content_hash": "2e994ac706c8836ec6ad",
+      "ai_summary": "",
+      "ai_summary_basis": "",
+      "ai_summary_at": "",
+      "ai_summary_model": "",
+      "archive_url": "",
+      "archive_status": "not_needed",
+      "why_for_you": [
+        "rubrique prioritaire"
+      ]
+    },
+    {
+      "id": "870a115e3e41c15afc",
+      "title": "États-Unis- Russie : l'accord sur le diesel déclenche la colère de Volodymyr Zelensky et la consternation en Europe",
+      "summary": "Les États-Unis sont prêts à assouplir leurs sanctions contre Moscou en échange de diesel russe : un accord surprise entre les États-Unis et la Russie, qui suscite la colère du président ukrainien Volodymyr Zelensky.",
+      "url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-12h30/journal-de-12h30-du-samedi-10-octobre-2026-8352580",
+      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-12h30/journal-de-12h30-du-samedi-10-octobre-2026-8352580",
+      "source": "France Culture",
+      "source_id": "france-culture",
+      "category": "histoire",
+      "published_at": "2026-10-10T10:30:00Z",
+      "image": "https://www.radiofrance.fr/pikapi/images/e7a41b16-8281-4706-ac6c-102fd2198b7a/720x405?webp=false",
+      "score": 68.35,
+      "matched_keywords": [],
+      "watch_matches": [],
+      "paywalled": false,
+      "content_hash": "e4eea45534576f95c43e",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4215,7 +4243,7 @@
       "category": "politique",
       "published_at": "2026-10-01T07:00:00Z",
       "image": "",
-      "score": 68.66,
+      "score": 68.0,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -4231,101 +4259,21 @@
       ]
     },
     {
-      "id": "b771e4144b17b48d20",
-      "title": "Mille-pattes, cloportes et vers de terre au service des sols",
-      "summary": "Et si, pour restaurer un sol dégradé, il fallait d’abord faire revenir les organismes qui le font vivre ? Lucie Caron, docteure en écologie des sols, développe une solution fondée sur la faune du sol pour restaurer sa fertilité et ses fonctions naturelles.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/l-invention/mille-pattes-cloportes-et-vers-de-terre-au-service-des-sols-9971368",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/l-invention/mille-pattes-cloportes-et-vers-de-terre-au-service-des-sols-9971368",
-      "source": "France Culture",
-      "source_id": "france-culture",
-      "category": "histoire",
-      "published_at": "2026-10-10T05:09:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/8a4cc989-18d2-46c5-ada0-e9cd0fd211d1/720x405?webp=false",
-      "score": 68.63,
-      "matched_keywords": [],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "88941cc30f55851d4483",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "rubrique prioritaire"
-      ]
-    },
-    {
-      "id": "1f08910836d45d5ca6",
-      "title": "Inflation, répression, guerre : des Iraniens racontent leur quotidien",
-      "summary": "En Iran, l’inflation galopante bouleverse le quotidien et nourrit la colère. Mais face à une répression féroce, beaucoup n’osent plus manifester. Entre peur, désillusion et défiance envers les puissances étrangères, des Iraniens racontent un pays à bout de souffle.",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/le-reportage-de-la-redaction/inflation-repression-guerre-des-iraniens-racontent-leur-quotidien-3533980",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/le-reportage-de-la-redaction/inflation-repression-guerre-des-iraniens-racontent-leur-quotidien-3533980",
-      "source": "France Culture",
-      "source_id": "france-culture",
-      "category": "histoire",
-      "published_at": "2026-10-10T05:05:00Z",
-      "image": "https://www.radiofrance.fr/pikapi/images/04d6b8d7-465b-4014-a6ca-01f4a7b75a6d/720x405?webp=false",
-      "score": 68.62,
-      "matched_keywords": [],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "6e7ccfdf07f3f63e8afa",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "rubrique prioritaire"
-      ]
-    },
-    {
-      "id": "56dfcd4ea4eea314a8",
-      "title": "JOURNAL DE 7H, du samedi 10 octobre 2026",
-      "summary": "",
-      "url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-7-h/journal-de-7h-du-samedi-10-octobre-2026-9212685",
-      "resolved_url": "https://www.radiofrance.fr/franceculture/podcasts/journal-de-7-h/journal-de-7h-du-samedi-10-octobre-2026-9212685",
-      "source": "France Culture",
-      "source_id": "france-culture",
-      "category": "histoire",
-      "published_at": "2026-10-10T05:00:00Z",
-      "image": "",
-      "score": 68.61,
-      "matched_keywords": [],
-      "watch_matches": [],
-      "paywalled": false,
-      "content_hash": "",
-      "ai_summary": "",
-      "ai_summary_basis": "",
-      "ai_summary_at": "",
-      "ai_summary_model": "",
-      "archive_url": "",
-      "archive_status": "not_needed",
-      "why_for_you": [
-        "rubrique prioritaire"
-      ]
-    },
-    {
-      "id": "1d27449d4e84576e9b",
-      "title": "55e Rencontre cinéma de Marcigny",
-      "summary": "55e Rencontre cinéma de Marcigny France Télévisions",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM2htTDNKdVM4YTZkODQ2WFZCaVB2NUtmWkVZRWYyMURqVXVhdXNRdU9udFoxeDdjeWRMeDA2Y0FfYXlQWm9GMTQ5Yy1RMmFIYXpXUl9VM2Z4UjR5Y0twZDRCLUZjWUE1SmR0UXhCNDI3MWY3RDBfRC1vMUJPZ3p2NGVFMlhBS0F5Z0ZLRFk2OVhWa3phX3oyeFNDQjR3WGdrX2xCUWhtT2o1czBGNzVfcUJ0YWUxTEtpRWZCTUVHWUxkUlU?oc=5",
-      "resolved_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOM2htTDNKdVM4YTZkODQ2WFZCaVB2NUtmWkVZRWYyMURqVXVhdXNRdU9udFoxeDdjeWRMeDA2Y0FfYXlQWm9GMTQ5Yy1RMmFIYXpXUl9VM2Z4UjR5Y0twZDRCLUZjWUE1SmR0UXhCNDI3MWY3RDBfRC1vMUJPZ3p2NGVFMlhBS0F5Z0ZLRFk2OVhWa3phX3oyeFNDQjR3WGdrX2xCUWhtT2o1czBGNzVfcUJ0YWUxTEtpRWZCTUVHWUxkUlU?oc=5",
-      "source": "France Télévisions",
+      "id": "d0700aefcefb8e198d",
+      "title": "\"Cela fait cinq ans qu'il a disparu et pourtant il est là\" : une grande exposition à la Cinémathèque pour rendre hommage à Jean-Paul Belmondo",
+      "summary": "\"Cela fait cinq ans qu'il a disparu et pourtant il est là\" : une grande exposition à la Cinémathèque pour rendre hommage à Jean-Paul Belmondo franceinfo",
+      "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOVU5icGt2VDhpQldqRnRaRHpwajRtUUprOFNCVVdmdm9ZcjdfM0RjRnZVZlh0RWZjMzdPMk1pQVBvUW43cDRqVkVDYVI5VDktZ0xlanlZOE1CTkFNSkFhZnBUUmFBRkRFeFhxdTFSc2wtb0RIZFo0aGN4VW9mbUhsU2pwc0Q3RTNxM3FpaF9BNXNnenh0MDZTRWtXOURKXy1nU1lKY0NxRTBBc3YwRGtDYVBsV2hOOVp5clV1UFg5SkZrbVZGQmNQWjdTT3FhNDlYVHR1WGsycHB6QXdvVWNHaktmLUUyN0RVOFVrQXhBN2RPZjNVYUpwWkNtTVQ3eXoxc2w2T1QyWVV5X3gta3BleEIyNHdmUzJDZHNr?oc=5",
+      "resolved_url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOVU5icGt2VDhpQldqRnRaRHpwajRtUUprOFNCVVdmdm9ZcjdfM0RjRnZVZlh0RWZjMzdPMk1pQVBvUW43cDRqVkVDYVI5VDktZ0xlanlZOE1CTkFNSkFhZnBUUmFBRkRFeFhxdTFSc2wtb0RIZFo0aGN4VW9mbUhsU2pwc0Q3RTNxM3FpaF9BNXNnenh0MDZTRWtXOURKXy1nU1lKY0NxRTBBc3YwRGtDYVBsV2hOOVp5clV1UFg5SkZrbVZGQmNQWjdTT3FhNDlYVHR1WGsycHB6QXdvVWNHaktmLUUyN0RVOFVrQXhBN2RPZjNVYUpwWkNtTVQ3eXoxc2w2T1QyWVV5X3gta3BleEIyNHdmUzJDZHNr?oc=5",
+      "source": "franceinfo",
       "source_id": "news-culture",
       "category": "culture",
-      "published_at": "2026-10-07T14:27:02Z",
+      "published_at": "2026-10-08T10:25:53Z",
       "image": "",
-      "score": 67.59,
-      "matched_keywords": [
-        "télévision"
-      ],
+      "score": 53.14,
+      "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
-      "content_hash": "",
+      "content_hash": "79be28931c55381389e6",
       "ai_summary": "",
       "ai_summary_basis": "",
       "ai_summary_at": "",
@@ -4333,7 +4281,7 @@
       "archive_url": "",
       "archive_status": "not_needed",
       "why_for_you": [
-        "mots-clés : télévision"
+        "rubrique prioritaire"
       ]
     },
     {
@@ -4347,7 +4295,7 @@
       "category": "international",
       "published_at": "2026-10-06T07:00:00Z",
       "image": "",
-      "score": 52.66,
+      "score": 51.71,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": true,
@@ -4373,7 +4321,7 @@
       "category": "sciences",
       "published_at": "2026-10-06T16:37:51Z",
       "image": "",
-      "score": 52.26,
+      "score": 51.31,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -4399,7 +4347,7 @@
       "category": "culture",
       "published_at": "2026-10-07T13:31:26Z",
       "image": "",
-      "score": 51.47,
+      "score": 50.53,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -4425,7 +4373,7 @@
       "category": "culture",
       "published_at": "2026-10-04T04:00:02Z",
       "image": "",
-      "score": 41.28,
+      "score": 40.34,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -4451,7 +4399,7 @@
       "category": "sciences",
       "published_at": "2026-10-02T07:00:00Z",
       "image": "",
-      "score": 39.06,
+      "score": 38.11,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
@@ -4477,7 +4425,7 @@
       "category": "culture",
       "published_at": "2026-10-02T07:00:00Z",
       "image": "",
-      "score": 35.66,
+      "score": 34.71,
       "matched_keywords": [],
       "watch_matches": [],
       "paywalled": false,
